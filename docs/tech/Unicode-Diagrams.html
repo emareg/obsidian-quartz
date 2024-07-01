@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Unicode Diagram Drawing</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Unicode Diagram Drawing"/><meta property="og:description" content="You all have heard about ASCII art and have seen ASCII diagrams. But now UTF8 is default in most applications, and thus enables the creation of beautiful diagrams, like this one: ┌─────────────────────┐ A ┤╺━━━━━━━━━━━━ │ 62.5% B ┤╺━━━━━━━━━━━━━━━━╸ │ 85.0% C ┤╺━━━━━━━━━╸ │ 50.0% └┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴┘ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰ Or to show directories and boxes: some-dorectory/ ├── Dir_A │ └── File_C ├── File_A └── File_B ╭────────╮ ┌────────┐ │ TestA │ │ Test B │ ╰────────╯ └────────┘ Why character diagrams instead of images? They are small, portable and text inlined diagrams that look decent even in a text editor."/><meta property="og:image" content="https://brain.emareg.de/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="You all have heard about ASCII art and have seen ASCII diagrams. But now UTF8 is default in most applications, and thus enables the creation of beautiful diagrams, like this one: ┌─────────────────────┐ A ┤╺━━━━━━━━━━━━ │ 62.5% B ┤╺━━━━━━━━━━━━━━━━╸ │ 85.0% C ┤╺━━━━━━━━━╸ │ 50.0% └┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴┘ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰ Or to show directories and boxes: some-dorectory/ ├── Dir_A │ └── File_C ├── File_A └── File_B ╭────────╮ ┌────────┐ │ TestA │ │ Test B │ ╰────────╯ └────────┘ Why character diagrams instead of images? They are small, portable and text inlined diagrams that look decent even in a text editor."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="tech/Unicode-Diagrams"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="..">EmaReg's Garden</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;earth&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;info&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;mind&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;society&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;tech&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="earth"><button class="folder-button"><span class="folder-title">earth</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="earth"><li><a href="../earth/Avoid-Waste-with-R's" data-for="earth/Avoid-Waste-with-R's">Avoid Waste with R's</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="info"><button class="folder-button"><span class="folder-title">info</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="info"><li><a href="../info/Classification-Error-Types" data-for="info/Classification-Error-Types">Classification Error Types</a></li><li><a href="../info/CRUD-Operations" data-for="info/CRUD-Operations">CRUD Operations</a></li><li><a href="../info/DOER-Process" data-for="info/DOER-Process">DOER Process</a></li><li><a href="../info/DOER-Process-Documentation" data-for="info/DOER-Process-Documentation">DOER Process Documentation</a></li><li><a href="../info/Resolution–Precision–Accuracy" data-for="info/Resolution–Precision–Accuracy">Resolution–Precision–Accuracy</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="mind"><button class="folder-button"><span class="folder-title">mind</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="mind"><li><a href="../mind/Logido" data-for="mind/Logido">Logische Selbstverteidigung</a></li><li><a href="../mind/The-37-percent-Stopping-Rule" data-for="mind/The-37-percent-Stopping-Rule">The 37% Stopping Rule</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="society"><button class="folder-button"><span class="folder-title">society</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="society"><li><a href="../society/Meeting-Manifesto" data-for="society/Meeting-Manifesto">Meeting Manifesto</a></li><li><a href="../society/Willenspunkte-System" data-for="society/Willenspunkte-System">Willenspunkte-System</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="tech"><button class="folder-button"><span class="folder-title">tech</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="tech"><li><a href="../tech/File-based-Version-Control" data-for="tech/File-based-Version-Control">File-based Version Control</a></li><li><a href="../tech/Non-Functional-Requirements" data-for="tech/Non-Functional-Requirements">Non-Functional Requirements</a></li><li><a href="../tech/OAuth" data-for="tech/OAuth">OAuth</a></li><li><a href="../tech/Unicode-Diagrams" data-for="tech/Unicode-Diagrams">Unicode Diagram Drawing</a></li><li><a href="../tech/Universal-Project-Folder-Structure" data-for="tech/Universal-Project-Folder-Structure">Universal Project Folder Structure</a></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../tech/">tech</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Unicode Diagram Drawing</a></div></nav><h1 class="article-title">Unicode Diagram Drawing</h1><p show-comma="true" class="content-meta"><span>Sep 30, 2022</span><span>17 min read</span></p></div></div><article class="popover-hint"><p>You all have heard about ASCII art and have seen ASCII diagrams. But now UTF8 is default in most applications, and thus enables the creation of beautiful diagrams, like this one:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>  ┌─────────────────────┐</span></span>
+<span data-line><span>A ┤╺━━━━━━━━━━━━        │ 62.5%   </span></span>
+<span data-line><span>B ┤╺━━━━━━━━━━━━━━━━╸   │ 85.0%</span></span>
+<span data-line><span>C ┤╺━━━━━━━━━╸          │ 50.0%</span></span>
+<span data-line><span>  └┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴┘</span></span>
+<span data-line><span>   ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰</span></span></code></pre></figure>
+<p>Or to show directories and boxes:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line> </span>
+<span data-line><span>some-dorectory/</span></span>
+<span data-line><span>├── Dir_A</span></span>
+<span data-line><span>│   └── File_C</span></span>
+<span data-line><span>├── File_A</span></span>
+<span data-line><span>└── File_B</span></span>
+<span data-line><span>╭────────╮ ┌────────┐</span></span>
+<span data-line><span>│ TestA  │ │ Test B │</span></span>
+<span data-line><span>╰────────╯ └────────┘</span></span></code></pre></figure>
+<h2 id="why-character-diagrams-instead-of-images">Why character diagrams instead of images?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-character-diagrams-instead-of-images" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>They are small, portable and text inlined diagrams that look decent even in a text editor. They are a good choice for Markdown-based systems and can also be pasted into many chat applications that have monospace font.</p>
+<h3 id="further-ideas">Further ideas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#further-ideas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>UFT-8 diagrams do not need to be pure text. We embed them into HTML and so we can use CSS and JS to enable additional features.</p>
+<ul>
+<li>Select fonts for different character ranges</li>
+<li>Use JS to reduce/increase font size until it fits into screen width</li>
+<li>Use JS to export to ASCII. E.g. replace all box drawing chars by closest ASCII char (<code>┌─┐</code> → <code>+-+</code>)</li>
+<li>Use CSS to offer tooltips.</li>
+<li>Use links inside the diagrams.</li>
+</ul>
+<h2 id="unicode-box-drawing">Unicode Box Drawing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#unicode-box-drawing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="box-drawing">Box Drawing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#box-drawing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>┌───────┐ ╭───────╮  ┏━━━━━━━┓  ╔═══════╗</span></span>
+<span data-line><span>│ Box A │ │ Box B │  ┃ Box C ┃  ║ Box D ║</span></span>
+<span data-line><span>└───────┘ ╰───────╯  ┗━━━━━━━┛  ╚═══════╝</span></span>
+<span data-line><span>┌┬──────┐ ┌┬──────┐  ┏┳━━━━━━┓  ╔╦══════╗</span></span>
+<span data-line><span>├┼──────┤ ├┼──────┤  ┣╋━━━━━━┫  ╠╬══════╣</span></span>
+<span data-line><span>││Box A │ ││Box A │  ┃┃Box C ┃  ║║Box D ║</span></span>
+<span data-line><span>└┴──────┘ └┴──────┘  ┗┻━━━━━━┛  ╚╩══════╝</span></span></code></pre></figure>
+<h3 id="lines-symbols-shades">Lines, Symbols, Shades<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lines-symbols-shades" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Thin:   ─ │ ╌ ╎ ┄ ┆ ┈ ┊     ╱ ╲ ╳
+Thick:  ━ ┃ ╍ ╏ ┅ ┇ ┉ ┋
+
+Arrow+Line: ─►  ◄─ 
+Arrows: ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ↚ ↛ ↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↨ ↩ ↪ ↫ ↬ ↭ ↮ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷ ↸ ↹ ↺ ↻ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇍ ⇎ ⇏ ⇐ ⇑ ⇒ ⇓
+
+Boxes:     ▢▣▤▥▦▧▨▩ ◧◨◩◪◫  ⚀⚁⚂⚃⚄⚅
+Circles:   ◍◎●○◐◑◒◓◔◕⬤
+Triagnles: ▲△▶▷▼▽◀◁   ▴▵▸▹▾▿◂◃  ♳♴♵♶♷♸♹♺
+Rombs:     ◆◇◈
+
+Shades: ░ ▒ ▓
+Blocks: █ ▌   ▁▂▃▄▅▆▇█  █ ▉ ▊ ▋ ▌ ▍ ▎ ▏   ⣀⣠⣤⣴⣶⣾⣿⣷⣦⣤⣄   ⣼⣧  ⣰⣸⣇⣆
+
+Misc: 𒐆 𒐪
+
+
+; 𝑎 𝑏 𝑐 𝑑 𝑒 𝑓 𝑔 ℎ 𝑖 𝑗 𝑘 𝑙 𝑚 𝑛 𝑜 𝑝 𝑞 𝑟 𝑠 𝑡 𝑢 𝑣 𝑤 𝑥 𝑦 𝑧  
+; 𝒶 𝒷 𝒸 𝒹 𝑒 𝒻 𝑔 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 𝑜 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏
+Serif: 𝐚 𝐛 𝐜 𝐝 𝐞 𝐟 𝐠 𝐡 𝐢 𝐣 𝐤 𝐥 𝐦 𝐧 𝐨 𝐩 𝐪 𝐫 𝐬 𝐭 𝐮 𝐯 𝐰 𝐱 𝐲 𝐳
+Serif: 𝐀 𝐁 𝐂 𝐃 𝐄 𝐅 𝐆 𝐇 𝐈 𝐉 𝐊 𝐋 𝐌 𝐍 𝐎 𝐏 𝐐 𝐑 𝐒 𝐓 𝐔 𝐕 𝐖 𝐗 𝐘 𝐙
+Sans:  𝗔 𝗕 𝗖 𝗗 𝗘 𝗙 𝗚 𝗛 𝗜 𝗝 𝗞 𝗟 𝗠 𝗡 𝗢 𝗣 𝗤 𝗥 𝗦 𝗧 𝗨 𝗩 𝗪 𝗫 𝗬 𝗭
+Sans:  𝗮 𝗯 𝗰 𝗱 𝗲 𝗳 𝗴 𝗵 𝗶 𝗷 𝗸 𝗹 𝗺 𝗻 𝗼 𝗽 𝗾 𝗿 𝘀 𝘁 𝘂 𝘃 𝘄 𝘅 𝘆
+Nums: ⓪ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳ ㉑ ㉒ ㉓ ㉔ ㉕ ㉖ ㉗ ㉘ ㉙ ㉚ ㉛ ㉜ ㉝ ㉞ ㉟ ㊱ ㊲ ㊳ ㊴ ㊵ ㊶ ㊷ ㊸ ㊹ ㊺ ㊻ ㊼ ㊽ ㊾ ㊿
+
+
+▤ ▤ ▢ + ◔◕◱ = ◩▤▣
+◪ ▤ ◔ +  ▣◕ =
+
+</code></pre>
+<p>3-Stage Progress: ○◒⬤
+5-Stage Progress: ○◔◑◕◕⬤
+7-Iterations</p>
+<p><a href="https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols" class="external">https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<a href="https://yaytext.com/bold-italic/" class="external">https://yaytext.com/bold-italic/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>▤▤▢ + ◔◕◱ = ◩▤▣
+◪▤◔ +    ▣◕ = ◔◪◔
+◥◩▣ + ◪▢◱ = ▤▢◔</p>
+<p>◕◥▢◪◔▤◱_▣◩
+◩◪◥▤▢◱◒◔◕▣  ▟▙▗</p>
+<p> ¡puɐʇsɟdoʞ uǝu ןɐɯ ɥɔɐɯ ‘ᴉɥ
+ ¡puɐʇsɟdoʞ uǝu ןɐɯ ɥɔɐɯ ‘ʎǝɥ
+ ¿ɯnɹ ɥɔsןɐɟ sǝןןɐ ɹǝᴉɥ sᴉ ɯnɹɐʍ ןɐɯ ɓɐs
+ ¿ɯnɹ ɥɔsןɐɟ ɹǝp sᴉ ɯnɹɐʍ</p>
+<p> z ʎ x ʍ ʌ n ʇʇʇ s ɹ b d o u ɯ ן ʞ ɾ ıᴉ ɥ ɓ ɟ ǝ p ɔ q ɐ</p>
+<p>😀😄😊😉🧬🛡🔍🔎✒⌛</p>
+<h2 id="-useful-emoji-set">🙂 Useful Emoji Set<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-useful-emoji-set" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Unicode Emojis can be used to make concepts more visually appealing.</p>
+<h3 id="meta-data">Meta-Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>👤 Author</li>
+<li>👥 Authors</li>
+<li>📆 Date</li>
+<li>🏛 Institution</li>
+<li>📧 E-Mail · 📞 Phone</li>
+</ul>
+<h3 id="document-structure">Document Structure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#document-structure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>⚡ Abstract</li>
+<li>🎯 Goal / Direction</li>
+<li>💡 Idea</li>
+<li>🧩 Challenges</li>
+<li>⚓🧱  State of the Art</li>
+<li>📈 📊 Evaluation</li>
+<li>⚖️ License, Terms &amp; Conditions</li>
+<li>🙏 Acknowledgment</li>
+<li>📚 References</li>
+</ul>
+<h3 id="coding">Coding<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#coding" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>📦 Packets (Software)</li>
+<li>💌 Features / Supporters</li>
+<li>📜 Instructions | 📖 Documentation</li>
+<li>🛠 Tools</li>
+<li>⚙ Settings</li>
+<li>✏ Edit</li>
+</ul>
+<h3 id="status">Status<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>🏆 Achievement</li>
+<li>🎓 Academic</li>
+<li>💰 Funding</li>
+<li>⚠🚧 Warnung | 📣🔔 Announcements</li>
+<li>🧪 Experimental | 🗑 Deprecated</li>
+<li>🔥 Hot/new</li>
+<li>📡 Status: ❌🆘🟧🟨🟩❇✳✅</li>
+<li>Ranking: 🥇🥈🥉</li>
+<li>Priority:</li>
+<li>Likelihood: ⚀⚁⚂⚃⚄⚅</li>
+</ul>
+<p>Arrow Types: Timeflow ↣  Send ⇝  Implication → Evolution⇾ Move ⇥ Dimension ⇸</p>
+<p>Further: 🌐♻👁‍🗨🗃👉🤝 ⬜🔳✅</p>
+<p>🥇🥈🥉
+☹😐🙂😀🤩</p>
+<h1 id="-references">📚 References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="https://www.ietf.org/rfc/rfc2360.txt" class="external">https://www.ietf.org/rfc/rfc2360.txt<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Geometric_Shapes_(Unicode_block)" class="external">https://en.wikipedia.org/wiki/Geometric_Shapes_(Unicode_block)<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="examples">Examples<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#examples" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="class-diagrams">Class diagrams<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#class-diagrams" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line> </span>
+<span data-line><span>┌─────────────────┐</span></span>
+<span data-line><span>│     Manager     |</span></span>
+<span data-line><span>├─────────────────┤</span></span>
+<span data-line><span>│ +name: str      │</span></span>
+<span data-line><span>├─────────────────┤ </span></span>
+<span data-line><span>│ +run()          │</span></span>
+<span data-line><span>│ +leave()        │</span></span>
+<span data-line><span>└─────────────────┘</span></span>
+<span data-line> </span></code></pre></figure>
+<h3 id="directory-trees">Directory Trees<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#directory-trees" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>project/
+ ├─ build/
+ ├─ docs/
+ │  ├─ build/
+ │  └─ src/
+ ├─ make/
+ ├─ res/
+ │  ├─ img/
+ │  │  ├─ dias/
+ │  │  └─ logo/
+ │  └─ css/
+ ├─ src/
+ └─ tmp/
+    ├─ logs/
+    └─ objs/
+</code></pre>
+<h3 id="qr-code">QR Code<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#qr-code" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>█████████████████████████</span></span>
+<span data-line><span>██ ▄▄▄▄▄ █▀▀█▀▀█ ▄▄▄▄▄ ██      █▀▀▀▀▀█ ▄▄ ▄▄ █▀▀▀▀▀█</span></span>
+<span data-line><span>██ █   █ █▀▀▀▀██ █   █ ██      █ ███ █ ▄▄▄▄  █ ███ █</span></span>
+<span data-line><span>██ █▄▄▄█ █▀███▀█ █▄▄▄█ ██      █ ▀▀▀ █ ▄   ▄ █ ▀▀▀ █</span></span>
+<span data-line><span>██▄▄▄▄▄▄▄█▄▀▄▀▄█▄▄▄▄▄▄▄██      ▀▀▀▀▀▀▀ ▀▄▀▄▀ ▀▀▀▀▀▀▀</span></span>
+<span data-line><span>██ ▄▄ ▄█▄▄  ▀▄▄ ▀ ▀ ▀ ▀██      █▀▀█▀ ▀▀██▄▀▀█▄█▄█▄█▄</span></span>
+<span data-line><span>███▀▀   ▄█▀ █   ▄▄▀▀ ▄███       ▄▄███▀ ▄█ ███▀▀▄▄█▀ </span></span>
+<span data-line><span>██▄█▄█▄█▄▄▀▄▀▄▄▀▄▀  ▀█ ██      ▀ ▀ ▀ ▀▀▄▀▄▀▀▄▀▄██▄ █</span></span>
+<span data-line><span>██ ▄▄▄▄▄ █▄▀█▄▄ █ ▀▀  ███      █▀▀▀▀▀█ ▀▄ ▀▀█ █▄▄██ </span></span>
+<span data-line><span>██ █   █ █ █ ▀▄▀ ▄ ▄▀▀███      █ ███ █ █ █▄▀▄█▀█▀▄▄ </span></span>
+<span data-line><span>██ █▄▄▄█ █ ▄▄   █▄▀▀ ████      █ ▀▀▀ █ █▀▀███ ▀▄▄█  </span></span>
+<span data-line><span>██▄▄▄▄▄▄▄█▄█▄█▄█▄▄█▄█▄███      ▀▀▀▀▀▀▀ ▀ ▀ ▀ ▀▀ ▀ ▀ </span></span>
+<span data-line><span>█████████████████████████</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>Braile does not work:</span></span>
+<span data-line><span>⡏⡭⠭⡍⣟⢫⠛⡏⡭⠭⡍⡇</span></span>
+<span data-line><span>⡇⠧⠤⠇⡗⡊⡒⡇⠧⠤⠇⡇</span></span>
+<span data-line><span>⡯⢭⣭⡯⢉⡑⠡⢹⣙⡙⢙⡇</span></span>
+<span data-line><span>⡷⠽⠭⠬⡅⣨⡽⣪⢃⡐⢏⡇</span></span>
+<span data-line><span>⡇⡏⠉⡇⡏⣤⠡⢪⢃⡔⣻⡇</span></span>
+<span data-line><span>⠧⠭⠭⠥⠧⠼⠽⠮⠤⠵⠽⠇</span></span></code></pre></figure>
+<p><a href="https://superuser.com/questions/1420001/is-it-possible-to-create-a-qr-code-using-text" class="external">https://superuser.com/questions/1420001/is-it-possible-to-create-a-qr-code-using-text<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="packet-diagrams">Packet Diagrams<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#packet-diagrams" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>ASCII</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>    0                   1                   2                   3</span></span>
+<span data-line><span>    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1</span></span>
+<span data-line><span>   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span></span>
+<span data-line><span>   |Version| Prio. |                   Flow Label                  |</span></span>
+<span data-line><span>   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</span></span></code></pre></figure>
+<p>UTF-8</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>₀0 1 2 3 4 5 6 7 8 9₁0 1 2 3 4 5 6 7 8 9₂0 1 2 3 4 5 6 7 8 9₃0 1  </span></span>
+<span data-line><span>┌─┬─┬─┬─┬─┬─┬─┬─┼─┬─┬─┬─┬─┬─┬─┬─┼─┬─┬─┬─┬─┬─┬─┬─┼─┬─┬─┬─┬─┬─┬─┬─┐</span></span>
+<span data-line><span>│Version┆ Prio. ┆                  Flow Label                   │</span></span>
+<span data-line><span>└─┴─┴─┴─┴─┴─┴─┴─┼─┴─┴─┴─┴─┴─┴─┴─┼─┴─┴─┴─┴─┴─┴─┴─┼─┴─┴─┴─┴─┴─┴─┴─┘</span></span>
+<span data-line> </span>
+<span data-line><span>  0   1   2   3   4   5   6   7  </span></span>
+<span data-line><span>┌───┬───┬───┬───┬───┬───┬───┬───┐</span></span>
+<span data-line><span>│flp│ kg│ m1| m0|-s1|-s0|AK1|AK0|</span></span>
+<span data-line><span>└───┴───┴───┴───┴───┴───┴───┴───┘</span></span></code></pre></figure>
+<h3 id="plots">Plots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#plots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>                                           ⢀⣀⠤⠤⠤⠤⢄⣀⡀            
+                                        ⡠⠔⠊⠁       ⠈⠑⠢⣀         
+                                     ⣀⠔⠉               ⠑⠢⡀      
+                                   ⡠⠊                    ⠈⠢⣀    
+                                 ⡠⠊                         ⠑⢄  
+⢀                              ⡠⠊                             ⠑⢄
+ ⠑⢄                          ⡠⠊                                 
+   ⠑⢄                     ⢀⡠⠊                                   
+     ⠉⠢⡀                ⢀⠔⠁                                     
+       ⠈⠑⠤⣀          ⣀⠤⠊⠁                                       
+           ⠉⠒⠢⠤⠤⠤⠤⠒⠒⠉    
+
+
+ ⣤
+⣀⣠⣴⣿⣿⣿⣿⣶⣾⣿⣷⣦⣤                                       
+</code></pre>
+<pre><code>  ┌────────────────────────────────┐
+  ┤              ▄▄▄               │  
+  ┤             █████              │
+  ┤           ▄███████▄            │ 
+0 ┤______▄▄▄█████████████▄▄▄_______│ 
+  └┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬─┘
+  ⁻⁵ ⁻⁴ ⁻³ ⁻² ⁻¹  ⁰  ¹  ²  ³  ⁴  ⁵
+
+  ┌────────────────────────────────┐
+  ┤               ┊                │  
+  ┤               ┊ ╱              │
+  ┤               ┊╱               │ 
+0 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈│ 
+  └┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬─┘
+
+▁▂▃▄▅▆▇█
+</code></pre>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>  ┌</span></span>
+<span data-line><span>A ┤▄▄▄▄▄▄▄  ▬▬▬▬▬</span></span>
+<span data-line><span>B ┤▄▄▄▄▄▄▄  ▬▬▬▬▬</span></span>
+<span data-line><span>  └</span></span>
+<span data-line> </span>
+<span data-line><span>  </span></span>
+<span data-line><span>A ┤━━━━━━━━━━━━ 62.5%</span></span>
+<span data-line><span>B ┤━━━━━━━━━━━━━━━━ 85.0%</span></span>
+<span data-line><span>  </span></span>
+<span data-line> </span>
+<span data-line><span>  ┌</span></span>
+<span data-line><span>A ┤█████████████      70%</span></span>
+<span data-line><span>  │</span></span>
+<span data-line><span>B ┤█████████████████▌ 85%</span></span>
+<span data-line><span>  └</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>  ┌─────────────────────┐</span></span>
+<span data-line><span>A ┤╺━━━━━━━━━━━━        │ 62.5%   </span></span>
+<span data-line><span>B ┤╺━━━━━━━━━━━━━━━━╸   │ 85.0%</span></span>
+<span data-line><span>C ┤╺━━━━━━━━━╸          │ 50.0%</span></span>
+<span data-line><span>  └┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴┘</span></span>
+<span data-line><span>   ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ¹⁰</span></span>
+<span data-line> </span>
+<span data-line><span>  ┌───────────────────────────────┐</span></span>
+<span data-line><span>A ┤  ┝━━███━━┥                    │ 62.5%   </span></span>
+<span data-line><span>B ┤        ┝━━██▊██━━━┥           │ 85.0%</span></span>
+<span data-line><span>C ┤              ├┄┄╊━━█━━╉┄┄┤    │ 50.0%</span></span>
+<span data-line><span>D ┤    ├───█─┤                    │ 27.3%</span></span>
+<span data-line><span>  └┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴┘</span></span>
+<span data-line><span>   ⁰  ¹⁰ ²⁰ ³⁰ ⁴⁰ ⁵⁰ ⁶⁰ ⁷⁰ ⁸⁰ ⁹⁰ ¹⁰⁰</span></span>
+<span data-line> </span>
+<span data-line><span> ├┄┄╊━━█━━╉┄┄┤</span></span>
+<span data-line><span> </span></span>
+<span data-line><span> ├┈┈┈┈┈╊━━━╋━╉┈┈┈┈┤</span></span>
+<span data-line> </span>
+<span data-line><span>├┈┈┈┈┈╊━━━┿━╉┈┈┈┈┤</span></span>
+<span data-line><span> </span></span>
+<span data-line><span> ├┈┈┈┈┾━╋━┽┈┈┈┈┤</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>┌┬┬┬┬┬╂┬┬┬┬┬┬┬┬┬┬┬┬┬┐</span></span>
+<span data-line><span>0    ⁵    1    ⁵    2</span></span>
+<span data-line> </span>
+<span data-line><span>       ┌────┰──┐</span></span>
+<span data-line><span> A └┈┈┈┴────┸──┴┈┈┈┘</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>╫╧╧ ╪</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>├┈┺━╏━┹┈┈┤</span></span>
+<span data-line> </span>
+<span data-line><span>├───╂─┤</span></span>
+<span data-line> </span>
+<span data-line><span>1 ┌</span></span>
+<span data-line><span>½ ├ ▄  </span></span>
+<span data-line><span>¼ ├ █  █  </span></span>
+<span data-line><span>0 └─┬──┬─</span></span>
+<span data-line><span>    A  B</span></span>
+<span data-line><span>   </span></span>
+<span data-line><span>▁▂▃▄▅▆▇█</span></span>
+<span data-line> </span>
+<span data-line><span>▄ ▖ ▀ ━ ╸</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span> ╱</span></span>
+<span data-line><span>╱</span></span>
+<span data-line> </span>
+<span data-line><span>  ┌────────────┐</span></span>
+<span data-line><span>5 ┤            │    </span></span>
+<span data-line><span>3 ┤   ╻ ╻ ┃    │ </span></span>
+<span data-line><span>1 ┤ ╻┃┃┃┃┃┃╻   │ </span></span>
+<span data-line><span>  └────────────┘</span></span>
+<span data-line><span>    ABCDEFGH</span></span>
+<span data-line> </span>
+<span data-line><span>    ╻╻</span></span>
+<span data-line><span>  ╻┃┃┃┃╻ </span></span>
+<span data-line><span>─┸┸┸┸┸┸┸┸┰┰┰┰┰┰┰┰  </span></span>
+<span data-line><span>          ╹┃┃┃┃╹</span></span>
+<span data-line><span>            ╹╹</span></span></code></pre></figure>
+<p><a href="https://github.com/JuliaPlots/UnicodePlots.jl" class="external">https://github.com/JuliaPlots/UnicodePlots.jl<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="floorplan">FloorPlan<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#floorplan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>╔════════╦═══╦═════╗
+║        ║   ║     ║  
+│   WZ   ║         │
+│        ║   ╠═════╣
+║        ║         /
+╠════   ═╬         ║
+║        /         ║
+║        ╠_  ══════╣
+│   EZ   ║         ║
+│        ║  Küche  │
+║        ║         ║
+╚════════╩═════════╝
+</code></pre>
+<h3 id="layer-charts">Layer Charts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-charts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>┌────────┐                    </span></span>
+<span data-line><span>│weblayer│                    </span></span>
+<span data-line><span>└┬─┬─┬───┘                    </span></span>
+<span data-line><span> │ │┌▽────────────────────────┐</span></span>
+<span data-line><span> │ ││chrome                   │</span></span>
+<span data-line><span> │ │└┬─────┬─────────────────┬┘</span></span>
+<span data-line><span> │┌▽─▽────┐│                 │</span></span>
+<span data-line><span> ││content││                 │</span></span>
+<span data-line><span> │└┬─┬─┬──┘│                 │</span></span>
+<span data-line><span> │ │ │┌▽───▽──────────────┐  │</span></span>
+<span data-line><span> │ │ ││blink              │  │</span></span>
+<span data-line><span> │ │ │└┬──┬───┬─┬───┬───┬─┘  │</span></span>
+<span data-line><span> │ │┌▽─▽┐┌▽──┐│┌▽─┐┌▽─┐┌▽───┐│</span></span>
+<span data-line><span> │ ││net││WTF│││v8││CC││skia││</span></span>
+<span data-line><span> │ │└┬──┘└┬──┘│└──┘└──┘└────┘│</span></span>
+<span data-line><span>┌▽─▽─▽────▽───▽──────────────▽┐</span></span>
+<span data-line><span>│base                         │</span></span>
+<span data-line><span>└─────────────────────────────┘</span></span>
+<span data-line> </span>
+<span data-line><span>  </span></span>
+<span data-line> </span></code></pre></figure>
+<pre><code> ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮                         ╭┈┈┈┈┈┈┈┈┈┈┈╮
+ ┊ mount passphrase ┊━━━━━⎛key derivation⎞━━━▶┊ mount key ┊
+ ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ ,───⎝   function   ⎠    ╰┈┈┈┈┈┬┈┈┈┈┈╯
+ ╭──────╮            ╱                              │
+ │ salt │───────────´                               │
+ ╰──────╯                                           │
+ ╭─────────────────────╮                            ▼         ╭┈┈┈┈┈┈┈┈┈┈┈┈╮
+ │ encrypted master key│━━━━━━━━━━━━━━━━━━━━━━(decryption)━━━▶┊ master key ┊
+ ╰─────────────────────╯                                      ╰┈┈┈┈┈┈┈┈┈┈┈┈╯
+</code></pre>
+<h3 id="pinout-diagrams">PinOut Diagrams<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pinout-diagrams" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>                               +-----+</span></span>
+<span data-line><span>  +----[PWR]-------------------| USB |--+</span></span>
+<span data-line><span>  |                            +-----+  |</span></span>
+<span data-line><span>  |         GND/RST2  [ ][ ]            |</span></span>
+<span data-line><span>  |       MOSI2/SCK2  [ ][ ]  A5/SCL[ ] |   C5</span></span>
+<span data-line><span>  |          5V/MISO2 [ ][ ]  A4/SDA[ ] |   C4</span></span>
+<span data-line><span>  |                             AREF[ ] |</span></span>
+<span data-line><span>  |                              GND[ ] |</span></span>
+<span data-line><span>  | [ ]N/C                    SCK/13[ ] |   B5</span></span>
+<span data-line><span>  | [ ]IOREF                 MISO/12[ ] |   .</span></span>
+<span data-line><span>  | [ ]RST                   MOSI/11[ ]~|   .</span></span>
+<span data-line><span>  | [ ]3V3    +---+               10[ ]~|   .</span></span>
+<span data-line><span>  | [ ]5v    -| A |-               9[ ]~|   .</span></span>
+<span data-line><span>  | [ ]GND   -| R |-               8[ ] |   B0</span></span>
+<span data-line><span>  | [ ]GND   -| D |-                    |</span></span>
+<span data-line><span>  | [ ]Vin   -| U |-               7[ ] |   D7</span></span>
+<span data-line><span>  |          -| I |-               6[ ]~|   .</span></span>
+<span data-line><span>  | [ ]A0    -| N |-               5[ ]~|   .</span></span>
+<span data-line><span>  | [ ]A1    -| O |-               4[ ] |   .</span></span>
+<span data-line><span>  | [ ]A2     +---+           INT1/3[ ]~|   .</span></span>
+<span data-line><span>  | [ ]A3                     INT0/2[ ] |   .</span></span>
+<span data-line><span>  | [ ]A4/SDA  RST SCK MISO     TX>1[ ] |   .</span></span>
+<span data-line><span>  | [ ]A5/SCL  [ ] [ ] [ ]      RX&lt;0[ ] |   D0</span></span>
+<span data-line><span>  |            [ ] [ ] [ ]              |</span></span>
+<span data-line><span>  |  UNO_R3    GND MOSI 5V  ____________/</span></span>
+<span data-line><span>  \_______________________/</span></span></code></pre></figure>
+<h3 id="pcb-schematics">PCB Schematics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pcb-schematics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Resistors:  ─VVVV─    ──███──  ──▭──  ──▬──  </span></span>
+<span data-line><span>Diodes:     ──▷├──   ──┨◁──</span></span>
+<span data-line><span>Capacitor:  ──┨┠──   ──┨┠──</span></span>
+<span data-line><span>Gap:        ──▷ ◁──</span></span>
+<span data-line><span>Src/GND:</span></span>
+<span data-line> </span>
+<span data-line><span> △</span></span>
+<span data-line><span> │     |     |</span></span>
+<span data-line><span> │     █ R2  ║</span></span>
+<span data-line><span> │     |  </span></span>
+<span data-line><span>━┷━</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>VDD   ─────────────┬─────────┬─────┬─────────────────┬─────┬─────────┐</span></span>
+<span data-line><span>                   │         │     │                 │     │         │    </span></span>
+<span data-line><span>                   │         │     │                 │     │         │    </span></span>
+<span data-line><span>               ║───┘     ║───┘     └───║         ║───┘     └───║     └───║        </span></span>
+<span data-line><span>    vclk o────o║────────o║             ║o──   ──o║             ║o────────║o────o   </span></span>
+<span data-line><span>               ║───┐     ║───┐     ┌───║   ╲ ╱   ║───┐     ┌───║     ┌───║    </span></span>
+<span data-line><span>                   │         │     │        ╳        │     │         │    </span></span>
+<span data-line><span>                   │         └─────┼──────── ────────┼─────┘         │             </span></span>
+<span data-line><span>                   │               │        ╳        │               │    </span></span>
+<span data-line><span>                   │               └───║   ╱ ╲   ║───┘               │    </span></span>
+<span data-line><span>                   │                   ║───   ───║                   │          </span></span>
+<span data-line><span>                   │               ┌───║         ║───┐               │    </span></span>
+<span data-line><span>                   │               │                 │               │    </span></span>
+<span data-line><span>                   └───────────────┤                 ├───────────────┘        </span></span>
+<span data-line><span>                                   │                 │    </span></span>
+<span data-line><span>                               ║───┘                 └───║                </span></span>
+<span data-line><span>                    vinp o─────║                         ║o────o vinn        </span></span>
+<span data-line><span>                               ║───┐                 ┌───║                </span></span>
+<span data-line><span>                                   └────────┬────────┘    </span></span>
+<span data-line><span>                                            │    </span></span>
+<span data-line><span>                                            │    </span></span>
+<span data-line><span>                                        ║───┘    </span></span>
+<span data-line><span>                              vclk o────║        </span></span>
+<span data-line><span>                                        ║───┐    </span></span>
+<span data-line><span>                                            │    </span></span>
+<span data-line><span>                                            │    </span></span>
+<span data-line><span>  VSS ─────────────────────────────────────────────────────────────────</span></span>
+<span data-line> </span>
+<span data-line><span>  </span></span>
+<span data-line> </span>
+<span data-line><span>                         ___+5V</span></span>
+<span data-line><span>                          |</span></span>
+<span data-line><span>                         _|_</span></span>
+<span data-line><span>                        _\_/_  LED</span></span>
+<span data-line><span>         ____             |</span></span>
+<span data-line><span>TTL ____|6k8 |__________|/</span></span>
+<span data-line><span>        |____|    |     |\e</span></span>
+<span data-line><span>                 _|_     _|_</span></span>
+<span data-line><span>                |4k7|   |270|</span></span>
+<span data-line><span>                |_ _|   |_ _|</span></span>
+<span data-line><span>                  |       |</span></span>
+<span data-line><span>                 _|_______|_GND</span></span>
+<span data-line> </span></code></pre></figure>
+<h3 id="secuence-diagrams">Secuence Diagrams<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#secuence-diagrams" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>┌───────┐  ┌───────┐ ┌───────┐</span></span>
+<span data-line><span>│Actor 1│  │Actor 2│ │Actor 3│</span></span>
+<span data-line><span>└───┬───┘  └───┬───┘ └───┬───┘</span></span>
+<span data-line><span>    │          │         │    </span></span>
+<span data-line><span>    │message 2 │         │    </span></span>
+<span data-line><span>    │─────────>│         │    </span></span>
+<span data-line><span>    │          │         │    </span></span>
+<span data-line><span>    │          │message 1│    </span></span>
+<span data-line><span>    │          │────────>│    </span></span>
+<span data-line><span>┌───┴───┐  ┌───┴───┐ ┌───┴───┐</span></span>
+<span data-line><span>│Actor 1│  │Actor 2│ │Actor 3│</span></span>
+<span data-line><span>└───────┘  └───────┘ └───────┘</span></span></code></pre></figure>
+<p><a href="https://plantuml.com/de/ascii-art" class="external">https://plantuml.com/de/ascii-art<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="chemical-formulas">Chemical Formulas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chemical-formulas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>ASCII:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>R                         R         O</span></span>
+<span data-line><span> \                         \        ║</span></span>
+<span data-line><span>  N = C = O  +  O   ––→     N - C - O - R²</span></span>
+<span data-line><span>               H R²         H</span></span></code></pre></figure>
+<h3 id="oscilloscope-signals">Oscilloscope Signals<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oscilloscope-signals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>ASCII:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>      __    __   __ ___     __   __     __   __        _</span></span>
+<span data-line><span>SDA ··  \__/__···__X___\___/__···__\___/__···__\______/</span></span>
+<span data-line><span>      ____   _ _ _   _   _   _ _ _   _   _ _ _   _   ___</span></span>
+<span data-line><span>SCL ··    \_/ 0-6 \_/7\_/8\_/ 0-7 \_/8\_/ 0-7 \_/8\_/</span></span>
+<span data-line><span>        S     Addr  RW  ACK   Cmd   ACK   Data  ACK   P</span></span>
+<span data-line> </span>
+<span data-line> </span>
+<span data-line><span>  __</span></span>
+<span data-line><span> ╱</span></span>
+<span data-line><span>╱</span></span></code></pre></figure>
+<h3 id="architecture-diagrams">Architecture Diagrams<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#architecture-diagrams" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>  vncviewer         .-,(  ),-.    </span></span>
+<span data-line><span>   __  _         .-(          )-.           gateway           vncserver</span></span>
+<span data-line><span>  [__]|=|  ---->(    internet    )-------> __________ ------> ____   __</span></span>
+<span data-line><span>  /::/|_|        '-(          ).-'        [_...__...°]       |    | |==|</span></span>
+<span data-line><span>                     '-.( ).-'                               |____| |  |</span></span>
+<span data-line><span>                                                             /::::/ |__|</span></span></code></pre></figure>
+<h3 id="git-trees">Git Trees<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#git-trees" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dia" data-theme="github-light github-dark"><code data-language="dia" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>feature-branch ┈┈┈┈┈┈╭●───●───●</span></span>
+<span data-line><span>                     │</span></span>
+<span data-line><span>master ─────●───●───●╯</span></span></code></pre></figure>
+<h3 id="chess-boards">Chess Boards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chess-boards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗╮
+║ ♜ │░♞░│ ♝ │░♛░│ ♚ │░♝░│ ♞ │░♜░║8
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║░♟░│ ♟ │░♟░│ ♟ │░♟░│ ♟ │░♟░│ ♟ ║7
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║   │░░░│   │░░░│   │░░░│   │░░░║6
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║░░░│   │░░░│   │░░░│   │░░░│   ║5
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║   │░░░│   │░░░│   │░░░│   │░░░║4
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║░░░│   │░░░│   │░░░│   │░░░│   ║3
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ ║2
+╟───┼───┼───┼───┼───┼───┼───┼───╢┊
+║ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ ║1
+╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝┊
+╰┈a┈┈┈b┈┈┈c┈┈┈d┈┈┈e┈┈┈f┈┈┈g┈┈┈h┈┈╯
+
+
+</code></pre>
+<p><a href="https://qwerty.dev/chess-symbols-to-copy-and-paste/#beautiful-dingbats" class="external">https://qwerty.dev/chess-symbols-to-copy-and-paste/#beautiful-dingbats<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>Unicode Fun:</p>
+<pre><code>
+Copy in gras
+
+กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้ ก็็็็็็็็็็็็็็็็็็็็ ก็็็็็็็็็็็็็็็็็็็็ กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้ ก็็็็็็็็็็็็็็็็็็็็ กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้ กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้ ก็็็็็็็็็็็็็็็็็็็็ ก็็็็็็็็็็็็็็็็็็็็ กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้ ก็็็็็็็็็็็็็็็็็็็็ กิิิิิิิิิิิิิิิิิิิิ ก้้้้้้้้้้้้้้้้้้้้   
+</code></pre>
+<h2 id="-references-1">📚 References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-references-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://authors.ietf.org/diagrams" class="external">https://authors.ietf.org/diagrams<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://asciiflow.com/#/" class="external">https://asciiflow.com/#/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul></article></div><div class="right sidebar"></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.2.3</a> © 2024</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></body><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

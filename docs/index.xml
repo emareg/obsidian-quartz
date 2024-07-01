@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>EmaReg&#039;s Garden</title>
+      <link>https://brain.emareg.de</link>
+      <description>Last 10 notes on EmaReg&#039;s Garden</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>The 37% Stopping Rule</title>
+    <link>https://brain.emareg.de/mind/The-37-percent-Stopping-Rule</link>
+    <guid>https://brain.emareg.de/mind/The-37-percent-Stopping-Rule</guid>
+    <description>👨‍🔬 E. Regnath · 📆 Jun. 2023 · 🧪 v-0.2 How to choose wisely if you know little: Observe 25%–37% of options, then select the next best. The optimal strategy for selecting the best car, phone, or romantic partner is easy to follow and proven by math – yet known by few.</description>
+    <pubDate>Mon, 01 Jul 2024 22:38:30 GMT</pubDate>
+  </item><item>
+    <title>Welcome to Quartz</title>
+    <link>https://brain.emareg.de/</link>
+    <guid>https://brain.emareg.de/</guid>
+    <description>This is a blank Quartz installation. See the documentation for how to get started.</description>
+    <pubDate>Mon, 01 Jul 2024 21:15:59 GMT</pubDate>
+  </item><item>
+    <title>DOER Process Documentation</title>
+    <link>https://brain.emareg.de/info/DOER-Process-Documentation</link>
+    <guid>https://brain.emareg.de/info/DOER-Process-Documentation</guid>
+    <description>This is the describing page for DOER Process. Thinking about Organize Possible task lists (not inbox!): SW Dev: 2approve–2build←2check←2do←2grow←2plan←2sort PDCA but backwards: 2check–2do–2plan (It is important to do check tasks first!) Garden analogy: seeds (grow), tree(project), roots (checks), leafs/fruits (acts) Inbox (2sort): Where everything arrives Incubator / Garden (2grow): Seeds / Cell / Egg: Abstract Idea Soon / Receptor: Wait for specific condition Planner Tool: Kanban-Board / Worklists (of actionable / checkable): 🟠Check /Calls/ Pending 2check (need checking) → Or in communication? 🟡Do /Actions/Focus/Active 2do (do soon) 🟣Plan / Grow / Feed / Horizon / Init / Define / Next 2plan (stored) → Or Incubator? (Done) → Not shown 🟢Export / Publish / Finish / Finalize → Not a task category! (same as done) 🔷Hold / Keep / Maybe / Res / Rest/ Know Calendar: For events.</description>
+    <pubDate>Sat, 04 May 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>File-based Version Control</title>
+    <link>https://brain.emareg.de/tech/File-based-Version-Control</link>
+    <guid>https://brain.emareg.de/tech/File-based-Version-Control</guid>
+    <description>👨‍🔬 E. Regnath · 📆 2024-04 · 🧪 v1.0 Do you have files and folder names including terms like final, final2, old, or v2? Then file-based version control might be for you.</description>
+    <pubDate>Sat, 20 Apr 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Resolution–Precision–Accuracy</title>
+    <link>https://brain.emareg.de/info/Resolution%E2%80%93Precision%E2%80%93Accuracy</link>
+    <guid>https://brain.emareg.de/info/Resolution%E2%80%93Precision%E2%80%93Accuracy</guid>
+    <description>Since no measurement of a physical quantity is infinitely accurate, it is important to determine how much a measured value will most likely deviate from the unknown, true value of ...</description>
+    <pubDate>Sat, 16 Mar 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>OAuth</title>
+    <link>https://brain.emareg.de/tech/OAuth</link>
+    <guid>https://brain.emareg.de/tech/OAuth</guid>
+    <description>OAuth2 is a protocol to share access tokens between different parties. OAuth is not an authentication protocol because it says absolutely nothing about the user.</description>
+    <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>CRUD Operations</title>
+    <link>https://brain.emareg.de/info/CRUD-Operations</link>
+    <guid>https://brain.emareg.de/info/CRUD-Operations</guid>
+    <description>Stands for Create, Read, Update and Delete and are the four basic operations of persistent storage. CRUDHTTPSQLCreatePOSTINSERTReadGETSELECTUpdatePUTUPDATEDeleteDELETEDELETE.</description>
+    <pubDate>Wed, 30 Aug 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Avoid Waste with R&#039;s</title>
+    <link>https://brain.emareg.de/earth/Avoid-Waste-with-R's</link>
+    <guid>https://brain.emareg.de/earth/Avoid-Waste-with-R's</guid>
+    <description>The hierarchy of waste management: reduce: Buy only what is needed. Buy less often. reuse: Buy high quality and reuse items before throwing them in the trash.</description>
+    <pubDate>Wed, 16 Aug 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Classification Error Types</title>
+    <link>https://brain.emareg.de/info/Classification-Error-Types</link>
+    <guid>https://brain.emareg.de/info/Classification-Error-Types</guid>
+    <description>There are two error types in classification problems: False positives (FP) and false negatives (FN). I find it more convenient to think in False Alarms (FP) and Missed Hits (FN).</description>
+    <pubDate>Wed, 16 Aug 2023 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>DOER Process</title>
+    <link>https://brain.emareg.de/info/DOER-Process</link>
+    <guid>https://brain.emareg.de/info/DOER-Process</guid>
+    <description>A method for processing documents and information based on GTD. DOER stands for DOER Overview Dump &amp; Decide: Dump any input as short note into a central “inbox”.</description>
+    <pubDate>Wed, 16 Aug 2023 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
