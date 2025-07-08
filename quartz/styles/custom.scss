@@ -60,7 +60,8 @@ summary>* { display: inline; }
 summary:hover, details[open] summary, .card>p:first-child {
 	box-shadow: inset 0 0 0 2em var(--clight), 0 -.8rem 0 .8rem var(--clight); 
 }
-
+.card h4 { margin: 0; line-height: 1;}
+.card p { line-height: 1.4;}
 
 
 /*transitions*/
