@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "EmaReg's Garden",
-    pageTitleSuffix: "",
+    pageTitle: "EmaReg",
+    pageTitleSuffix: "'s 2nd Brain",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -78,6 +78,7 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
+      Plugin.TitlePage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,

@@ -1,10 +1,13 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+header > .search { margin-left: auto; }
+.search { margin-left: auto; }
+
 
 /*transitions*/
 .grow { display:inline-block; transition: all .1s ease-in-out; }
-.grow:hover { transform: scale(1.2); }
+.grow:hover { transform: scale(1.3); }
 
 /* autorow extra feature */
 .autorow { display: flex; margin:  0.5rem -0.5rem; align-items: stretch; }
