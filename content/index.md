@@ -63,7 +63,10 @@ My vision is that at the end all system components fit together as shown in the 
 <img src="res/img/imv-vision.svg">
 
 
-<div class="row">
+
+
+
+<div class="row" style="margin-top: 4em">
 <div class="col-4">
 
 ### Publications
@@ -71,10 +74,120 @@ My vision is that at the end all system components fit together as shown in the 
 </div>
 <div class="col">
 
-I try to push digitalization towards the Internet of Things and Industrial Metaverse. My current focus is on trusted asset sharing, data interoperability, and verifiable credentials.
 
-My vision is that at the end all system components fit together as shown in the following diagram:
+  <ul class="pub-list fa-ul lh-11">
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1109/COINS51742.2021.9524266">CISCAV: Consensus-based Intersection Scheduling for Connected Autonomous Vehicles</a></span>
+        <div class="pub-authors"><small><strong>Emanuel Regnath</strong>, Markus Birkner, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>IEEE International Conference on Omni-Layer Intelligent Systems (COINS), Virtual, 2021</small></div>
+        <div><small><a href="https://emanuel.regnath.info/bib/rbs:2021.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1109/ICBC51069.2021.9461082">A-PoA: Anonymous Proof of Authorization for Decentralized Identity Management</a></span>
+        <div class="pub-authors"><small>Jan Lauinger, Jens Ernstberger, <strong>Emanuel Regnath</strong>, Mohammad Hamad, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2021), Sydney, Australia, 2021</small></div>
+        <div><small><a href="https://emanuel.regnath.info/bib/apoa2021.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.23919/DATE51398.2021.9474070">SPPS: Secure Policy-based Publish/Subscribe System for V2C Communication</a></span>
+        <div class="pub-authors"><small>Mohammad Hamad, <strong>Emanuel Regnath</strong>, Jan Lauinger, Vassilis Prevelakis, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>Proceedings of the Conference on Design, Automation and Test in Europe (DATE 2021), Grenoble, France, 2021</small></div>
+        <div><small><a href="https://emanuel.regnath.info/bib/spps2021.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1109/COINS49042.2020.9191420">Blockchain, what time is it? Trustless Datetime Synchronization for IoT</a></span>
+        <div class="pub-authors"><small><strong>Emanuel Regnath</strong>, Nitin Shivaraman, Shanker Shreejith, Arvind Easwaran, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>IEEE International Conference on Omni-layer Intelligent Systems (COINS 2020), Barcelona, Spain, 2020</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2020-Blockchain_Datetime_Synchronization.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/bcsync2020.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.23919/DATE48585.2020.9116517">AMSA: Adaptive Merkle Signature Architecture</a></span>
+        <div class="pub-authors"><small><strong>Emanuel Regnath</strong>, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>Proceedings of the Conference on Design, Automation and Test in Europe (DATE 2020), Grenoble, France, 2020</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2020-AMSA_Hash_Signatures.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/amsa2020.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1145/3240765.3240820">LeapChain: Efficient Blockchain Verification for Embedded IoT</a></span>
+        <div class="pub-authors"><small><strong>Emanuel Regnath</strong>, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>ACM International Conference on Computer-Aided Design (ICCAD), San Diego, CA, USA, 2018</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2018-LeapChain.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/leapchain.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1109/FDL.2018.8524068">SmaCoNat: Smart Contracts in Natural Language</a></span>
+        <div class="pub-authors"><small><strong>Emanuel Regnath</strong>, Sebastian Steinhorst</small></div>
+        <div class="pub-publisher"><small>Forum on specification and Design Languages (FDL), Munich, Germany, 2018</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2018-SmaCoNat.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/smaconat.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span> <a href="https://dx.doi.org/978-3-319-66266-4">Development and Verification of a Flight Stack for a High-Altitude Glider in Ada/SPARK 2014</a></span>
+        <div class="pub-authors"><small>Martin Becker, <strong>Emanuel Regnath</strong>, Samarjit Chakraborty</small></div>
+        <div class="pub-publisher"><small>36th International Conference on Computer Safety, Reliability and Security (SAFECOMP), Trento, Italy, 2017</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2017-Spark_Glider.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/spark_glider.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+    <li>
+      <div class="pub-list-item">
+        <span><a href="https://dx.doi.org/10.1109/RTCSA.2015.21">Smart2: Smart Charging for Smart Phones</a></span>
+        <div class="pub-authors"><small>Alma Pröbstl, Philipp Kindt, <strong>Emanuel Regnath</strong>, Samarjit Chakraborty</small></div>
+        <div class="pub-publisher"><small>IEEE 21st International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2015</small></div>
+        <div><small><a href="https://emanuel.regnath.info/pdf/2015-Smart_Charger.pdf"><button>PDF</button></a> <a href="https://emanuel.regnath.info/bib/smart2_charger.txt"><button>BibTeX</button></a></small></div>
+      </div>
+    </li>
+  </ul>
 
+
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-4">
+
+### Projects
+
+<small>Ideas come to life</small>
+
+</div>
+<div class="col">
+
+
+<div class="autorow">
+
+<div class="card">
+ <img src="https://id2.dev/favicon.png" style="padding: 0 2em">
+ <h4>ID2 Identifiers</h4>
+ <p>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</p>
+</div>
+
+<div class="card">
+ <img src="..">
+ <h4>Acamedic</h4>
+ <p>Academic Dictionary for Scientific Writing in American English.</p>
+</div>
+
+<div class="card">
+ <img src="">
+ <h4>Classless.css</h4>
+ <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
+</div>
+
+</div>
 
 </div>
 </div>
