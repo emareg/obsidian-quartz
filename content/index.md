@@ -1,11 +1,11 @@
 ---
-title: About Me
+title: Emanuel Regnath
 layout: Custom
 ---
 
-<div class="row" style="background-color: #abb1; box-shadow: 0vw -50vw 0 50vw #abb1; padding: 0 0 1em; margin: 3em 0 2em;">
+<div class="row" style="background-color: #abb1; box-shadow: 0vw -50vw 0 50vw #abb1; padding: 3rem 0 4rem; margin: 0 0 4rem;">
 
-<div class="myprofile col-4" style="text-align: center">
+  <div class="myprofile col-4" style="text-align: center">
       <div class="myportrait" style="width: 8em; height: 8em;"></div>
       <meta itemprop="image" content="img/regnath.jpg">
       <div class="portrait-title">
@@ -17,9 +17,9 @@ layout: Custom
           </a>
         <p>
       </div>
-</div>
+  </div>
 
-<div class="col">
+  <div class="col">
     <div id="myroles" style="text-align: center;">
           <a class="intralink" href="/#research">Researcher</a>
          • <a class="intralink" href="/#projects">Developer</a>
@@ -36,12 +36,51 @@ layout: Custom
         <a href="https://orcid.org/0000-0002-0006-7761" class="grow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill:currentColor; width:1em; height:1em"><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57zM300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369z"/></svg></a>
     </div>
     <p>Hi, I am a Researcher and Software Architect. My interests are centered around connected cyber-physical systems (IoT, Industrial Metaverse), autonomous embedded systems (vehicles, drones), and cyber security (hashes, signatures). I like to solve problems on the protocol and data layer and to automate tasks with scripts because “where there is a shell, there is a way“.</p>
+  </div>
 </div>
+
+
+
+<p style="text-align: center">Checkout how to</a>
+
+<div class="autorow">
+
+<div class="card">
+  <a href="/#research">
+    <img src="res/img/myresearch.jpg">
+    <h4>Write Research</h4>
+  </a>
+  <p>Scientific insights for the Internet of Things and Industrial Metaverse that I published during and after my Ph.D.</p>
 </div>
 
-Explore: [[info]], [[mind]]
+<div class="card">
+  <a href="/#projects">
+    <img src="res/img/myprojects.jpg"></img>
+    <h4>Build Projects</h4>
+  </a>
+  <p>From drones and clocks to automation scripts and small software tools. I like to create interactive stuff.</p>
+</div>
+
+<div class="card">
+  <a href="/info/">
+    <img src="res/img/mygarden.jpg"></img>
+    <h4>Grow Ideas</h4>
+  </a>
+  <p>A digital garden, where I collect ideas & thoughts about the world, the [[mind]], and society.</p>
+</div>
+
+<div class="card">
+ <a href="/#hobbies">
+  <img src="res/img/myhobbies.jpg"></img>
+  <h4>Play Hobbies</h4>
+ </a>
+ <p>In my spare time I like to explore Sports, Music, and Games.</p>
+</div>
+
+</div>
 
 
+<br><br><br>
 
 
 <div class="row">
@@ -166,28 +205,114 @@ My vision is that at the end all system components fit together as shown in the 
 </div>
 <div class="col">
 
-
 <div class="autorow">
+<div class="autocol">
 
 <div class="card">
- <img src="https://id2.dev/favicon.png" style="padding: 0 2em">
- <h4>ID2 Identifiers</h4>
- <p>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</p>
+  <a href="https://classless.de">
+    <img src="https://id2.dev/favicon.png" style="padding: 0 25%">
+    <h4>ID2 Identifiers</h4>
+  </a>
+  <p>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</p>
 </div>
 
 <div class="card">
- <img src="..">
+ <img src="https://github.com/emareg/acamedic/raw/master/res/img/logo-github.png">
  <h4>Acamedic</h4>
  <p>Academic Dictionary for Scientific Writing in American English.</p>
 </div>
 
 <div class="card">
- <img src="">
- <h4>Classless.css</h4>
- <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
+  <a href="https://tex4tum.de">
+    <img alt="https://www.tex4tum.de/assets/img/Logo.png" src="res/img/tex4tum.png" style="background-color: #fff3">
+    <h4>Tex4TUM</h4>
+  </a>
+  <p>Interactive Knowledge Platform for Students.</p>
 </div>
 
 </div>
+
+<div class="autocol">
+
+<div class="card">
+  <a href="https://classless.de">
+    <img src="https://github.com/emareg/classlesscss/blob/master/docs/img/classless.png?raw=true">
+    <h4>Classless.css</h4>
+  </a>
+  <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
+</div>
+
+<div class="card">
+  <a href="https://github.com/emareg/unikeyboard">
+    <img src="https://raw.githubusercontent.com/emareg/unikeyboard/074f3a2cd38aedf190bfb4c909755ffae4447802/img/unikeyboard.svg">
+    <h4>Unikeyboard</h4>
+  </a>
+  <p>German XKB keyboard layout with 8 levels for often used unicode characters.</p>
+</div>
+
+<div class="card">
+ <img src="https://repository-images.githubusercontent.com/78838876/378c2557-8498-42c6-8c6a-38bbee4f4b7c">
+ <h4>Paper-Checker</h4>
+ <p>Python script that checks english texts for grammar mistakes.</p>
+</div>
+
+<div class="card">
+ <a href="https://github.com/emareg/promptheus">
+  <img src="res/img/promptheus.png">
+  <h4>Promptheus</h4>
+ </a>
+ <p>A bash/zsh/fish prompt with the power of a Titan.</p>
+</div>
+
+</div>
+
+<div class="autocol">
+
+<div class="card">
+  <a href="https://brain.emareg.de">
+    <img src="res/img/digital-garden.png">
+    <h4>My 2nd Brain</h4>
+  </a>
+  <p>A “digital garden” with <a href="https://obsidian.md">Obsidian</a> & <a href="https://quartz.jzhao.xyz/">Quartz</a>.</p>
+</div>
+
+
+<div class="card">
+  <a href="https://brain.emareg.de">
+    <img src="res/img/binaryclock.jpg">
+    <h4>Binary Clock</h4>
+  </a>
+  <p>Display date and time – NERD style.</p>
+</div>
+
+<div class="card">
+ <a href="https://github.com/tum-ei-rcs/StratoX">
+  <img src="https://github.com/tum-ei-rcs/StratoX/raw/master/doc/fig/glider.jpg?raw=true">
+ </a>
+ <h4>High-Altitude Glider</h4>
+ <p>Flight stack written in Ada/SPARK 2014.</p>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-4">
+
+## Hobbies
+
+</div>
+<div class="col">
+
+In my spare time
 
 </div>
 </div>
