@@ -20,24 +20,6 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.ConditionalRender({condition: (page) => page.fileData.slug == "index", component: Component.PageTitle() }),
     // Component.ConditionalRender({condition: (page) => page.fileData.slug == "index", component: Component.Search() }),
     // Component.ConditionalRender({condition: (page) => page.fileData.slug == "index", component: Component.Darkmode() }),
-    Component.ConditionalRender({
-      component: Component.Flex({
-        direction: "row",
-        components: [
-          { Component: Component.PageTitle() },
-          { Component: Component.Spacer(), grow: true },
-          {
-            Component: Component.Search(),
-            grow: true,
-            justify: "end",
-          },
-          { Component: Component.Darkmode(), justify: "end", },
-          { Component: Component.ReaderMode(), justify: "end", },
-        ],
-      }),
-      condition: (page) => page.fileData.slug == "index",
-    }),
-
   ],
   beforeBody: [
     Component.ConditionalRender({
@@ -49,41 +31,24 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.ConditionalRender({
-      component: Component.PageTitle(),
-      condition: (page) => page.fileData.slug !== "index",
+    Component.DesktopOnly(Component.PageTitle()),
+    Component.MobileOnly(Component.PageShortTitle()),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
     }),
-    Component.ConditionalRender({
-      component: Component.Flex({
-        components: [
-          {
-            Component: Component.Search(),
-            grow: true,
-          },
-          { Component: Component.Darkmode() },
-          { Component: Component.ReaderMode() },
-        ],
-      }),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-    Component.ConditionalRender({
-      component: Component.Explorer(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    Component.Explorer(),
   ],
   right: [
-    Component.ConditionalRender({
-      component: Component.Graph(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-    Component.ConditionalRender({
-      component: Component.DesktopOnly(Component.TableOfContents()),
-      condition: (page) => page.fileData.slug !== "index",
-    }),    
-    Component.ConditionalRender({
-      component: Component.Backlinks(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),       
+    Component.Graph(),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks(),      
   ],
 }
 

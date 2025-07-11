@@ -4,6 +4,9 @@
 header > .search { margin-left: auto; }
 .search { margin-left: auto; }
 
+.card:hover { box-shadow: 0 0 6px var(--secondary); }
+.card:hover a img { filter: contrast(0.5); }
+
 
 // publist
 .pub-list { padding-left: 1.5em; }
