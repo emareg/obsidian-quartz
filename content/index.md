@@ -3,10 +3,10 @@ title: Emanuel Regnath
 layout: Custom
 ---
 
-<div class="row" style="background-color: #abb1; box-shadow: 0vw -50vw 0 50vw #abb1; padding: 3rem 0 4rem; margin: 0 0 4rem;">
+<div class="row" style="background-color: #abb1; box-shadow: 0vw -50vw 0 50vw #abb1; padding: 3rem 0 4rem; margin-bottom: 4rem;">
 
-  <div class="myprofile col-4" style="text-align: center">
-      <div class="myportrait" style="width: 8em; height: 8em;"></div>
+  <div class="col-3 myprofile" style="text-align: center">
+      <div class="myportrait" style="min-width: 6em; min-height: 6em; width: 7.5em; height: 7.5em;"></div>
       <meta itemprop="image" content="img/regnath.jpg">
       <div class="portrait-title">
         <p itemprop="name" style="font: 1.2em/1.5 Helvetica; margin:0.2em 0">Emanuel Regnath</p>
@@ -19,12 +19,13 @@ layout: Custom
       </div>
   </div>
 
-  <div class="col">
+  <div class="col-9">
     <div id="myroles" style="text-align: center;">
-          <a class="intralink" href="/#research">Researcher</a>
+          <a class="intralink" href="#research" data-noPopover="true">Researcher</a>
          • <a class="intralink" href="/#projects">Developer</a>
+         • <a class="intralink" href="/thoughts">Thinker</a>
          • <a class="intralink" href="/#parkour">Freerunner</a>
-         • <a href="https://www.schachbund.de/verein/24430.html">Chess Player</a> 
+         • <a href="https://www.schachbund.de/verein/24430.html#:~:text=Regnath">Chess Player</a> 
          • Guitarist
     </div>
     <div id="socialicons" style="display: flex; gap: .6em; justify-content: center; font-size:2em; margin: .5em 0">
@@ -41,20 +42,20 @@ layout: Custom
 
 
 
-<p style="text-align: center">Checkout how to</a>
+<p style="text-align: center">My main activities are:</a>
 
-<div class="autorow">
+<div class="autorow nopopover">
 
 <div class="card">
-  <a href="/#research">
+  <a href="/#research" class="nopopover">
     <img src="res/img/myresearch.jpg">
-    <h4>Write Research</h4>
+    <h4>Publish Research</h4>
   </a>
-  <p>Scientific insights for the Internet of Things and Industrial Metaverse that I published during and after my Ph.D.</p>
+  <p>Scientific insights for the Internet of Things and Industrial Metaverse. Also check my Ph.D. Thesis.</p>
 </div>
 
 <div class="card">
-  <a href="/#projects">
+  <a href="/#projects" class="nopopover">
     <img src="res/img/myprojects.jpg"></img>
     <h4>Build Projects</h4>
   </a>
@@ -62,9 +63,9 @@ layout: Custom
 </div>
 
 <div class="card">
-  <a href="/info/">
+  <a href="/thoughts/">
     <img src="res/img/mygarden.jpg"></img>
-    <h4>Grow Ideas</h4>
+    <h4>Grow Thoughts</h4>
   </a>
   <p>A digital garden, where I collect ideas & thoughts about the world, the [[mind]], and society.</p>
 </div>
@@ -106,12 +107,12 @@ My vision is that at the end all system components fit together as shown in the 
 
 
 <div class="row" style="margin-top: 4em">
-<div class="col-4">
+<div class="col-3">
 
 ### Publications
 
 </div>
-<div class="col">
+<div class="col-9">
 
 
   <ul class="pub-list fa-ul lh-11">
@@ -230,6 +231,14 @@ My vision is that at the end all system components fit together as shown in the 
   <p>Interactive Knowledge Platform for Students.</p>
 </div>
 
+<div class="card" style="background-color: #fff;">
+  <a href="/project/tesserakt">
+    <img alt="4D Cube" src="res/img/tesserakt/hypercube.gif" style="background-color: #fff3; margin: auto 0;">
+    <h4>Tesserakt</h4>
+  </a>
+  <p>Simulation of a Four-Dimensional Hypercube.</p>
+</div>
+
 </div>
 
 <div class="autocol">
@@ -307,12 +316,103 @@ My vision is that at the end all system components fit together as shown in the 
 <div class="row">
 <div class="col-4">
 
-## Hobbies
+## Sports & Music
 
 </div>
 <div class="col">
 
-In my spare time
+<h3 id="parkour">Parkour and Freerunning</h3>
+
+Since 2008 I work as a coach for Parkour and Freerunning with children and young adults. I try to motivate them for these trend-sports that focus on body control and help to touch physical limits without any competitive spirit.  
+Check out the hompage of [TSV-Herrsching](https://www.tsv-herrsching.de/gymnastik_turnen/freestyle-parkour-akrobatik/#training).
+
+<div class="autorow fixed">
+<figure class="col-4">
+ <img src="res/img/sport/tsv-trakour.jpg">
+ <figcaption>Indoor Training</h4></figcaption>
+</figure>
+
+
+
+
+<figure class="col-4">
+ <img src="res/img/sport/trakour.jpg">
+ <figcaption>Trampoline Hall</h4></figcaption>
+</figure>
+
+
+<figure class="col-4">
+ <img src="res/img/sport/parkour-leap.jpg">
+ <figcaption>Outdoor</h4></figcaption>
+</figure>
+
+
+</div>
+
+
+
+
+### Other Sports
+I also enjoy trying all other sorts of sports.
+
+
+<div class="autorow">
+
+  <div class="autorow fixed">
+
+  <figure class="col">
+    <img src="res/img/sport/skiing2.jpg">
+    <figcaption>Skiing</figcaption>
+  </figure>
+  <figure class="col">
+    <img src="res/img/sport/wind-surfing.jpg">
+  <figcaption>Wind Surfing</figcaption>
+  </figure>
+
+  </div>
+
+  <div class="autorow fixed">
+    <figure class="col">
+      <img src="res/img/sport/biken.jpg">
+      <figcaption>Mountain Biking</figcaption>
+    </figure>
+    <figure class="col">
+      <img src="res/img/sport/slackline.jpg">
+      <figcaption>Slackline</figcaption>
+    </figure>
+
+  </div>
+
+</div>
+
+
+<div class="autorow">
+
+  <div class="autorow fixed">
+    <figure class="col">
+      <img src="res/img/sport/fencing.jpg">
+      <figcaption>Fencing</figcaption>
+    </figure>
+    <figure class="col">
+      <img src="res/img/sport/paragliding.jpg">
+      <figcaption>Paragliding</figcaption>
+    </figure>
+  </div>
+
+  <div class="autorow fixed">
+    <figure class="col">
+      <img src="res/img/sport/bouldern.jpg">
+      <figcaption>Bouldering</figcaption>
+    </figure>
+    <figure class="col">
+      <img src="res/img/sport/wave-surfing.jpg">
+      <figcaption>Wave Surfing</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+
 
 </div>
 </div>
