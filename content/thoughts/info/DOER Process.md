@@ -33,6 +33,7 @@ Dumping allows you to get something off your mind quickly. When a thought outsid
 > Your brain is made for having ideas... not for storing them.
 
 Then decide what should happen:
+
 * **Defer:** Postpone the processing to step 2 (Organize)
 * **Delegate:** Forward the item to another person.
 * ***Do it now:** If it is a task that requires less than 2min, execute immediately.
