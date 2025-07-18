@@ -9,7 +9,9 @@ category: projects
 img: res/img/tesserakt/hypercube.gif
 ---
 
-<small>Der folgende Text ist Größtenteils ein Auszug aus meiner Facharbeit in Mathematik „Computersimulation eines vierdimensionalen Würfels“, eingereicht am 29. Januar 2010.</small> $\newcommand{\ma}[1]{\boldsymbol{#1}}$
+<small>Der folgende Text ist Größtenteils ein Auszug aus meiner Facharbeit in Mathematik „Computersimulation eines vierdimensionalen Würfels“, eingereicht am 29. Januar 2010.</small> 
+
+$$\providecommand\ma[1]{\boldsymbol{#1}}$$
 
 Das Wort Tesserakt stammt von der Griechischen Bezeichnung „τέσσερεις ακτίνες“ („tésseris aktínes“) und bedeutet etwa „vier Strahlen“, weil immer vier „Strahlen“ an einem Eckpunkt zusammentreffen. Damit ist der Tesserakt die Verallgemeinerung des klassischen Würfels auf vier Dimensionen und verhält sich zum Würfel, wie sich der Würfel zum Quadrat verhält. Das bedeutet, dass bei jedem Eckpunkt des Tesserakts vier Kanten zusammenlaufen, die alle senkrecht aufeinander stehen und jeweils vier Kanten ein Quadrat bilden. Jeweils sechs solcher Quadrate bilden wiederum einen normalen dreidimensionalen Würfel. Der Tesserakt besteht also insgesamt aus 8 Würfeln, 16 Ecken, 32 Kanten und 24 Quadraten. Der vierdimensionale Würfel ist auch noch unter den Bezeichnungen 8-Zeller, 4-Kubus und Hyperwürfel bekannt, allerdings ist ein Hyperwürfel definiert als ein n-dimensionales Analogon des zweidimensionalen Quadrates mit $n \ge 4$ und muss somit nicht unbedingt vierdimensional sein, auch wenn oft der Tesserakt damit gemeint ist.
 
@@ -41,22 +43,23 @@ Im dreidimensionalen Raum drehen wir einen Würfel um eine Rotationsachse und es
 Die Rotationsmatrix $\ma R\_{xy}$ dreht einen Punkt in der XY Ebene und um die ZW Ebene, während die Rotationsmatrix $\ma R\_{zw}$ einen Punkt in der ZW Ebene und um die XY Ebene dreht.
 
 
+
 $$%
-\ma R_{xy} = 
-	\begin{bmatrix} 
-		\cos (θ) & -\sin (θ) & & \\ 
-		\sin (θ) & \cos (θ) & & \\
-		& & 1 & \\
-		& & & 1\\
-	\end{bmatrix}
-\qquad\qquad 
-\ma R_{zw} = 
-	\begin{bmatrix} 
-		1 & & &\\
-		& 1 & &\\
-		& & \cos (θ) & -\sin (θ)\\ 
-		& & \sin (θ) & \cos (θ)\\
-	\end{bmatrix}
+\ma R_{xy} = %
+	\begin{bmatrix} %
+		\cos (θ) & -\sin (θ) & & \\ %
+		\sin (θ) & \cos (θ) & & \\ %
+		& & 1 & \\ %
+		& & & 1\\ %
+	\end{bmatrix} %
+\qquad\qquad %
+\ma R_{zw} = %
+	\begin{bmatrix} %
+		1 & & &\\ %
+		& 1 & &\\ %
+		& & \cos (θ) & -\sin (θ)\\ %
+		& & \sin (θ) & \cos (θ)\\ %
+	\end{bmatrix}%
 $$
 
 
@@ -69,8 +72,8 @@ Da ein Tesserakt Punkte besitzt, die nicht im dreidimensionalen Raum liegen, lä
 Bei einer geometrischen Projektion werden alle Punkte des $n$-dimensionalen Raumes auf Punkte eines $(n-1)$-dimensionalen Raumes, dem Projektionsraum, abgebildet. Es wird praktisch ein –
 um eine Dimension verringertes – Abbild eines Körpers erzeugt.
 
-<figure class="col-12 my-0">
- <img class="col-sm-10" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Zentralprojektion.jpg">
+<figure>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Zentralprojektion.jpg">
  <figcaption><p>Zentralprojektion.<a href="https://commons.wikimedia.org/wiki/File:Zentralprojektion.jpg">[Quelle]</a>.</p></figcaption>
 </figure>
 
