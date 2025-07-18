@@ -67,7 +67,7 @@ layout: Custom
     <img src="res/img/mygarden.jpg"></img>
     <h4>Grow Thoughts</h4>
   </a>
-  <p>A digital garden, where I collect ideas & thoughts about the world, the [[mind]], and society.</p>
+  <p>A digital garden, where I collect ideas & thoughts about <a href="/thoughts/tech">technology</a>, the <a href="/thoughts/mind">philosophy</a>, and <a href="/thoughts/society">society</a>.</p>
 </div>
 
 <div class="card">
@@ -232,7 +232,7 @@ My vision is that at the end all system components fit together as shown in the 
 </div>
 
 <div class="card" style="background-color: #fff;">
-  <a href="/project/tesserakt">
+  <a href="/projects/tesserakt">
     <img alt="4D Cube" src="res/img/tesserakt/hypercube.gif" style="background-color: #fff3; margin: auto 0;">
     <h4>Tesserakt</h4>
   </a>
