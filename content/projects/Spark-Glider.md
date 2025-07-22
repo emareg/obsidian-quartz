@@ -21,10 +21,10 @@ This is a summary of the development process of a flight stack for the Pixhawk b
 
 ## Mission
 
-<div class="row justify-content-center">
+<div class="row" style="justify-content: center">
 <figure class="col-12 my-0">
  <img src="res/img/glider/mission.png">
- <figcaption><h4>Figure 1: Mission plan</h4></figcaption>
+ <figcaption><p>Figure 1: Mission plan</p></figcaption>
 </figure>
 </div>
 
@@ -35,10 +35,10 @@ The hardware concepts for ascending and descending of the balloon and the probe 
 The micro glider is a styrowing that uses two servos to control the “elevons” (a mix-word of “elevator” and “aileron”) which are movable surfaces to control the flight behavior. 
 
 
-<div class="row justify-content-center">
-<figure class="col-12 my-0">
+<div class="row" style="justify-content: center;">
+<figure class="col">
  <img class="col-sm-9" src="res/img/glider/glider.png">
- <figcaption><h4>Photo of our high-altitude micro glider and important system components.</h4></figcaption>
+ <figcaption>Photo of our high-altitude micro glider and important system components.</figcaption>
 </figure>
 </div>
 
@@ -94,10 +94,10 @@ The difference between the desired value $r(t)$ and the actual sensor measuremen
 
 
 
-<div class="row justify-content-center">
-<figure class="col-12 my-0">
+<div class="row" style="justify-content: center;">
+<figure class="col">
  <img class="col-sm-9" src="res/img/glider/pid.svg">
- <figcaption><h4>Block diagram of a typical PID controller loop.</h4></figcaption>
+ <figcaption>Block diagram of a typical PID controller loop.</figcaption>
 </figure>
 </div>
 
@@ -119,10 +119,10 @@ The challenge in control theory is to find proper values for the gains. Especial
 “Navigation is the determination of the position and velocity of a moving vehicle” [^kayton1997]. In contrast, guidance is steering towards a destination. The flight controller needs to perform both navigation and guidance.
 For basic navigation and guidance, three terms are important: *heading*, *course*, and *bearing*. The *heading* is the direction a vehicle is pointing. The *course* is the intended heading from a start point to a target point. The absolute *bearing* is the clockwise angle between north and the line from the vehicle's own position to its target position. The relation of these terms is illustrated in the figure below. If there were no external influences, such as wind, the bearing, the course, and the heading would be the same. However, in a realistic scenario, the aircraft is drifting and as a result the bearing is deviating from the course, which must be compensated by controlling the heading.
 
-<div class="row justify-content-center">
+<div class="row" style="justify-content: center;">
 <figure class="col-12 my-0">
  <img src="res/img/glider/navigation.svg">
- <figcaption><h4>Important angles for the navigation of the glider.</h4></figcaption>
+ <figcaption>Important angles for the navigation of the glider.</figcaption>
 </figure>
 </div>
 
@@ -160,10 +160,10 @@ Since the general safety goal is to prevent errors as early as possible, there a
 All concepts shall help to either avoid, detect, or mitigate fault, errors, and failures
 
 
-<div class="row justify-content-center">
-<figure class="col-12 my-0">
- <img src="res/img/glider/sw_architecture.svg">
- <figcaption><h4>Software Architecture.</h4></figcaption>
+<div class="row" style="justify-content: center;">
+<figure class="col" style="width: 100%;">
+ <img style="width: 100%;" src="res/img/glider/sw_architecture.svg">
+ <figcaption>Software Architecture.</figcaption>
 </figure>
 </div>
 
@@ -182,7 +182,7 @@ As illustrated in the figure above, the architecture was divided in 5 hierarchic
 <div class="row justify-content-center">
 <figure class="col-12 my-3">
  <img src="res/img/glider/drop_test.jpg">
- <figcaption><h4>Drop test using a drone.</h4></figcaption>
+ <figcaption>Drop test using a drone.</figcaption>
 </figure>
 </div>
 
