@@ -10,7 +10,7 @@ layout: Custom
       <meta itemprop="image" content="img/regnath.jpg">
       <div class="portrait-title">
         <p itemprop="name" style="font: 1.2em/1.5 Helvetica; margin:0.2em 0">Emanuel Regnath</p>
-        <p itemprop="jobTitle" style="color: gray; margin: 0">Software Architect</p>
+        <p itemprop="jobTitle" style="color: gray; margin: 0">Software Scientist</p>
         <p itemprop="worksFor" style="margin: 0 0 .5em">
           <a href="https://siemens.com" target="_blank" style="text-decoration:none;">
           Siemens AG
