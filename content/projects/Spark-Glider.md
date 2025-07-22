@@ -35,12 +35,12 @@ The hardware concepts for ascending and descending of the balloon and the probe 
 The micro glider is a styrowing that uses two servos to control the “elevons” (a mix-word of “elevator” and “aileron”) which are movable surfaces to control the flight behavior. 
 
 
-<div class="row" style="justify-content: center;">
-<figure class="col">
- <img class="col-sm-9" src="res/img/glider/glider.png">
+
+<figure style="justify-content: center;">
+ <img style="max-height: 16em;" src="res/img/glider/glider.png">
  <figcaption>Photo of our high-altitude micro glider and important system components.</figcaption>
 </figure>
-</div>
+
 
 
 
@@ -116,7 +116,7 @@ The difference between the desired value $r(t)$ and the actual sensor measuremen
 
 <figure class="row" style="justify-content: center;">
  <img src="res/img/glider/pid.svg">
- <figcaption>Block diagram of a typical PID controller loop.</figcaption>
+ <figcaption><p>Block diagram of a typical PID controller loop.</p></figcaption>
 </figure>
 
 
