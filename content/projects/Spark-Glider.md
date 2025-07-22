@@ -76,20 +76,32 @@ $$
 \hat{\vec x}\_{n|n-1} = \ma G\_n \hat{\vec x}\_{n-1|n-1} + \ma B \vec{u}\_n
 $$
 
-$$\ma C\_{\vec x\_{n|n-1}} = \ma G\_n \ma C\_{\vec x\_{n-1|n-1}} \ma G\_n^\top + \ma C\_{\vec v}$$
+$$
+\ma C\_{\vec x\_{n|n-1}} = \ma G\_n \ma C\_{\vec x\_{n-1|n-1}} \ma G\_n^\top + \ma C\_{\vec v}
+$$
 
 
 **2. Update:** calculate the innovation $\Delta \vec y\_n$, which is the difference between predicted and observed measurements. The certainty of measurement is expressed by the innovation covariance matrix $\ma S$, which depends on the measurement noise covariance matrix $\ma C\_{\vec w\_{n}}$. The innovation covariance matrix $\ma S$ is then used to calculate the Kalman gain matrix $\ma K\_n$
 
-$$\Delta \vec y\_n = \vec y\_n - \hat{\vec y}\_{n|n-1} =\vec y\_n - \ma H\_{n} \hat{\vec x}\_{n|n-1}$$
-$$\ma S = \ma H\_{n} \ma C\_{\vec x\_{n|n-1}} \ma H\_{n}^\top + \ma C\_{\vec w\_{n}}$$
-$$\ma K\_n = \ma C\_{\vec x\_{n|n-1}} \ma H\_{n}^\top {\ma S}^{-1}.$$
+$$
+\Delta \vec y\_n = \vec y\_n - \hat{\vec y}\_{n|n-1} =\vec y\_n - \ma H\_{n} \hat{\vec x}\_{n|n-1}
+$$
+$$
+\ma S = \ma H\_{n} \ma C\_{\vec x\_{n|n-1}} \ma H\_{n}^\top + \ma C\_{\vec w\_{n}}
+$$
+$$
+\ma K\_n = \ma C\_{\vec x\_{n|n-1}} \ma H\_{n}^\top {\ma S}^{-1}.
+$$
 
 The Kalman gain matrix can be seen as the weights for $\Delta \vec y_n$. Its entries have the property $K\_{ij} \in [0.0; 1.0],$ where 0.0 means the filter fully trusts the prediction and 1.0 means the filter fully trusts the measurement.
 Finally, the Kalman gain matrix is used to calculate the new state as well as its covariance matrix:
 
-$$\hat{\vec x}\_{n|n} = \hat{\vec x}\_{n|n-1} + \ma K\_n \Delta \vec y\_n$$
-$$\ma C\_{\vec x\_{n|n}} = \ma C\_{\vec x\_{n|n-1}} + \ma K\_n \ma H\_{n} \ma C\_{\vec x\_{n|n-1}}.$$
+$$
+\hat{\vec x}\_{n|n} = \hat{\vec x}\_{n|n-1} + \ma K\_n \Delta \vec y\_n
+$$
+$$
+\ma C\_{\vec x\_{n|n}} = \ma C\_{\vec x\_{n|n-1}} + \ma K\_n \ma H\_{n} \ma C\_{\vec x\_{n|n-1}}.
+$$
 
 
 
@@ -101,12 +113,12 @@ The difference between the desired value $r(t)$ and the actual sensor measuremen
 
 
 
-<div class="row" style="justify-content: center;">
-<figure class="col">
- <img class="col-sm-9" src="res/img/glider/pid.svg">
+
+<figure class="row" style="justify-content: center;">
+ <img src="res/img/glider/pid.svg">
  <figcaption>Block diagram of a typical PID controller loop.</figcaption>
 </figure>
-</div>
+
 
 The output $u(t)$ of the PID controller can be formulated as
 
