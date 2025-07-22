@@ -59,15 +59,22 @@ The equations in the following are derived from [^faragher2012].
 
 **State Space** Suppose we have the following state space model:
 
-$$\vec{x}_{n} = \ma G\_n \vec{x}\_{n-1} + \ma B \vec{u}\_n + \vec{v}\_n$$
+$$
+\vec{x}_{n} = \ma G\_n \vec{x}\_{n-1} + \ma B \vec{u}\_n + \vec{v}\_n
+$$
 
-$$\vec{y}\_{n} = \ma H\_{n} \vec{x}\_{n-1} + \vec{w}\_{n}$$
+$$
+\vec{y}\_{n} = \ma H\_{n} \vec{x}\_{n-1} + \vec{w}\_{n}
+$$
 
 with the state vector $\vec x$, transition matrix $\ma G$, Gaussian process noise $\vec v_n$, input vector $\vec u$, 
 measurement vector $\vec y$, measurement model $\ma H$, and Gaussian measurement noise $\vec w_n$ at each discrete point in time $n \in \N$. The transition matrix represents the linear dynamic model, commonly based on physical laws.
 
 **1. Prediction:** the prediction of the next state $\hat {\vec x}\_{n|n-1}$ is based on the old state and the linear dynamic model $\ma G\_n$. Additionally, the new process covariance $\ma C\_{\vec x\_{n|n-1}}$, which reflects the certainty of the model, is predicted with the dynamic model $\ma G_n$ and the process noise covariance $\ma C\_{\vec v}$.
-$$\hat{\vec x}\_{n|n-1} = \ma G\_n \hat{\vec x}\_{n-1|n-1} + \ma B \vec{u}\_n$$
+
+$$
+\hat{\vec x}\_{n|n-1} = \ma G\_n \hat{\vec x}\_{n-1|n-1} + \ma B \vec{u}\_n
+$$
 
 $$\ma C\_{\vec x\_{n|n-1}} = \ma G\_n \ma C\_{\vec x\_{n-1|n-1}} \ma G\_n^\top + \ma C\_{\vec v}$$
 
@@ -110,7 +117,9 @@ $$
 with the gains $K\_{\mathrm{P}}$, $K\_{\mathrm{I}}$, $K\_{\mathrm{D}}$, and the error $e(t) = r(t) - y(t)$.
 For a time discrete system, the derivation and integral can be approximated and the control equation for a point in time $t\_i$ simplifies to
 
-$$u[t\_i] = K\_{\mathrm{P}} \cdot e[t\_i] + K\_{\mathrm{I}} \sum\limits\_{l = 1}^{i} e[t\_l] \left(t\_l - t\_{l-1}\right) + K\_{\mathrm{D}} \frac{e[t\_i] - e[t\_{i-1}]}{t\_i - t\_{i-1}}$$
+$$
+u[t\_i] = K\_{\mathrm{P}} \cdot e[t\_i] + K\_{\mathrm{I}} \sum\limits\_{l = 1}^{i} e[t\_l] \left(t\_l - t\_{l-1}\right) + K\_{\mathrm{D}} \frac{e[t\_i] - e[t\_{i-1}]}{t\_i - t\_{i-1}}
+$$
 
 The challenge in control theory is to find proper values for the gains. Especially the derivative part, which can increase control stability, is often difficult to tune [^pidcontrol].
 
@@ -130,7 +139,9 @@ For basic navigation and guidance, three terms are important: *heading*, *course
 **Bearing**
 The bearing $\theta$ of an aircraft can be calculated from its own geographic position $(\varphi_1, \lambda_1)$ and its target geographic position $(\varphi_2, \lambda_2)$ by the equation
 
-$$\theta = \arctan 2 \big( \sin( \Delta \lambda) ⋅ \cos (\varphi_2), \quad \cos(\varphi_1) ⋅ \sin(\varphi_2) - \sin(\varphi_1) ⋅ \cos(\varphi_2) ⋅ \cos (\Delta \lambda) \big)$$
+$$
+\theta = \arctan 2 \big( \sin( \Delta \lambda) ⋅ \cos (\varphi_2), \quad \cos(\varphi_1) ⋅ \sin(\varphi_2) - \sin(\varphi_1) ⋅ \cos(\varphi_2) ⋅ \cos (\Delta \lambda) \big)
+$$
 
 where $\varphi$ is latitude, $\lambda$ is the longitude, and $\Delta \lambda = \lambda_2 - \lambda_1$. All angles are in radians.
 
@@ -145,8 +156,12 @@ For short distances with small differences between longitude ($\approx 1\,\deg$)
 It takes the spherical shape of the earth into account and is numerical stable [^latlong].
 The distance $d$ is calculated by the haversine equations as
 
-$$a = \sin^2\left(\frac{\Delta \varphi}{2}\right) + \cos(\varphi\_1) \cdot \cos(\varphi\_2) ⋅ \sin^2\left(\frac{\Delta \lambda}{2}\right)$$
-$$d = 2 \cdot R\_{\mathrm{Earth}} \cdot \arctan 2 \left( \sqrt{a}, \sqrt{1-a} \right)$$
+$$
+a = \sin^2\left(\frac{\Delta \varphi}{2}\right) + \cos(\varphi\_1) \cdot \cos(\varphi\_2) ⋅ \sin^2\left(\frac{\Delta \lambda}{2}\right)
+$$
+$$
+d = 2 \cdot R\_{\mathrm{Earth}} \cdot \arctan 2 \left( \sqrt{a}, \sqrt{1-a} \right)
+$$
 
 where $\varphi$ is the latitude, $\lambda$ the longitude, and $R_{\mathrm{Earth}}$ the radius of the earth.
 
