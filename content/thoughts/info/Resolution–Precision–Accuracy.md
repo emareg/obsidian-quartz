@@ -14,4 +14,4 @@ Since no measurement of a physical quantity is infinitely accurate, it is import
 
 Think of an archer, trying to shoot a target:
 
-![[accuracy-precision.svg|accuracy-precision.svg]]
+![Diagram illustrating the different concepts.](accuracy-precision.svg)
