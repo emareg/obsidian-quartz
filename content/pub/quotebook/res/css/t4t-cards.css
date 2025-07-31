@@ -1,0 +1,77 @@
+
+:root{
+	--bs-success: #a2ad00;
+	--bs-info: #005293;
+	--bs-warning: #e37222;
+	--bs-danger: #c4071b;
+}
+
+
+/* Bootstrap Dependencies, Redefined or Injected */
+details,
+.card {
+	display: block;
+  margin: .5rem 2px;
+	padding: 0 !important;
+	border-radius: 4px;
+	border: var(--border);
+}
+summary,
+.card-header, 
+.card>div:first-child:not(:last-child) {
+	margin: 0;padding: .3rem .6rem;
+	font-weight: 600;	
+	margin-bottom: 0;
+	background-color: var(--clight);
+	border-bottom: var(--border);
+}
+.card-body, details>*:not(summary) { padding: 0 .6rem; margin: .5rem 0; }
+.card p { margin: .5rem 0; }
+
+/* fix header paragraph */
+.card-header>p, div[class*="title"] p { margin: 0; }
+
+/* fix summary border */
+details:not([open]) summary { border-bottom: none; }
+
+
+/* box styles redefine border and clight */
+.hint, .success, .example {	
+	--border: .1rem solid var(--bs-success) !important;
+	--clight: #a2ad0010 !important;
+}
+.definition, .explanation, .info, .note {	
+	--border: .1rem solid var(--bs-info) !important;
+	--clight: #00529310 !important;
+}
+.warning, .attention, .important {	
+	--border: .1rem solid var(--bs-warning) !important;
+	--clight: #e3722210 !important;
+}
+.error, .danger {	
+	--border: .1rem solid var(--bs-danger) !important;
+	--clight: #c4071b10 !important;
+}
+
+
+/* own marker ▼,▲ */
+summary { list-style: none; }
+summary::marker { display: none; }
+summary:after { content: " "; float: right; width: 24px; height: 24px; color: var(--clink);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='gray' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='18 9 12 15 6 9'%3E%3C/polyline%3E%3C/svg%3E%0A");
+ }
+details[open] summary:after { transform: rotate(180deg); }
+
+
+/*<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><polyline points="18 15 12 9 6 15"></polyline></svg>
+*/
+
+/*.error>p, .danger>p { margin: .5rem; }
+.error [class*="title"],
+.danger [class*="title"]{
+	margin: 0; padding: .5rem;
+	font-weight: 600;
+	background-color: var(--bs-danger);
+	color: var(--cbg); 
+}*/
+

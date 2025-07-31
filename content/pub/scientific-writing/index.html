@@ -1,0 +1,531 @@
+<!DOCTYPE data-theme="sepia" html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" data-theme="sepia">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Emanuel Regnath" />
+  <meta name="dcterms.date" content="2017-09-21" />
+  <title>The Dos and Don’ts of Scientific Writing</title>
+<script type="text/javascript">
+
+function switchTheme(el) { document.documentElement.setAttribute('data-theme', el.value) }
+
+function switchCSS(cssid, el){ document.getElementById(cssid).href = el.value; }
+
+function addFontSize(addPx){
+  html = document.querySelector('html');
+  currentSize = parseFloat(window.getComputedStyle(html, null)
+    .getPropertyValue('font-size'));
+  html.style.fontSize = (currentSize + addPx) + 'px';
+}
+
+function toggleDarkMode(el){
+  var theme='light'
+  if (el.innerText == '☪'){
+    el.innerText = '☀'; theme='dark';
+  } else {
+    el.innerText = '☪';
+  }
+  document.documentElement.setAttribute('data-theme', theme)
+}
+
+function addBreadCrumbs(el){
+  const here = location.href.split('/').slice(3);
+  const parts = [{"text": 'Home', "link": '/'}];
+
+  for (let i = 0; i < here.length-1; i++) {
+    const text = decodeURIComponent(here[i]).split('.')[0];
+    const link = '/' + here.slice(0, i + 1).join('/');
+    parts.push({"text": text, "link": link});
+    // console.log(parts)
+  }
+  el.innerHTML = parts.map((part) => {
+    return "<a href=\"" + part.link + "\">" + part.text + "</a>"
+  }).join('<span style="padding: 5px">/</span>')
+}
+
+function loadScript(url) {
+    var script = document.createElement("script");
+    script.src = url;
+    document.head.appendChild(script);
+}
+
+function makeCollapseHeading(el){
+  sec = el.parentElement;
+  if (sec.tagName != "SECTION"){ return; }
+  el.classList.add("link");
+  el.addEventListener('click', toggleCollapse);
+  el.href = '#'+sec.id;
+  container = sec.parentElement;
+  container.insertBefore(el, sec)
+  // sec.removeChild(el);
+}
+
+// register on load
+document.addEventListener('DOMContentLoaded', function() {
+  addBreadCrumbs(document.getElementById("qbread"))
+});
+</script>
+
+  <style type="text/css">
+/* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
+
+
+/* for Sepia */
+@import url('https://fonts.cdnfonts.com/css/libertinus-serif');
+@import url('https://fonts.cdnfonts.com/css/libertinus-sans');
+
+html[data-theme='sepia']{
+	--rem: 14pt;
+	--width: 48rem;
+	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
+	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans-serif;
+	--font-c: 85%/1.4 monospace;
+	--ornament: "∞ ∞ ∞"; /*--ornament: "❦ ❦ ❦"; "☙ ❧";*/
+	/* foreground   | background color */
+	--cfg:    #433;   --cbg: #fefbf4;
+	--cdark: #6c605c; --clight: #f3efea;
+	--cmed: #a8928e;
+	--clink: #bd0000;
+	--cemph: #a35403; --cemphbg:  #a3540310;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+:root, html[data-theme='light'] {
+  --rem: 12pt;
+  --width: 50rem;
+  --navpos: absolute;  /* fixed | absolute */
+  --font-p: 1em/1.7 'Open Sans', Helvetica, sans-serif;
+  --font-h: .9em/1.5 'Open Sans', Helvetica, sans-serif;
+  --font-c: .9em/1.4 monospace;
+  --border: 1px solid var(--cmed);
+  --ornament: "‹‹‹ ›››";
+  /* foreground   | background color */
+  --cfg:   #433;    --cbg:    #fff;
+  --cdark: #888;    --clight: #f5f6f7;
+  --cmed:  #d1d1d1;
+  --clink: #07c;
+  --cemph: #088;    --cemphbg: #0881;
+}
+
+
+
+html[data-theme='dark'] {
+  /* foreground   | background color */
+  --cfg:   #cecbc4; --cbg:    #252220;
+  --cdark: #999;    --clight: #333;
+  --cmed:  #566;
+  --clink: #1ad;
+  --cemph: #0b9;
+}
+
+
+/* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
+
+/* reset block elements  */
+* { box-sizing: border-box; border-spacing: 0; margin: 0; padding: 0;}
+header, footer, figure, table, video, details, blockquote,
+ul, ol, dl, fieldset, pre, pre > code, caption {
+  display: block;
+  margin: 0.5rem 0rem 1rem;
+  width: 100%;
+  overflow: auto hidden;
+  text-align: left;
+}
+video, summary, input, select { outline:none; }
+
+/* reset clickable things  (FF Bug: select:hover prevents usage) */
+a, button, select, summary { color: var(--clink); cursor: pointer; }
+
+
+/* 3. Base Style ––––––––––––––––––––––––––––––––––––––– */
+html { font-size: var(--rem); background: var(--cbg); }
+body {
+  position: relative;
+  margin: auto;
+  max-width: var(--width);
+  font: var(--font-p);
+  color: var(--cfg);
+  padding: 3.0rem 0.6rem 0;
+  overflow-x: hidden;
+}
+body > footer { margin: 4rem 0rem 1rem; font-size: 90%; box-shadow: 0vw 50vw 0 50vw var(--clight); background-color: var(--clight); padding: 2rem 0; }
+p { margin: .6em 0; font-size: 1em; }
+
+/* links */
+a[href]{ text-decoration: underline solid var(--cmed); text-underline-position: under; }
+a[href^="#"] {text-decoration: none; }
+a:hover, button:not([disabled]):hover, summary:hover {
+  filter: brightness(92%); color: var(--cemph); border-color: var(--cemph);
+}
+
+/* lists */
+ul, ol, dl { margin: 1rem 0; padding: 0 0 0 2em; }
+li:not(:last-child), dd:not(:last-child) { margin-bottom: 0.5rem; }
+dt { font-weight: bold; }
+
+/* headings */
+h1, h2, h3, h4, h5 { margin: 1.5em 0 .5rem; font: var(--font-h); line-height: 1.2em; clear: both; }
+h1+h2, h2+h3, h3+h4, h4+h5 { margin-top: .5em; padding-top: 0; }  /* non-clashing headings */
+h1 { font-size: 2.2em; font-weight: 300; }
+h2 { font-size: 2.0em; font-weight: 300; font-variant: small-caps; }
+h3 { font-size: 1.5em; font-weight: 400; }
+h4 { font-size: 1.1em; font-weight: 700; }
+h5 { font-size: 1.2em; font-weight: 400; color: var(--cfg); }
+h6 { font-size: 1.0em; font-weight: 700; font-style: italic; display: inline; }
+h6 + p { display: inline; }
+
+/* tables */
+td, th {
+  padding: 0.5em 0.8em;
+  text-align: right;
+  border-bottom: 0.1rem solid var(--cmed);
+  white-space: nowrap;
+  font-size: 95%;
+}
+thead th[colspan] { padding: .2em 0.8em; text-align: center; }
+thead tr:not(:only-child) td { padding: .2em 0.8em; }
+thead+tbody tr:first-child td { border-top: 0.1rem  solid var(--cdark);  }
+td:first-child, th:first-child { text-align: left; }
+tr:hover{ background-color: var(--clight); }
+table img { display: block; }
+
+/* figures */
+img, svg { max-width: 100%; vertical-align: text-top; object-fit: cover; }
+p>img:not(:only-child) { float: right; margin: 0 0 .5em .5em; }
+figure > img { display: inline-block; width: auto; }
+figure > img:only-of-type, figure > svg:only-of-type { max-width: 100%; display: block; margin: 0 auto 0.4em; }
+figcaption, caption { font: var(--font-h); color: var(--cdark); width: 100%; }
+figcaption > *:first-child, caption > *:first-child { display: inline-block; margin: 0; }
+figure > *:not(:last-child) { margin-bottom: 0.4rem; }
+
+/* code */
+pre > code {
+  margin: 0;
+  position: relative;
+  padding: 0.8em;
+  border-left: .4rem solid var(--cemph);
+}
+code, kbd, samp {
+  padding: 0.2em;
+  font: var(--font-c);
+  background: var(--clight);
+  border-radius: 4px;
+}
+kbd { border: 1px solid var(--cmed); }
+
+/* misc */
+blockquote { border-left: 0.4rem solid var(--cmed); padding: 0 0 0 1rem;  }
+time{ color: var(--cdark); }
+hr { border: 0; border-top: 0.1rem solid var(--cmed); }
+nav { width: 100%; background-color: var(--clight); }
+::selection, mark { background: var(--clink); color: var(--cbg); }
+
+
+/* 4. Extra Style –––––––––––––––––––––––––––––––––––––– */
+
+/* Auto Numbering: figure/tables/headings/cite */
+article { counter-reset: h2 0 h3 0 tab 0 fig 0 lst 0 ref 0 eq 0; }
+article figure figcaption:before {
+  color: var(--cemph);
+  counter-increment: fig;
+  content: "Figure " counter(fig) ": ";
+}
+
+/* subfigures */
+figure { counter-reset: subfig 0 }
+article figure figure { counter-reset: none; }
+article figure > figure { display: inline-grid; width: auto; }
+figure > figure:not(:last-of-type) { padding-right: 1rem; }
+article figure figure figcaption:before {
+  counter-increment: subfig 1;
+  content: counter(subfig, lower-alpha) ": ";
+}
+
+/* listings */
+article figure pre + figcaption:before {
+  counter-increment: lst 1;
+  content: "Listing " counter(lst) ": ";
+}
+
+/* tables */
+figure > table:only-of-type { display: table; margin: 0.5em auto !important; width: fit-content; }
+article figure > table caption { display: table-caption; caption-side: bottom; }
+article figure > table + figcaption:before,
+article table caption:before {
+  color: var(--cemph);
+  counter-increment: tab 1;
+  content: "Table " counter(tab) ": ";
+}
+
+/* headings */
+article h2, h3 { position: relative; }
+article h2:before,
+article h3:before {
+  display: inline-block;
+  position: relative;
+  font-size: 0.6em;
+  text-align: right;
+  vertical-align: baseline;
+  left: -1rem;
+  width: 2.5em;
+  margin-left: -2.5em;
+}
+article h1 { counter-set: h2; }
+article h2:before { counter-increment: h2; content: counter(h2) ". "; counter-set: h3; }
+article h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) ". ";}
+@media (max-width: 60rem) { h2:before, h3:before { display: none; } }
+
+/* tooltip + citation */
+article p>cite:before {
+  padding: 0 .5em 0 0;
+  counter-increment: ref; content: " [" counter(ref) "] ";
+  vertical-align: super; font-size: .6em;
+}
+article p>cite > *:only-child { display: none; }
+article p>cite:hover > *:only-child,
+[data-tooltip]:hover:before {
+  display: inline-block; z-index: 40;
+  white-space: pre-wrap;
+  position: absolute; left: 1rem; right: 1rem;
+  padding: 1em 2em;
+  text-align: center;
+  transform:translateY( calc(-100%) );
+  content: attr(data-tooltip);
+  color: var(--cbg);
+  background-color: var(--cemph);
+  box-shadow: 0 2px 10px 0 black;
+}
+[data-tooltip], article p>cite:before { 
+  color: var(--clink);
+  border: .8rem solid transparent; margin: -.8rem;
+}
+abbr[title], [data-tooltip] { cursor: help; }
+
+
+/* details/cards */
+summary>* { display: inline; }
+.card, details {
+  display: block;
+  margin: 0.5rem 0rem 1rem;
+  padding: 0 .6rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card, details[open] { outline: 1px solid var(--cmed); }
+.card>img:first-child { margin: -3px -.6rem; max-width: calc(100% + 1.2rem); }
+summary:hover, details[open] summary, .card>p:first-child {
+  box-shadow: inset 0 0 0 2em var(--clight), 0 -.8rem 0 .8rem var(--clight); 
+}
+.hint { --cmed: var(--cemph); --clight: var(--cemphbg); background-color: var(--clight); }
+.warn { --cmed: #c11; --clight: #e221; background-color: var(--clight); }
+
+
+/* big first letter */
+article > section:first-of-type > h2:first-of-type + p:first-letter,
+article > h2:first-of-type + p:first-letter, .lettrine {
+  float: left;
+  font-size: 3.5em;
+  padding: 0.1em 0.1em 0 0;
+  line-height: 0.68em;
+  color: var(--cemph);
+}
+
+/* ornaments */
+section:after {
+  display: block;
+  margin: 1em 0;
+  color: var(--cmed);
+  text-align: center;
+  font-size: 1.5em;
+  content: var(--ornament);
+}
+
+.float-left  { float: left !important; }
+.float-right { float: right !important; }
+
+/* be print-friendly */
+@media print { 
+  @page { margin: 1.5cm 2cm; } 
+  html {font-size: 9pt!important; } 
+  body { max-width: 27cm; }
+  p { orphans: 2; widows: 2; }
+  caption, figcaption { page-break-before: avoid; }
+  h2, h3, h4, h5 { page-break-after: avoid; }
+  .noprint, body>nav, section:after { display: none; }
+  .row { flex-direction: row; }
+}
+
+/* ============Pandoc Classless=================================================== */
+
+nav#TOC {
+  position: static !important;
+  display: block !important;
+  box-shadow: none;
+  padding: 0.5rem 0;
+}
+nav#TOC ul {list-style-type: revert; padding: revert; margin: 0 0.6rem;}
+nav#TOC ul li {display: revert; padding: revert;}
+
+
+header { text-align: center !important; }
+.subtitle { font-size: 1.3em; margin-top: 0.2em;}
+
+/* Fix Classless Problems */
+figcaption p, caption p { display: inline-block; }
+
+/* for section headers */
+section:not(.level2):after{ display: none !important; }
+
+figure { overflow-x: hidden !important; }
+span img { height: 1.4em; }
+
+/* headings */
+h2 > small, h3 > small { display: block; color: var(--cdark); }
+
+/* code for diagrams */
+pre.tabs code, pre.dia code { line-height: 1; }
+
+td pre { margin: 0; }
+
+/* links */
+.link { color: var(--clink); cursor: pointer; }
+.link:hover { filter: brightness(92%); color: var(--cemph); border-color: var(--cemph); }
+
+
+/* auto grid */
+.autorow { display: flex; margin:  0.5rem -0.5rem; align-items: stretch; }
+.autorow > * { padding: 0  0.5rem; flex: 1 1 100%; }
+
+/* Small/Big/Large classes */
+big, .big, .large { font-size: 115%; }
+small, .small { font-size: 90%; }
+.tiny { font-size: 60%; }
+
+/* new */
+.weak { color: var(--cdark); }
+a, h1, h2, h3 {overflow-wrap: break-word; hyphens: auto;}
+
+.w-50 { width: 50%; }
+.pagebreak-before { page-break-before: always; }
+
+.qdoc-buttons{text-align: right;} .qdoc-buttons * {color: var(--cmed)!important; text-decoration: none!important;}
+.qdoc-buttons #qbread{ float: left; } 
+
+/* code formatting */
+/*https://github.com/jgm/pandoc/blob/master/test/lhs-test.html*/
+
+code span.kw,  /* Keyword */
+code span.op,   /* Operator */
+code span.cf   /* ControlFlow */
+{ font-weight: bold; } 
+
+
+code span.co, /* Comment */
+code span.an  /* Annotation */
+{ color: var(--cdark); font-style: italic; }
+
+code span.ch, /* Char */
+code span.st, /* String */
+code span.fl, /* Float */
+code span.dv /* Decimal Value */
+{ color: var(--cemph); }
+
+code span.dt, /* DataType */
+code span.fu /* Function */
+{ color: var(--clink); }
+
+code span.bu,  /* BuiltIn */
+code span.sc  /* SpecialChar */
+{ font-weight: bold; font-style: italic; } 
+
+</style>
+
+</head>
+<body>
+<div class="qdoc-buttons noprint"><span id="qbread"></span><a onclick="toggleDarkMode(this)">☪</a> <a onclick="addFontSize(-1)">ᴀ-</a> | <a onclick="addFontSize(1)">A+</a></div>
+<header id="title-block-header" style="overflow-x: hidden;">
+<h1 class="title">The Dos and Don’ts of Scientific Writing</h1>
+
+<div class="row">
+  <div class="col">
+    <p class="author">
+        </p>
+  </div>
+</div>
+
+<p class="date">2017-09-21</p>
+</header>
+<article>
+<style>
+.emph{ color: #bd0000; }
+@media print {
+    h1 {margin-top: 1em;}
+}
+</style>
+<p><strong>Do</strong> write in active voice.<br /> <span class="emph"><strong>Don’t</strong></span> let words be written. It was
+found to result in confusion about by whom actions have been caused.</p>
+<p><strong>Do</strong> use simple and common words. Your goal is to
+inform, not to impress.<br /> <span class="emph"><strong>Don’t</strong></span> engender flowery or
+compounded character constructions to disguise incertitude.</p>
+<p><strong>Do</strong> use positive forms and opposites to avoid
+negative forms.<br /> <span class="emph"><strong>Don’t</strong></span>
+use non-positive forms and inverted anti-counter-forms when not
+unavoidable.</p>
+<p><strong>Do</strong> make every word count. Split long sentences to
+increase readability.<br> <span class="emph"><strong>Don’t</strong></span> try to say something in a way
+that seems to formulate a simple statement with a lot more words than
+what would actually have been necessary to explain it.<br /> <span class="emph"><strong>Don’t</strong></span> put individual statements,
+even if they belong together, in one sentence – especially not in
+subclauses and in between dashes – or using conjunctions and try to
+connect them, because a mixture of thoughts (e.g. by reading additional
+statements) is difficult to follow; even if you want to.</p>
+<p><strong>Do</strong> make use of prepositions in between words of a
+sentence in order to avoid a cluster of nouns.<br> <span class="emph"><strong>Don’t</strong></span> skip a sentence’s inter-word
+prepositions ensuring noun cluster avoidance.</p>
+<p><strong>Do</strong> use a clear sentence structure.<br /> <span class="emph"><strong>Don’t</strong></span> use prepositions to end your
+sentences with.<br /> <span class="emph"><strong>Don’t</strong></span>
+use adverbs to accidentally or intensionally split infinitives.<br>
+<span class="emph"><strong>Don’t</strong></span> forget to make a
+comparison if you use more comparatives.</p>
+<p><strong>Do</strong> skip unnecessary phrases.<br /> <span class="emph"><strong>Don’t</strong></span> use “it is clear”, “this
+means that”, “and so on” or something like that.<br /> On the other hand,
+<span class="emph"><strong>don’t</strong></span> overuse introductory
+phrases such as “however” or “therefore”. Additionally, be consistent
+and <span class="emph"><strong>don’t</strong></span> break clear
+patterns.<br /> <span class="emph"><strong>Don’t</strong></span> you
+think that rhetorical questions are useless as well?</p>
+<p><strong>Do</strong> name things explicitly and repeat the names, even
+if you have to repeat names multiple times.<br /> <span class="emph"><strong>Don’t</strong></span> write about it because it is
+hard to know what it is. This is also true for this.<br /> <span class="emph"><strong>Don’t</strong></span> use abbr. or TLAs without
+explaining them.<br /> <span class="emph"><strong>Don’t</strong></span>
+use several synonyms or similar terms or different words with the same
+meaning.</p>
+<p><strong>Do</strong> write precisely about specific facts and figures
+in 2 out of 3 sentences.<br /> <span class="emph"><strong>Don’t</strong></span> state quantities with 2.9931
+more significant figures than their accuracy.<br /> <span class="emph"><strong>Don’t</strong></span> use quite vague quantifiers,
+such as “very”, “some”, “often”, “many”, or “most” too often.<br /> <span class="emph"><strong>Don’t</strong></span> generalize statements about
+information in writings.</p>
+<p><strong>Do</strong> write cautiously about your conclusions as they
+could be wrong or incomplete.<br /> <span class="emph"><strong>Don’t</strong></span> always use all absolute
+quantifiers because nothing is ever purely binary.<br /> <span class="emph"><strong>Don’t</strong></span> use an insane amount of
+exaggeration, it is a billion times worse!!!</p>
+<p><span class="emph"><strong>Don’t</strong></span> reverse the order
+and assume knowledge, which means that statements are explained later,
+for example, in subclauses. Furthermore, only one argument should be
+delivered or described in a paragraph. Therefore, introductory phrases
+are often used to make sentences look related. However, this text still
+does not flow.<br /> <strong>Do</strong> write text that flows. You
+create flow by beginning sentences with information the reader already
+knows. New information should be added at the end of a sentence to
+deliver your argument step-by-step. Such a sentence structure will
+smoothly guide the reader through an entire paragraph without using
+introductory phrases.</p>
+<p><small class="noprint weak">This document was inspired by the work
+from Frank L. Visco and William Safire. Also available as <a href="https://emanuel.regnath.info/pdf/2019-The_Dos_and_Donts_of_Scientific_Writing.pdf"><abbr title="Probability Density Function; Portable Document Format">PDF</abbr>
+Version</a>.</small></p>  
+</article>
+<footer class="noprint weak small">This is a self-contained Webpage. You can right click and save it as single HTML file without any dependencies! Also printing to PDF should look decent.</footer>
+</body>
+</html>

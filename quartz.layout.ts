@@ -1,6 +1,26 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+
+function mySortFn(a, b) {
+  const nameOrderMap: Record<string, number> = {
+    "research/index.md": 10,
+    "projects/index.md": 20,
+    "thoughts/index.md": 30,
+    "thoughts/world/index.md": 31,
+    "thoughts/earth/index.md": 32,
+    "thoughts/body/index.md": 33,
+    "thoughts/mind/index.md": 34,
+    "thoughts/art/index.md": 35,
+    "thoughts/society/index.md": 36,
+    "thoughts/tech/index.md": 37,
+    "thoughts/info/index.md": 38,
+    "hobbies/index.md": 40,
+  }
+  return (nameOrderMap[a.data.filePath] || 0)- (nameOrderMap[b.data.filePath] || 0)  
+}
+
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -43,10 +63,28 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+          const nameOrderMap: Record<string, number> = {
+		        "research/index.md": 10,
+		        "projects/index.md": 20,
+		        "thoughts/index.md": 30,
+		        "thoughts/world/index.md": 31,
+		        "thoughts/earth/index.md": 32,
+		        "thoughts/body/index.md": 33,
+		        "thoughts/mind/index.md": 34,
+		        "thoughts/art/index.md": 35,
+		        "thoughts/society/index.md": 36,
+		        "thoughts/tech/index.md": 37,
+		        "thoughts/info/index.md": 38,
+		        "hobbies/index.md": 40,
+	        }
+          return (nameOrderMap[a.data.filePath] || 0)- (nameOrderMap[b.data.filePath] || 0)
+      }
+    }),
   ],
   right: [
-    Component.Graph(),
+    Component.DesktopOnly(Component.Graph()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),      
   ],
@@ -67,7 +105,25 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+            sortFn: (a, b) => {
+          const nameOrderMap: Record<string, number> = {
+		        "research/index.md": 10,
+		        "projects/index.md": 20,
+		        "thoughts/index.md": 30,
+		        "thoughts/world/index.md": 31,
+		        "thoughts/earth/index.md": 32,
+		        "thoughts/body/index.md": 33,
+		        "thoughts/mind/index.md": 34,
+		        "thoughts/art/index.md": 35,
+		        "thoughts/society/index.md": 36,
+		        "thoughts/tech/index.md": 37,
+		        "thoughts/info/index.md": 38,
+		        "hobbies/index.md": 40,
+	        }
+          return (nameOrderMap[a.data.filePath] || 0)- (nameOrderMap[b.data.filePath] || 0)
+      }
+    }),
   ],
   right: [],
 }

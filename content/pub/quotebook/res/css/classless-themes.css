@@ -1,0 +1,43 @@
+
+
+/* for Sepia */
+@import url('https://fonts.cdnfonts.com/css/libertinus-serif');
+@import url('https://fonts.cdnfonts.com/css/libertinus-sans');
+
+html[data-theme='dark'] {
+	/* foreground   | background color */
+	--cfg:   #cecbc4; --cbg:    #252220;
+	--cdark: #999;    --clight: #333;
+	--cmed:  #566;
+	--clink: #1ad;
+	--cemph: #0b9;
+}
+
+@media (prefers-color-scheme: dark) {
+	html[data-theme='light'] {
+		/* foreground   | background color */
+		--cfg:   #cecbc4; --cbg:    #252220;
+		--cdark: #999;    --clight: #333;
+		--cmed:  #566;
+		--clink: #1ad;
+		--cemph: #0b9;
+	}	
+}
+
+
+
+html[data-theme='sepia']{
+	--rem: 14pt;
+	--width: 48rem;
+	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
+	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
+	--font-c: 85%/1.4 monospace;
+	--ornament: "∞ ∞ ∞"; 
+	/*--ornament: "❦ ❦ ❦"; "☙ ❧";*/
+	/* foreground   | background color */
+	--cfg:    #433;   --cbg: #fefbf4;
+	--cdark: #6c605c; --clight: #f3efea;
+	--cmed: #a8928e;
+	--clink: #bd0000;
+	--cemph: #a35403;
+}

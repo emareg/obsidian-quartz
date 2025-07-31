@@ -1,0 +1,63 @@
+/* File: tumcolors.css Copyright (C) 2019 The LaTeX4EI Team
+   Provides the TUM Corporate Design colors.
+*/
+
+:root{
+
+	/* primary colors */
+	--TUMBlue        : #3070b3;  /*different from print color!*/
+	--TUMWhite       : #ffffff;
+	--TUMBlack       : #333333;
+
+	/* secondary colors */
+	--TUMBlueDark    : #005293;
+	--TUMBlueDarker  : #003359;
+	--TUMGrayDark    : #8a8a8a;
+	--TUMGray        : #b3b3b3;
+	--TUMGrayLight   : #e6e6e6;
+	--TUMGrayLighter : #f7f7f7;
+
+	/* accent colors */
+	--TUMGreen       : #A2AD00;
+	--TUMOrange      : #E37222;
+	--TUMIvory       : #DAD7CB;
+	--TUMBlueLight   : #64A0C8;
+	--TUMBlueLighter : #98C6EA;
+
+	/* extended colors */
+	--TUMExtViolet   : rgb(105,  8, 90 );
+	--TUMExtNavy     : rgb( 15, 27, 95 );
+	--TUMExtTeal     : rgb(  0,119,138 );
+	--TUMExtForest   : rgb(  0,124, 48 );
+	--TUMExtLime     : rgb(103,154, 29 );
+	--TUMExtYellow   : rgb(255,220,  0 );
+	--TUMExtGoldenrod: rgb(249,186,  0 );
+	--TUMExtPumpkin  : rgb(214, 76, 19 );
+	--TUMExtRed      : rgb(196,  7, 27 );
+	--TUMExtMaroon   : rgb(156, 13, 22 );
+
+
+	/* Redefinition of Bootstrap Colors */
+	--bs-blue: var(--TUMBlue);
+	--bs-indigo: var(--TUMExtNavy);
+	--bs-purple: var(--TUMExtViolet);
+	--bs-pink: var(--TUMExtPumpkin);
+	--bs-red: var(--TUMExtRed);
+	--bs-orange: var(--TUMOrange);
+	--bs-yellow: var(--TUMExtGoldenrod);
+	--bs-green: var(--TUMExtForest);
+	--bs-teal: var(--TUMExtTeal);
+	--bs-cyan: var(--TUMBlueLight);
+	--bs-white: var(--TUMWhite);
+	--bs-gray: var(--TUMGray);
+	--bs-gray-dark: var(--TUMGrayDark);
+	--bs-primary: var(--TUMBlueDark);
+	--bs-secondary: var(--TUMGray);
+	--bs-success: var(--TUMExtForest);
+	--bs-info: var(--TUMBlueLight);
+	--bs-warning: var(--TUMExtPumpkin);
+	--bs-danger: var(--TUMExtRed);
+	--bs-light: var(--TUMWhite);
+	--bs-dark: var(--TUMBlack);
+
+}
