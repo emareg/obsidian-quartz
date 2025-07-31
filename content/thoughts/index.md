@@ -1,5 +1,5 @@
 ---
-title: "Garden of Thoughts"
+title: "Thoughts"
 author: Emanuel Regnath
 date: "2023-02-28"
 lang: en

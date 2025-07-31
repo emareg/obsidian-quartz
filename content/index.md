@@ -196,137 +196,133 @@ My vision is that at the end all system components fit together as shown in the 
 
 
 
-<div class="row">
-<div class="col-4">
+
 
 ### Projects
 
 <small>Ideas come to life</small>
 
-</div>
-<div class="col">
+
 
 <div class="autorow">
 <div class="autocol">
 
-<div class="card">
-  <a href="https://id2.dev">
-    <img src="https://id2.dev/favicon.png" style="padding: 0 25%">
-    <h4>ID2 Identifiers</h4>
-  </a>
-  <p>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</p>
-</div>
+  <div class="card">
+    <a href="https://id2.dev">
+      <img src="https://id2.dev/favicon.png" style="padding: 0 25%">
+      <h4>ID2 Identifiers</h4>
+    </a>
+    <p>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</p>
+  </div>
 
-<div class="card">
-  <a href="https://github.com/emareg/acamedic">
-    <img src="https://github.com/emareg/acamedic/raw/master/res/img/logo-github.png">
-    <h4>Acamedic</h4>
-  </a>
- <p>Academic Dictionary for Scientific Writing in American English.</p>
-</div>
+  <div class="card">
+    <a href="https://github.com/emareg/acamedic">
+      <img src="https://github.com/emareg/acamedic/raw/master/res/img/logo-github.png">
+      <h4>Acamedic</h4>
+    </a>
+  <p>Academic Dictionary for Scientific Writing in American English.</p>
+  </div>
 
-<div class="card">
-  <a href="https://tex4tum.de">
-    <img alt="https://www.tex4tum.de/assets/img/Logo.png" src="res/img/tex4tum.png" style="background-color: #fff3">
-    <h4>Tex4TUM</h4>
-  </a>
-  <p>Interactive Knowledge Platform for Students.</p>
-</div>
+  <div class="card">
+    <a href="https://tex4tum.de">
+      <img alt="https://www.tex4tum.de/assets/img/Logo.png" src="res/img/tex4tum.png" style="background-color: #fff3">
+      <h4>Tex4TUM</h4>
+    </a>
+    <p>Interactive Knowledge Platform for Students.</p>
+  </div>
 
-<div class="card" style="background-color: #fff;">
-  <a href="/projects/tesserakt">
-    <img alt="4D Cube" src="res/img/tesserakt/hypercube.gif" style="background-color: #fff3; margin: auto 0;">
-    <h4>Tesserakt</h4>
-  </a>
-  <p>Simulation of a Four-Dimensional Hypercube.</p>
-</div>
+  <div class="card" style="background-color: #fff;">
+    <a href="/projects/tesserakt">
+      <img alt="4D Cube" src="res/img/tesserakt/hypercube.gif" style="background-color: #fff3; margin: 0 auto; display: block;">
+      <h4>Tesserakt</h4>
+    </a>
+    <p>Simulation of a Four-Dimensional Hypercube.</p>
+  </div>
 
 </div>
-
 <div class="autocol">
 
-<div class="card">
-  <a href="https://classless.de">
-    <img src="https://github.com/emareg/classlesscss/blob/master/docs/img/classless.png?raw=true">
-    <h4>Classless.css</h4>
+  <div class="card">
+    <a href="https://classless.de">
+      <img src="https://github.com/emareg/classlesscss/blob/master/docs/img/classless.png?raw=true">
+      <h4>Classless.css</h4>
+    </a>
+    <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
+  </div>
+
+  <div class="card">
+    <a href="https://github.com/emareg/unikeyboard">
+      <img src="https://raw.githubusercontent.com/emareg/unikeyboard/074f3a2cd38aedf190bfb4c909755ffae4447802/img/unikeyboard.svg">
+      <h4>Unikeyboard</h4>
+    </a>
+    <p>German XKB keyboard layout with 8 levels for often used unicode characters.</p>
+  </div>
+
+  <div class="card">
+    <a href="https://github.com/emareg/paper-checker">
+      <img src="https://repository-images.githubusercontent.com/78838876/378c2557-8498-42c6-8c6a-38bbee4f4b7c">
+      <h4>Paper-Checker</h4>
+    </a>
+    <p>Python script that checks english texts for grammar mistakes.</p>
+  </div>
+
+  <div class="card">
+  <a href="https://github.com/emareg/promptheus">
+    <img src="res/img/promptheus.png">
+    <h4>Promptheus</h4>
   </a>
-  <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
-</div>
-
-<div class="card">
-  <a href="https://github.com/emareg/unikeyboard">
-    <img src="https://raw.githubusercontent.com/emareg/unikeyboard/074f3a2cd38aedf190bfb4c909755ffae4447802/img/unikeyboard.svg">
-    <h4>Unikeyboard</h4>
-  </a>
-  <p>German XKB keyboard layout with 8 levels for often used unicode characters.</p>
-</div>
-
-<div class="card">
- <img src="https://repository-images.githubusercontent.com/78838876/378c2557-8498-42c6-8c6a-38bbee4f4b7c">
- <h4>Paper-Checker</h4>
- <p>Python script that checks english texts for grammar mistakes.</p>
-</div>
-
-<div class="card">
- <a href="https://github.com/emareg/promptheus">
-  <img src="res/img/promptheus.png">
-  <h4>Promptheus</h4>
- </a>
- <p>A bash/zsh/fish prompt with the power of a Titan.</p>
-</div>
+  <p>A bash/zsh/fish prompt with the power of a Titan.</p>
+  </div>
 
 </div>
-
 <div class="autocol">
 
-<div class="card">
-  <a href="https://brain.emareg.de">
-    <img src="res/img/digital-garden.png">
-    <h4>My 2nd Brain</h4>
+  <div class="card">
+    <a href="/thoughts/">
+      <img src="res/img/digital-garden.png">
+      <h4>My 2nd Brain</h4>
+    </a>
+    <p>A “digital garden” with <a href="https://obsidian.md">Obsidian</a> & <a href="https://quartz.jzhao.xyz/">Quartz</a>.</p>
+  </div>
+
+
+  <div class="card">
+    <a href="/projects/binaryclock">
+      <img src="res/img/binaryclock.jpg">
+      <h4>Binary Clock</h4>
+    </a>
+    <p>Display date and time – NERD style.</p>
+  </div>
+
+  <div class="card">
+  <a href="/projects/spark_glider">
+    <img src="https://github.com/tum-ei-rcs/StratoX/raw/master/doc/fig/glider.jpg?raw=true">
+    <h4>High-Altitude Glider</h4>
   </a>
-  <p>A “digital garden” with <a href="https://obsidian.md">Obsidian</a> & <a href="https://quartz.jzhao.xyz/">Quartz</a>.</p>
-</div>
-
-
-<div class="card">
-  <a href="https://brain.emareg.de">
-    <img src="res/img/binaryclock.jpg">
-    <h4>Binary Clock</h4>
-  </a>
-  <p>Display date and time – NERD style.</p>
-</div>
-
-<div class="card">
- <a href="https://github.com/tum-ei-rcs/StratoX">
-  <img src="https://github.com/tum-ei-rcs/StratoX/raw/master/doc/fig/glider.jpg?raw=true">
- </a>
- <h4>High-Altitude Glider</h4>
- <p>Flight stack written in Ada/SPARK 2014.</p>
-</div>
-
-</div>
-
-
-</div>
-
+  <p>Flight stack written in Ada/SPARK 2014.</p>
+  </div>
 
 </div>
 </div>
 
 
 
-<div class="row">
-<div class="col-4">
 
-## Sports & Music
 
-</div>
-<div class="col">
+
+
+## Hobbies
+
+In my spare time I like to do sports, play guitar, or games.
+
+
 
 <h3 id="parkour">Parkour and Freerunning</h3>
 
 Since 2008 I work as a coach for Parkour and Freerunning with children and young adults. I try to motivate them for these trend-sports that focus on body control and help to touch physical limits without any competitive spirit.  
 Check out the hompage of [TSV-Herrsching](https://www.tsv-herrsching.de/gymnastik_turnen/freestyle-parkour-akrobatik/#training).
+
+<div class="row">
 
 <div class="autorow fixed">
 <figure class="col-4">
@@ -353,10 +349,12 @@ Check out the hompage of [TSV-Herrsching](https://www.tsv-herrsching.de/gymnasti
 
 
 
+<div class="col">
 
 ### Other Sports
 I also enjoy trying all other sorts of sports.
 
+</div>
 
 <div class="autorow">
 
@@ -367,8 +365,10 @@ I also enjoy trying all other sorts of sports.
     <figcaption>Skiing</figcaption>
   </figure>
   <figure class="col">
-    <img src="res/img/sport/wind-surfing.jpg">
-  <figcaption>Wind Surfing</figcaption>
+    <a href="/hobbies/windsurfing">
+      <img src="res/img/sport/wind-surfing.jpg">
+      <figcaption>Wind Surfing</figcaption>
+    </a>
   </figure>
 
   </div>
@@ -411,10 +411,6 @@ I also enjoy trying all other sorts of sports.
       <figcaption>Wave Surfing</figcaption>
     </figure>
   </div>
-
-</div>
-
-
 
 </div>
 </div>

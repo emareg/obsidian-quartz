@@ -7,6 +7,10 @@ header > .search { margin-left: auto; }
 .card:hover { box-shadow: 0 0 6px var(--secondary); }
 .card:hover a img { filter: contrast(0.5); }
 
+figure a figcaption { line-height: 1.0;}
+figure figcaption { line-height: 1.4;}
+figure a img { margin-bottom: 0; }
+
 
 // publist
 .pub-list { padding-left: 1.5em; }
