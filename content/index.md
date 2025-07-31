@@ -210,7 +210,7 @@ My vision is that at the end all system components fit together as shown in the 
 <div class="autocol">
 
 <div class="card">
-  <a href="https://classless.de">
+  <a href="https://id2.dev">
     <img src="https://id2.dev/favicon.png" style="padding: 0 25%">
     <h4>ID2 Identifiers</h4>
   </a>
@@ -218,8 +218,10 @@ My vision is that at the end all system components fit together as shown in the 
 </div>
 
 <div class="card">
- <img src="https://github.com/emareg/acamedic/raw/master/res/img/logo-github.png">
- <h4>Acamedic</h4>
+  <a href="https://github.com/emareg/acamedic">
+    <img src="https://github.com/emareg/acamedic/raw/master/res/img/logo-github.png">
+    <h4>Acamedic</h4>
+  </a>
  <p>Academic Dictionary for Scientific Writing in American English.</p>
 </div>
 
