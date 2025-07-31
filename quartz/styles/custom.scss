@@ -10,8 +10,10 @@ figure a img { margin-bottom: 0; }
 
 .table-container > table { margin: 1rem 0; }
 
-// table tr td:first-child, table tr th:first-child { padding-left: 0; }
-// table tr td:last-child, table tr th:last-child { padding-right: 0; }
+@media (max-width: 40rem) { 
+    table tr td:first-child, table tr th:first-child { padding-left: 0; }
+    table tr td:last-child, table tr th:last-child { padding-right: 0; }
+}
 
 // cards
 .card:hover { box-shadow: 0 0 6px var(--secondary); }
