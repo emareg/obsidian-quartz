@@ -9,7 +9,7 @@ category: thoughts/info
 
 
 ## DOER Productivity Process
-A method for processing documents and information based on [[Getting Things Done (GDT)|GTD]]. **DOER** stands for
+A method for processing documents and information based on [[Getting Things Done (GTD)|GTD]]. **DOER** stands for
 
 1. **Dump & Decide**: Dumping allows you to get “Life's random inputs” off your mind quickly. Remember: “Your brain is made for having ideas... not for storing them.” Thus, dump any input as short note into a central “inbox”. It can contain URLs, todos, notes, talks, PDFs, quotes, ideas, task, etc. After dumping, decide whether to
 	* **Defer:** Postpone the processing to step 2 (Organize)

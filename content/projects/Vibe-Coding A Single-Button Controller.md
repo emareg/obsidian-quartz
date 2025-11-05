@@ -9,6 +9,10 @@ category: projects
 img: res/sbc-logo.png
 ---
 
+<style>
+pre::not(["data-language"])>code { text-wrap: auto; }
+</style>
+
 The other day I tried "vibe coding" for the first time, where you use an LLM AI to quickly generate code in iterations to build a working prototype (demos included below!). In this short article, I will share the insights I got about vibe coding including the prompts I used. Maybe it helps or motivates you to try it for yourself. It was a lot of fun for me and I felt a kind of symbiotic flow state: I learned how much new information I can give the LLM with each prompt and when the balance was right, I really got exited that it "understood" what I wanted and delivered working code almost instantly. 
 
 ### The Single Button Controller Idea

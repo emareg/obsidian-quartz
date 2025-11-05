@@ -1,6 +1,7 @@
 ---
 author: Emanuel Regnath
-alias: NFR
+aliases:
+  - NFR
 type: digest
 date: 2022-10-06
 lang: en

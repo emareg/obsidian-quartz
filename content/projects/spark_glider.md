@@ -15,7 +15,6 @@ tags:
   - tech
 ---
 
-# Flightstack for a High-Altitude Glider written in Ada/SPARK
 
 This is a summary of the development process of a flight stack for the Pixhawk board I wrote in Ada/SPARK from scratch during my Master's Thesis. Source code can be found on [github](https://github.com/tum-ei-rcs/StratoX).
 

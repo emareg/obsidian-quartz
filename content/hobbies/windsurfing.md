@@ -6,6 +6,9 @@ share: true
 ---
 
 Some personal notes on windsurfing.
+
+
+
 ## Harness
 * Put the straps first: Front foot, back foot
 * Get into the harness: look forward
