@@ -41,7 +41,7 @@ Zuerst der Taster. Beim Taster vertauschen wir zuerst die Richtungstasten. Wolle
 Und das wars auch schon. Allerdings werden immer noch alle anderen Geräte, die ein "hoch" fahren Befehl an die Gruppenadresse des AKU schicken, die Prozentwerte in Richtung 0% treiben.
 
 Deswegen muss in Home Assistant in der KNX Integration noch das `inverted_position` flag gesetzt werden.
-![[Pasted image 20251103235812.png|Pasted image 20251103235812.png]]
+![[res/img/Pasted image 20251103235812.png|res/img/Pasted image 20251103235812.png]]
 
 
 
@@ -56,13 +56,10 @@ Beim Taster vertauschen wir zuerst die Richtungstasten. Wollen wir links nach un
 
 Die KNX Integration in Home Assistant invertiert von sich aus bereits die Pozentwerte für KNX. Nachdem wir aber jetzt alles vertauscht haben, müssen wir das Home Assistant wieder austreiben.
 
-TODO: check effect of invert position and invert updown!
-
-
 Bedient man in Home Assistant den Schieberegler wird ein Prozentwert an die "Absolute Position" Gruppenadresse geschickt und der Rolladen fährt korrekt. Drückt man allerdings den hochfahren Button im Dashboard, schickt dieser ein "Auf" Befehl an die Single Object Control Adresse und die bedeutet für den AKU immer noch Richtung 0%, was verkehrt ist. Deswegen wird als letzter Schritt das `inverted_position` flag in HA gesetzt.
 
 
-TODO: 
+TODO: Check updown inversion.
 
 ### Andere Ansätze und warum sie nicht so gut sind.
 
@@ -71,7 +68,5 @@ TODO:
 * Nicht Home Assistant verwenden: Wenig gute Alternativen. Alexa direkt würde gehen.
 
 
-Nach meiner Erfahrung ist die oben genannte Lösung die einzige, die wirklich komplette Konsistenz über alle Ansichten und Befehle schafft. Allerdings auch nur wenn alle Sender von Befehlen das vertauschen können. In meinem Fall sind das nur HA und MDT Taster. Somit 
+Nach meiner Erfahrung ist die oben genannte Lösung die einzige, die wirklich komplette Konsistenz über alle Ansichten und Befehle schafft. Allerdings auch nur wenn alle Sender von Befehlen das vertauschen können. In meinem Fall sind das nur HA und MDT Taster.  
 
-
-Artikel zu "Einheitliche Prozentwerte für Rolladen in HA, Alexa, und KNX/MDT" 🧩 Problem: HA 0% offen, MDT 100% zu. 💡 Idee: Invertiere Motor und Symbole in MDT (3er Bild: HA, MDT, Real Photo) ⚓ Alternativen: * Invertierte Dummy Entities in HA (effort, viz) * Buy different KNX? * Not use HA
