@@ -6,6 +6,7 @@ function mySortFn(a, b) {
   const nameOrderMap: Record<string, number> = {
     "research/index.md": 10,
     "projects/index.md": 20,
+    "projects/smart-home/index.md": 25,
     "thoughts/index.md": 30,
     "thoughts/world/index.md": 31,
     "thoughts/earth/index.md": 32,
