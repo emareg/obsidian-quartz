@@ -17,20 +17,17 @@ It started with a small idea for a "single button controller" that I had when pa
 ### How to Vibe Code
 First, I thought of a simple "app" where I could use the single-button for controls and I came up with "Entering an IP address". So the first prompt to Chat GPT-4 on chat.openai.com was the following:
 
-```
-Create a single HTML file application. Offer an element where the user can enter an IP address by scrolling through the numbers 0 to 255 using the arrow keys.
-```
+>  `Create a single HTML file application. Offer an element where the user can enter an IP address by scrolling through the numbers 0 to 255 using the arrow keys.`
 
 And oh boy it worked! Here is the output the AI produced on the first attempt: [[ip-spinner-v1.html|ip-spinner-v1.html]]
 I want to stress out that this is not polished. I really did not try anything else before, I started a new chat, entered exactly the prompt above, and got this working code. Ok, the AI added also a "Random IP" button I did not ask for but the core functionality was there. Thrilled by this instant success, I tried to get the basic controller logic with the next prompt:
 
-```
-Great. Now write a JS function that allows the user to click or tap anywhere in the app to control the number selection in the following way:
+> Great. Now write a JS function that allows the user to click or tap anywhere in the app to control the number selection in the following way:
+> 
+>* short tap (<400ms): increase octet by one 
+>* double tap: decrease octet by one 
+>* long press (>600ms): switch to next octet
 
-* short tap (<400ms): increase octet by one 
-* double tap: decrease octet by one 
-* long press (>600ms): switch to next octet
-```
 
 Note here that I picked up the "octet" terminology the AI has used in its first code output. I think this is important to get a common understanding. And again I got exited that the AI delivered 90% of what I wanted! The only problem was the double tap: It issued also the single tap increase so the number would not change. So some refinements where needed. I put three in one prompt but I would not put more than that:
 
