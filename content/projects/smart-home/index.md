@@ -1,5 +1,5 @@
 ---
-title: Smart Home with KNX+HA
+title: Smart Home
 type: essay
 author: Emanuel Regnath
 lang: de
