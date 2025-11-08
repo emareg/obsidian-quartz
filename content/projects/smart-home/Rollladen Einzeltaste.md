@@ -8,10 +8,12 @@ share: true
 category: projects/smart-home
 ---
 
-Hier ist eine Lösung, um mit einer Taste einen Rollladen automatisch in bestimmte Positionen fahren zu lassen *UND* manuell jederzeit stoppen zu können.
+Hier ist eine Lösung, um mit *einer* Taste einen Rollladen automatisch in bestimmte Positionen fahren zu lassen *UND* manuell jederzeit stoppen zu können.
 Mein Setup: MDT Taster Smart 86 (≙Glastaster II) und MDT Universalaktor.
 
 ![[Einzelrollotaste.mp4|Einzelrollotaste.mp4]]
+Video zur Bedienung. Hier sieht man auch die [[Einheitliche Rollladen Positionen|veränderte Prozentkodierung]].
+
 
 ### 🧩 Problem: Auf/Ab muss abgewartet werden. 
 
