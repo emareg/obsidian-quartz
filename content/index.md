@@ -22,7 +22,7 @@ layout: Custom
   <div class="col-9">
     <div id="myroles" style="text-align: center;">
           <a class="intralink" href="#research" data-noPopover="true">Researcher</a>
-         • <a class="intralink" href="/#projects">Developer</a>
+         • <a class="intralink" href="#projects">Developer</a>
          • <a class="intralink" href="/thoughts">Thinker</a>
          • <a class="intralink" href="/#parkour">Freerunner</a>
          • <a href="https://www.schachbund.de/verein/24430.html#:~:text=Regnath">Chess Player</a> 
@@ -55,7 +55,7 @@ layout: Custom
 </div>
 
 <div class="card">
-  <a href="/#projects" class="nopopover">
+  <a href="/projects/" class="nopopover">
     <img src="res/img/myprojects.jpg"></img>
     <h4>Build Projects</h4>
   </a>

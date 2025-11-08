@@ -4,7 +4,8 @@
 header > .search { margin-left: auto; }
 .search { margin-left: auto; }
 
-figure a figcaption { line-height: 1.0;}
+figure { margin: 0 auto;}
+figure a figcaption { font-size: small; color: var(--gray); }
 figure figcaption { line-height: 1.4;}
 figure a img { margin-bottom: 0; }
 
