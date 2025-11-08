@@ -12,7 +12,7 @@ Hier ist eine Lösung, um mit *einer* Taste einen Rollladen automatisch in besti
 Mein Setup: MDT Taster Smart 86 (≙Glastaster II) und MDT Universalaktor.
 
 ![[Einzelrollotaste.mp4|Einzelrollotaste.mp4]]
-Video zur Bedienung. Hier sieht man auch die [[Einheitliche Rollladen Positionen|veränderte Prozentkodierung]].
+Video zur Bedienung: Kurze Taste schaltet Zielpositionen durch (50%, 30%, 0%=unten). Lange Taste stoppt fahrendes Rollo und fährt stehendes Rollo nach oben. Im Display sieht man auch die [[Einheitliche Rollladen Positionen|veränderte Prozentkodierung]].
 
 
 ### 🧩 Problem: Auf/Ab muss abgewartet werden. 
