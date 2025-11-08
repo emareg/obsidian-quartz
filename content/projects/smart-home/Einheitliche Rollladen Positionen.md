@@ -9,6 +9,12 @@ category: projects/smart-home
 ---
 
 **TL;DR:** Wie schafft man es, dass in KNX, Home Assistant (und über Alexa), die Soll-Position 0% den Rollladen ganz nach unten fährt und danach überall 0% (= unten) angezeigt wird? → Wir invertieren in KNX so gut wie alles, außer der Prozentkodierung und dann invertieren wir in der KNX Integration von HA die automatische Invertierung. Klingt komisch, funktioniert aber aktuell wohl nur so 🤷‍♂️
+
+<figure>
+  <img src="res/img/KNX-HA-Real-Same2-Marked.png">
+  <figcaption>Resultat für Rollladen auf 92%: Konsistente Positionen in KNX (MDT Taster), im Home Assistant Dashboard, und in der Realität.</figcaption>
+</figure>
+
 ### 🧩 Das Problem
 Wenn ein Rollladen auf "20%" steht, verdeckt er dann 20% der Fensterfläche oder lässt er noch 20% Licht rein? Diese Frage scheint wohl keine klare Antwort zu kennen. Zumindest sehen die beiden Systeme KNX und Home Assistant (HA) das unterschiedlich und je nach Perspektive erscheint auch beides logisch.
 
@@ -51,14 +57,12 @@ cover:
   invert_position: true
 ```
 
-![[res/img/Pasted image 20251103235812.png|res/img/Pasted image 20251103235812.png]]
+Und das wars auch schon. Wir haben endlich ein komplett einheitliches Verhalten. Wie bisher auch, fährt "Auf" am Taster und "Auf" in HA den Rollladen tatsächlich nach oben. Sowohl auf dem Tasterdisplay als auch in HA wird der Rollladen auch als "offen" dargestellt. Neu ist, dass nun sowohl am Taster als auch in HA der Prozentwert 100% angegeben wird. Schickt man jetzt 0% über KNX oder HA (oder Alexa) an den Rollladen, fährt dieser komplett nach unten. 🥳 
 
-Und das wars auch schon. Wir haben endlich ein komplett einheitliches Verhalten. Wie bisher auch, fährt "Auf" am Taster und "Auf" in HA den Rollladen tatsächlich nach oben. Sowohl auf dem Tasterdisplay als auch in HA wird der Rollladen auch als "offen" dargestellt. Neu ist, dass nun sowohl am Taster als auch in HA der Prozentwert 100% angegeben wird. Schickt man jetzt 0% über KNX oder HA an den Rollladen, fährt dieser komplett nach unten. 🥳 
+![[KNX-HA-Real-Same2-Marked.png|KNX-HA-Real-Same2-Marked.png]]
 
 
-%% TODO: Check updown inversion. %%
-
-### Andere Ansätze und warum sie nicht so gut sind.
+### ⚓ Andere Ansätze
 
 Ich hatte zuerst [diesen Beitrag](https://community.home-assistant.io/t/cover-entities-that-are-0-open-and-100-closed/581979) gefunden, der eine inverse dummy Entity via Automation in HA erstellt:  Diese Lösung invertiert alles in HA, so dass 0% oben und 100% unten bedeutet. Das Klang zuerst vielversprechend aber man hat dann viele redundante entities in HA. Außerdem ist die Visualisierung in HA dann falsch, denn auch hier bedeutet 0% immer noch unten. Also keine komplett konsistente Lösung.
 
