@@ -11,6 +11,8 @@ category: projects/smart-home
 Hier ist eine Lösung, um mit einer Taste einen Rollladen automatisch in bestimmte Positionen fahren zu lassen *UND* manuell jederzeit stoppen zu können.
 Mein Setup: MDT Taster Smart 86 (≙Glastaster II) und MDT Universalaktor.
 
+![[Einzelrollotaste.mp4|Einzelrollotaste.mp4]]
+
 ### 🧩 Problem: Auf/Ab muss abgewartet werden. 
 
 Standardmäßig nutzt man bei MDT die Zweitastenfunktion für Rollos, welche für Auf und Ab jeweils eine separate Taste anbietet und in der Mitte den Positionsstatus anzeigt. Das ist sehr intuitiv. Der Nachteil ist jedoch, dass man warten muss, wenn man das Rollo an einer bestimmten Position dazwischen stoppen möchte, da man dafür im richtigen Moment eine der beiden Tasten erneut drücken muss (Single Object Control).
