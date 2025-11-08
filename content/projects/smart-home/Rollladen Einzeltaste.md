@@ -36,7 +36,4 @@ Ergebnis: Mit einem kurzem Tastendruck kann man jetzt 3 verschiedene Werte durch
 1. Verzögerte Statusanzeige bei langer Taste: Drücke ich die lange Taste, bleibt die Statusanzeige vorerst unverändert auf der aktuellen Position, da ich keinen Wert auswähle sondern direkt einen "Auf" Befehl schicke. Bei der kurzen Taste sehe ich die neue Position als "Vorschau" bevor das Rollo dort hin fährt. Das ist leider kein konsistentes Verhalten. Vielleicht könnte MDT ein neues Feature aufnehmen, bei dem auch die lange Taste einen eigenen Statuswert definieren kann?
 2. Die Steuerung ist nicht intuitiv und auch kein KNX Standard: Selber kann man sowas nutzen aber ein Gast braucht erstmal eine Erklärung. Einmal half auch das "Lange rechts unten drücken, dann fährt es hoch" nichts. Derjenige hat etwas zu kurz gedrückt und das Rollo fuhr weiter nach unten. Beim erneuten Versuch ist er auf die versteckte "Seite umschalten" Taste gekommen und war dann komplett verwirrt. Da hilft nur noch aufstehen und selber bedienen. Bei Übernachtungsgästen also weniger zu empfehlen oder man hängt eine komplette "Bedienungsanleitung" daneben. Ob die dann nochmal zu Besuch kommen? xD
 
-Nachdem ich bisher stiller Leser in diesem Forum war und dadurch nützliche Infos bekommen habe, möchte ich hier meine Lösung als ersten Beitrag teilen. Ich hoffe die Erklärung ist hilfreich für alle, die auf ein MDT Setup setzen und gerne die Funktionalität ihrer wertvollen Glastaster Tasten auf der ersten Seite maximal ausreizen wollen 😉
-
-Auf Beitrag Antworten?
-https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/knx-einsteiger/2048450-mdt-glastaster-ii-rolladen-extra-langer-tastendruck-zum-beschatten
+![[Pasted image 20251108202243.png|Pasted image 20251108202243.png]]
