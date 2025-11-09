@@ -3,7 +3,7 @@ title: Einheitliche Rollladen Positionen in KNX und Home Assistant
 type: essay
 author: Emanuel Regnath
 lang: de
-date: 2025-11-02
+date: 2025-11-08
 share: true
 category: projects/smart-home
 permalink: einheitliche-rollo-positionen
