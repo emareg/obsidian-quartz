@@ -6,6 +6,7 @@ lang: de
 date: 2025-11-02
 share: true
 category: projects/smart-home
+permalink: einheitliche-rollo-positionen
 ---
 
 **TL;DR:** Wie schafft man es, dass in KNX, Home Assistant (und über Alexa), die Soll-Position 0% den Rollladen ganz nach unten fährt und danach überall 0% (= unten) angezeigt wird? → Wir invertieren in KNX so gut wie alles, außer der Prozentkodierung und dann invertieren wir in der KNX Integration von HA die automatische Invertierung. Klingt komisch, funktioniert aber aktuell wohl nur so 🤷‍♂️
@@ -36,13 +37,13 @@ Nachdem nur die Prozentkodierung fest eingebrannt ist und wir sonst viele Mögli
 
 Im AKU nutzt man die Option "Auf/Ab vertauscht", so dass der Rollladen erstmal "falsch" herum fährt. Somit ist der Rollladen bei 100% tatsächlich oben und bei 0% tatsächlich unten. 
 
-![[Pasted image 20251103223232.png|Pasted image 20251103223232.png]]
+![[MDT-Universalaktor-Motor-vertauscht.png|MDT-Universalaktor-Motor-vertauscht.png]]
 
 Die Bedeutung der Prozentangaben sind aber unverändert, also 0% sind für den AKU immer noch "oben" und er fährt nur den Rollladen falsch. Das bedeutet eben auch, dass alle Geräte, die ein "Auf" (hochfahren) Befehl an die Gruppenadresse des AKU schicken, die Prozentwerte in Richtung 0% treiben. Deswegen tauschen wir auch das Verhalten der "anderen Geräte". In meinem Fall sind das nur zwei Arten: MDT Taster und Home Assistant. 
 
 Zum Taster: Beim Taster vertauschen wir zuerst die Richtungstasten. Wollen wir links nach unten fahren, stellen wir links "Auf" ein. Das schickt ein hochfahren Befehl an den AKU, der ja den Motor falsch rum nach unten fahren wird. Danach vertauschen wir noch die Pfeile für die Tasten und die Statussymbole des Rollladens. Lediglich die Prozentangaben bleiben unverändert, denn da haben wir ja keine andere Wahl. 
 
-![[Pasted image 20251103234654.png|Pasted image 20251103234654.png]]
+![[MDT-Taster-Rollo-Position-Invertiert-Marked.png|MDT-Taster-Rollo-Position-Invertiert-Marked.png]]
 
 Soweit so gut. Allerdings werden immer noch alle anderen Geräte, die ein "Auf" Befehl an die Gruppenadresse des AKU schicken, die Prozentwerte in Richtung 0% treiben.
 
