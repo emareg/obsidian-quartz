@@ -3,7 +3,7 @@ title: Komplexe KNX/MDT Rollladen Steuerung mit nur einer Taste
 type: essay
 author: Emanuel Regnath
 lang: de
-date: 2025-11-02
+date: 2025-11-09
 share: true
 category: projects/smart-home
 permalink: rollladen-einzeltaste
