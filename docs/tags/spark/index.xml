@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SPARK on Emanuel Regnath</title>
+    <link>/tags/spark/</link>
+    <description>Recent content in SPARK on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 20 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/spark/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>High-Altitude Glider</title>
+      <link>/project/spark_glider/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/spark_glider/</guid>
+      <description>Flight stack written in Ada/SPARK 2014</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="author" content="Emanuel Regnath">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Flight stack written in Ada/SPARK 2014">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/project/spark_glider/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="rgb(0,101,189)">
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha512-iqRdf+0KMFmNZgdsA+8bz1MWIIXQBUCavPYVSVI83fcVfH2Y2PnNooLN04bgTNoUiQvIzidiIHJAcIP/uAEV9w==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Emanuel Regnath">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Emanuel Regnath">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/project/spark_glider/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/emanuelregnath">
+  <meta property="twitter:creator" content="@https://twitter.com/emanuelregnath">
+  
+  <meta property="og:site_name" content="Emanuel Regnath">
+  <meta property="og:url" content="/project/spark_glider/">
+  <meta property="og:title" content="High-Altitude Glider | Emanuel Regnath">
+  <meta property="og:description" content="Flight stack written in Ada/SPARK 2014">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2016-09-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2016-09-20T00:00:00&#43;00:00">
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="/res/css/own.css">
+<link rel="stylesheet" type="text/css" href="/res/css/bs_custom.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous" onload='renderMathInElement(document.body, {delimiters: [{left: "$$", right: "$$", display: true},{left: "$", right: "$", display: false}], macros: {
+    "\\ma": "\\textbf",
+    "\\N": "{\\mathbb N}",
+    "\\vec": "\\boldsymbol",
+    "\\diff": "\\,\\mathrm d"
+  }});'></script>
+
+
+  <title>High-Altitude Glider | Emanuel Regnath</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Emanuel Regnath</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Me</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#work">
+            
+            <span>Work</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#life">
+            
+            <span>Life</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+  
+<script>
+    console.log('-------- Hugo Debug: Theme = Twenty-Sixteen -------')
+    console.log('HUGO_ENV: ', 'NOT SET')
+    console.log('Long Env: ', 'DEV')
+    console.log('Is Prod?: ', 'false')
+    console.log('Page Kind: ', 'page')
+    console.log('Current Section: ', 'Page(\/project)')
+    console.log('Page Section: ', 'project')
+    console.log('Page Type: ', 'project')
+    console.log('Page Dir: ', 'project\/project\/spark_glider.md')
+    console.log('Page Wd: ', '1800')
+    console.log('Page Home?: ', 'false')
+    console.log('Page Node?: ', 'false')
+    console.log('Page Page?: ', 'true')
+    console.log('Page Date: ', '2016-09-20 00:00:00 \x2b0000 UTC')
+    console.log('Page Lastmod: ', '2016-09-20 00:00:00 \x2b0000 UTC')
+    console.log('Page Date=Lastmod?: ', 'true')
+    console.log('Page Date<>Lastmod?: ', 'false')
+    console.log('Section Parent: ', '\/{0xc000113380}')
+    console.log('Sharing Icons?: ', 'NOT DEFINED')
+    console.log('Comments?: ', 'NOT DEFINED')
+    console.log('Disquss?: ', 'NOT DEFINED')
+    console.log('Google Analytics?: ', 'NOT DEFINED')
+    console.log('Count of related pages: ', '0' )
+    console.log(': ', '')
+    console.log('---------------------------------------------------')
+</script>
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">High-Altitude Glider</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="pull-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fproject%2fspark_glider%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fproject%2fspark_glider%2f&amp;title=High-Altitude%20Glider"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="whatsapp"
+         href="whatsapp://send?text==%2fproject%2fspark_glider%2f&amp;title=High-Altitude%20Glider"
+         target="_blank" rel="noopener">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    </li>    
+    <li>
+      <a class="telegram"
+         href="https://telegram.me/share/url?url=%2fproject%2fspark_glider%2f&amp;title=High-Altitude%20Glider"
+         target="_blank" rel="noopener">
+        <i class="fa fa-telegram"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=High-Altitude%20Glider&amp;body=%2fproject%2fspark_glider%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      <p>This is a summary of the development process of a flight stack for the Pixhawk board I wrote in Ada/SPARK from scratch during my Master&rsquo;s Thesis. Source code can be found on <a href="https://github.com/tum-ei-rcs/StratoX">github</a>.</p>
+<h2 id="mission">Mission</h2>
+<div class="row justify-content-center">
+<figure class="col-12 my-0">
+ <img src="/img/glider/mission.png">
+ <figcaption><h4>Figure 1: Mission plan</h4></figcaption>
+</figure>
+</div>
+<p>The goal of this project is to send a probe to the stratosphere and return it to the takeoff location. The probe consists of a flight controller with several sensors and is embedded into a styrowing glider. The glider is lightweight and able to perform basic flight maneuvers. In order to perform the mission, which is illustrated in Figure 1, the glider will be attached to a helium balloon, which will start ascending when released. Once it reaches its target altitude, the balloon is cut-off and the glider will fall. In this moment, the flight controller takes over control and autonomously navigates the glider back to its starting position on the ground.
+The hardware concepts for ascending and descending of the balloon and the probe itself have been developed by Matthias Jungmann in his diploma thesis.</p>
+<h2 id="micro-glider">Micro Glider</h2>
+<p>The micro glider is a styrowing that uses two servos to control the “elevons” (a mix-word of “elevator” and “aileron”) which are movable surfaces to control the flight behavior.</p>
+<div class="row justify-content-center">
+<figure class="col-12 my-0">
+ <img class="col-sm-9" src="/img/glider/glider.png">
+ <figcaption><h4>Photo of our high-altitude micro glider and important system components.</h4></figcaption>
+</figure>
+</div>
+<h2 id="flight-controller-theory">Flight Controller Theory</h2>
+<p>A flight controller performs several tasks which include monitoring and stabilization of an air vehicle. It reads sensors to obtain position and orientation of the vehicle and then computes the commands for the actuators that are required to keep the vehicle in a stable and controllable state.
+Modern flight controller for micro air vehicles are also responsible for navigation and guidance.
+Since our goal is stabilization and navigation of a styrowing, we will explain the theory of sensor fusion, control loops, and the GPS that are necessary for the software development.</p>
+<h3 id="kalman-filter">Kalman-Filter</h3>
+<p>Pose estimation from sensor measurements is one major task for flight control. The linear filter described by R. Kálmán in 1960 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> allows optimal estimates of unknown variables measured by sensors with Gaussian noise.
+It is one of the most important algorithms for sensor fusion and used in a large variety of applications <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+The algorithm is used to estimate the value of a state variable and consists of two major calculation steps: (1.) prediction of the new state and (2.) updating the state estimation with measurement values.
+The equations in the following are derived from <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p><strong>State Space</strong> Suppose we have the following state space model:</p>
+<p>$$\vec{x}_{n} = \ma G_n \vec{x}_{n-1} + \ma B \vec{u}_n + \vec{v}_n$$</p>
+<p>$$\vec{y}_{n} = \ma H_{n} \vec{x}_{n-1} + \vec{w}_{n}$$</p>
+<p>with the state vector $\vec x$, transition matrix $\ma G$, Gaussian process noise $\vec v_n$, input vector $\vec u$,
+measurement vector $\vec y$, measurement model $\ma H$, and Gaussian measurement noise $\vec w_n$ at each discrete point in time $n \in \N$. The transition matrix represents the linear dynamic model, commonly based on physical laws.</p>
+<p><strong>1. Prediction:</strong> the prediction of the next state $\hat {\vec x}_{n|n-1}$ is based on the old state and the linear dynamic model $\ma G_n$. Additionally, the new process covariance $\ma C_{\vec x_{n|n-1}}$, which reflects the certainty of the model, is predicted with the dynamic model $\ma G_n$ and the process noise covariance $\ma C_{\vec v}$.
+$$\hat{\vec x}_{n|n-1} = \ma G_n \hat{\vec x}_{n-1|n-1} + \ma B \vec{u}_n$$</p>
+<p>$$\ma C_{\vec x_{n|n-1}} = \ma G_n \ma C_{\vec x_{n-1|n-1}} \ma G_n^\top + \ma C_{\vec v}$$</p>
+<p><strong>2. Update:</strong> calculate the innovation $\Delta \vec y_n$, which is the difference between predicted and observed measurements. The certainty of measurement is expressed by the innovation covariance matrix $\ma S$, which depends on the measurement noise covariance matrix $\ma C_{\vec w_{n}}$. The innovation covariance matrix $\ma S$ is then used to calculate the Kalman gain matrix $\ma K_n$</p>
+<p>$$\Delta \vec y_n = \vec y_n - \hat{\vec y}_{n|n-1} =\vec y_n - \ma H_{n} \hat{\vec x}_{n|n-1}$$
+$$\ma S = \ma H_{n} \ma C_{\vec x_{n|n-1}} \ma H_{n}^\top + \ma C_{\vec w_{n}}$$
+$$\ma K_n = \ma C_{\vec x_{n|n-1}} \ma H_{n}^\top {\ma S}^{-1}.$$</p>
+<p>The Kalman gain matrix can be seen as the weights for $\Delta \vec y_n$. Its entries have the property $K_{ij} \in [0.0; 1.0],$ where 0.0 means the filter fully trusts the prediction and 1.0 means the filter fully trusts the measurement.
+Finally, the Kalman gain matrix is used to calculate the new state as well as its covariance matrix:</p>
+<p>$$\hat{\vec x}_{n|n} = \hat{\vec x}_{n|n-1} + \ma K_n \Delta \vec y_n$$
+$$\ma C_{\vec x_{n|n}} = \ma C_{\vec x_{n|n-1}} + \ma K_n \ma H_{n} \ma C_{\vec x_{n|n-1}}.$$</p>
+<h3 id="pid-controller">PID Controller</h3>
+<p>Real world control problems are often solved by a proportional-integral-derivative (PID) controller, which was invented in 1910 and gained popularity since then <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. It offers a very simple, yet efficient control scheme that is easy to implement in low-level software. The PID controller can compensate low frequencies, such as steady-state errors and also provides a good transient response <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.
+Its basic structure is illustrated in the figure below.
+The difference between the desired value $r(t)$ and the actual sensor measurement $y(t)$ is the control error $e(t)$. The PID controller takes proportional part (P), integral (I), and derivation (D) of the control error and calculates a weighted sum to generate a control output $u(t)$ for the actuators that manipulate the physical process.</p>
+<div class="row justify-content-center">
+<figure class="col-12 my-0">
+ <img class="col-sm-9" src="/img/glider/pid.svg">
+ <figcaption><h4>Block diagram of a typical PID controller loop.</h4></figcaption>
+</figure>
+</div>
+<p>The output $u(t)$ of the PID controller can be formulated as</p>
+<p>$$
+u(t) = K_{\mathrm{P}} \cdot e(t) + K_{\mathrm{I}} \int\limits_{0}^{t} e(\tau) \diff \tau + K_{\mathrm{D}} \frac{\diff e(t)}{\diff t} ,
+$$</p>
+<p>with the gains $K_{\mathrm{P}}$, $K_{\mathrm{I}}$, $K_{\mathrm{D}}$, and the error $e(t) = r(t) - y(t)$.
+For a time discrete system, the derivation and integral can be approximated and the control equation for a point in time $t_i$ simplifies to</p>
+<p>$$u[t_i] = K_{\mathrm{P}} \cdot e[t_i] + K_{\mathrm{I}} \sum\limits_{l = 1}^{i} e[t_l] (t_l - t_{l-1}) + K_{\mathrm{D}} \frac{e[t_i] - e[t_{i-1}]}{t_i - t_{i-1}}$$</p>
+<p>The challenge in control theory is to find proper values for the gains. Especially the derivative part, which can increase control stability, is often difficult to tune <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<h3 id="navigation-and-guidance">Navigation and Guidance</h3>
+<p>“Navigation is the determination of the position and velocity of a moving vehicle” <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. In contrast, guidance is steering towards a destination. The flight controller needs to perform both navigation and guidance.
+For basic navigation and guidance, three terms are important: <em>heading</em>, <em>course</em>, and <em>bearing</em>. The <em>heading</em> is the direction a vehicle is pointing. The <em>course</em> is the intended heading from a start point to a target point. The absolute <em>bearing</em> is the clockwise angle between north and the line from the vehicle&rsquo;s own position to its target position. The relation of these terms is illustrated in the figure below. If there were no external influences, such as wind, the bearing, the course, and the heading would be the same. However, in a realistic scenario, the aircraft is drifting and as a result the bearing is deviating from the course, which must be compensated by controlling the heading.</p>
+<div class="row justify-content-center">
+<figure class="col-12 my-0">
+ <img src="/img/glider/navigation.svg">
+ <figcaption><h4>Important angles for the navigation of the glider.</h4></figcaption>
+</figure>
+</div>
+<p><strong>Bearing</strong>
+The bearing $\theta$ of an aircraft can be calculated from its own geographic position $(\varphi_1, \lambda_1)$ and its target geographic position $(\varphi_2, \lambda_2)$ by the equation</p>
+<p>$$\theta = \arctan 2 \big( \sin( \Delta \lambda) ⋅ \cos (\varphi_2), \quad \cos(\varphi_1) ⋅ \sin(\varphi_2) - \sin(\varphi_1) ⋅ \cos(\varphi_2) ⋅ \cos (\Delta \lambda) \big)$$</p>
+<p>where $\varphi$ is latitude, $\lambda$ is the longitude, and $\Delta \lambda = \lambda_2 - \lambda_1$. All angles are in radians.</p>
+<p><strong>Distance</strong>
+The distance between two locations can be calculated in several ways.
+The shortest distance is the line on the great-circle that connects the two points.</p>
+<p>The equation <em>Spherical Law of Cosines</em> is the most precise and straight forward method, however, it is only numerical stable at a precision of IEEE-754 64bit floating-point numbers <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>For short distances with small differences between longitude ($\approx 1,\deg$), a simple Pythagoras approximation is numerically stable and fast. However, for a good compromise, the haversine formula seemed to be adequate.
+It takes the spherical shape of the earth into account and is numerical stable <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.
+The distance $d$ is calculated by the haversine equations as</p>
+<p>$$a = \sin^2\left(\frac{\Delta \varphi}{2}\right) + \cos(\varphi_1) \cdot \cos(\varphi_2) ⋅ \sin^2\left(\frac{\Delta \lambda}{2}\right)$$
+$$d = 2 \cdot R_{\mathrm{Earth}} \cdot \arctan 2 \left( \sqrt{a}, \sqrt{1-a} \right)$$</p>
+<p>where $\varphi$ is the latitude, $\lambda$ the longitude, and $R_{\mathrm{Earth}}$ the radius of the earth.</p>
+<h2 id="flight-stack-software">Flight Stack Software</h2>
+<h3 id="safety-concepts">Safety Concepts</h3>
+<p>In order to prevent failure of the software, we have selected several safety concepts that were applied during the development process.
+Since the general safety goal is to prevent errors as early as possible, there are concepts for each development phase beginning at the requirement specification phase.
+All concepts shall help to either avoid, detect, or mitigate fault, errors, and failures</p>
+<div class="row justify-content-center">
+<figure class="col-12 my-0">
+ <img src="/img/glider/sw_architecture.svg">
+ <figcaption><h4>Software Architecture.</h4></figcaption>
+</figure>
+</div>
+<h3 id="software-architecture">Software Architecture</h3>
+<p>As illustrated in the figure above, the architecture was divided in 5 hierarchical layers with the top-down order: Tasks, Modules, Device Managers, Device Drivers, and \gls{HAA}. Additional required algorithms that have no further dependencies are packed into libraries which are not part of the hierarchy. A software unit in one hierarchical layer is only allowed to make calls to units in a lower layer, to libraries, or to units in the same layer if no cyclic dependencies are created.</p>
+<p><strong>Tasks:</strong> run multi-threaded on the CPU. The Ravenscar runtime schedules the tasks and ensures that no blocking can occur. Our application was planned to consist of only one mission task that is responsible for the overall behavior of the styrowing. It runs a FSM that represents the different states of the mission such as ascent and descent.</p>
+<p><strong>Modules:</strong> provide encapsulation of the main functionality. They group together related subprograms and represent a coherent part of the software. Each module can handle one or more device managers and provides a more abstract interface towards the mission task. We divided the application in 3 main modules: Estimator, Controller, and Logger.</p>
+<h2 id="flight-test">Flight Test</h2>
+<div class="row justify-content-center">
+<figure class="col-12 my-3">
+ <img src="/img/glider/drop_test.jpg">
+ <figcaption><h4>Drop test using a drone.</h4></figcaption>
+</figure>
+</div>
+<h2 id="references">References</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>R. E. Kalman, “A new approach to linear filtering and prediction problems”, Transactions of the ASME–Journal of Basic Engineering, vol. 82, no. Series D, pp. 35–45, 1960. doi: 10.1115/1.3662552. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>R. Faragher, “Understanding the basis of the kalman filter via a simple and intuitive derivation”, IEEE Signal Processing Magazine, vol. 29, no. 5, pp. 128–132, Sep. 2012, issn: 1053-5888. doi: 10.1109/MSP.2012.2203621. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>K. H. Ang, G. Chong, and Y. Li, “Pid control system analysis, design, and technology”, IEEE Transactions on Control Systems Technology, vol. 13, no. 4, pp. 559–576, Jul. 2005, issn: 1063-6536. doi: 10.1109/TCST.2005.847331. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>M. Kayton and W. R. Fried, Avionics Navigation Systems. May 1997, ISBN: 978-0-471-54795-2 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>C. Veness. (2002). Calculate distance, bearing and more between latitude/longitude points, [Online]. Available: <a href="http://www.movable-type.co.uk/scripts/latlong.html">http://www.movable-type.co.uk/scripts/latlong.html</a> (visited on 10/22/2016). <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+
+    
+
+    <p class="powered-by">
+
+      © 2018 Emanuel Regnath 
+
+      &middot;
+
+      <a href="/impressum">Impressum</a>
+
+      &middot;
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Cite</h4>
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha512-YK1Mz9UiZmhbFzXgMbl3bO49wZ78Xj3h8TtTBLFHEAEjUBxsEZdXd8Il5RWbhPOyB653bGQDNVGGny2mORZq4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/res/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>education on Emanuel Regnath</title>
+    <link>/tags/education/</link>
+    <description>Recent content in education on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 20 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tex4TUM</title>
+      <link>/project/tex4tum/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/tex4tum/</guid>
+      <description>Interactive Knowledge Platform.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX4EI</title>
+      <link>/project/latex4ei/</link>
+      <pubDate>Wed, 20 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/project/latex4ei/</guid>
+      <description>Cheat Sheets from Students for Students.</description>
+    </item>
+    
+  </channel>
+</rss>

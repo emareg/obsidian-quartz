@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Emanuel Regnath</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 06 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ID2 Identifiers</title>
+      <link>/project/id2/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/project/id2/</guid>
+      <description>A universal notation scheme for over 100 identifiers, such as DOI, EAN, or crypto-addresses.</description>
+    </item>
+    
+    <item>
+      <title>Acamedic</title>
+      <link>/project/acamedic/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/acamedic/</guid>
+      <description>Academic Dictionary for Scientific Writing in American English.</description>
+    </item>
+    
+    <item>
+      <title>Binary Clock</title>
+      <link>/project/binaryclock/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/binaryclock/</guid>
+      <description>Display date and time – NERD style.</description>
+    </item>
+    
+    <item>
+      <title>Classless.css</title>
+      <link>/project/classless/</link>
+      <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/classless/</guid>
+      <description>Minimal CSS3 framework with few but great styles for basic HTML tags.</description>
+    </item>
+    
+    <item>
+      <title>Tex4TUM</title>
+      <link>/project/tex4tum/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/tex4tum/</guid>
+      <description>Interactive Knowledge Platform.</description>
+    </item>
+    
+    <item>
+      <title>Paper Checker</title>
+      <link>/project/paper-checker/</link>
+      <pubDate>Tue, 17 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/paper-checker/</guid>
+      <description>Python script that checks english texts for grammar mistakes.</description>
+    </item>
+    
+    <item>
+      <title>High-Altitude Glider</title>
+      <link>/project/spark_glider/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/spark_glider/</guid>
+      <description>Flight stack written in Ada/SPARK 2014</description>
+    </item>
+    
+    <item>
+      <title>c2ada</title>
+      <link>/project/c2ada/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/project/c2ada/</guid>
+      <description>A quick &amp;amp; dirty python script which translates C to Ada code.</description>
+    </item>
+    
+    <item>
+      <title>Promptheus</title>
+      <link>/project/promptheus/</link>
+      <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/project/promptheus/</guid>
+      <description>A bash/zsh/fish prompt with the power of a Titan.</description>
+    </item>
+    
+    <item>
+      <title>uniKeyBoard</title>
+      <link>/project/unikeyboard/</link>
+      <pubDate>Mon, 30 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/project/unikeyboard/</guid>
+      <description>German XKB keyboard layout with 8 levels for often used unicode characters.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX4EI</title>
+      <link>/project/latex4ei/</link>
+      <pubDate>Wed, 20 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/project/latex4ei/</guid>
+      <description>Cheat Sheets from Students for Students.</description>
+    </item>
+    
+    <item>
+      <title>Tesserakt</title>
+      <link>/project/tesserakt/</link>
+      <pubDate>Fri, 29 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/project/tesserakt/</guid>
+      <description>Simulation of a Four-Dimensional Hypercube</description>
+    </item>
+    
+  </channel>
+</rss>

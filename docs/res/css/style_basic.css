@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* General basic styles that do not interfere with existing concepts,
+   this means that only size, color, and spacing should be changed
+
+   General CSS order: top right bottom left
+*/
+
+
+/* overwrite tags ========================================== */
+
+::root{
+	--bg-color: #FFFFFF;
+	--text-color: #0808A8;
+}
+
+
+body {	
+	color: #221818;
+
+	/* Global Font Settings */
+/*	font-family: Georgia, Ubuntu, Myriad Pro, Verdana, Arial;
+	font-size: large;*/
+	line-height: 170%;
+	word-spacing:0.1em;
+	letter-spacing:0em;	
+}
+
+
+
+/* Layout elements */
+
+
+
+
+/* headings */
+h1 { font-size:2em; font-weight:300; line-height: 1.2;
+	margin-top: 1.0rem; margin-bottom: 0.0rem;
+}
+/*h2 { font-size:2em; font-variant: small-caps; font-weight:lighter; margin-bottom: 0.5em; line-height: 100%;}*/
+
+/*h3 { font-size:1.2em; font-style: italic; font-weight:normal; line-height: 100%;}*/
+h2 { font-size:1.5rem; margin-top: 2rem;}
+h3 { font-size:1.5rem; margin-top: 2rem;}
+h4 { font-size:1.2rem; margin-top: 1.8rem;}
+h5 { font-size:1.0rem; margin-top: 1.0rem;}
+
+
+
+
+
+
+
+
+
+/* sections of the page */
+header{
+
+}
+
+main{	
+	display: block;
+	padding: 3%;
+}
+
+
+footer {
+
+}
+
+section {	
+	margin-bottom: 8rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+
+article {
+}
+
+
+
+
+/* special content */
+time {
+	float:right;
+	color: #777;
+}
+
+
+
+code, kbd, samp {
+	font-family: monospace;
+	font-size: 90%;
+	padding: 0.3em; 
+	background: #f4f5f6; 
+	white-space: pre; 
+}
+
+
+figure {
+
+}
+
+
+
+
+/* lists */
+ol, ul {
+	padding-left: 2em;
+	margin-bottom: 1em;
+	/* ul{ list-style-image: url(/wp-images/image.gif); } */
+}
+
+header li, main li {
+	margin-bottom: 0.5em;
+}
+
+/*
+ul {
+    list-style: none;
+}
+
+ul li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+ul li:before {
+    content: "▶ ";
+    color: red; /* or whatever color you prefer */
+}
+*/
+
+ul li, ol li {margin-bottom: 0.5em;}
+ul ol li, ul ul li, ol ul li, ol ol li {margin-bottom: 0.5em;}
+ol ul, ul ol {margin-bottom: 1em;}
+
+
+
+
+
+
+
+
+
+
+
+

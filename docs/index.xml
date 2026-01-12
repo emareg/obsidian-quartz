@@ -1,0 +1,90 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emanuel Regnath on Emanuel Regnath</title>
+    <link>/</link>
+    <description>Recent content in Emanuel Regnath on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Publications</title>
+      <link>/publication/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/project/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>/impressum/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/impressum/</guid>
+      <description>  &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;10px&#34; &gt;
+    &lt;tr&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; width=&#34;80px&#34;&gt;
+        Name  
+      &lt;/td&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; style=&#34;border-left: 1px solid #777777&#34;&gt; &lt;/td&gt;&lt;td&gt;
+        Emanuel Regnath
+      &lt;/td&gt;   
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; &gt;
+        Adresse&lt;br /&gt; 
+      &lt;/td&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; style=&#34;border-left: 1px solid #777777&#34;&gt; &lt;/td&gt;&lt;td&gt;
+        Schönbichlstr. 9 &lt;br /&gt; 82211 Herrsching
+      &lt;/td&gt;   
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; &gt;
+        Email 
+      &lt;/td&gt;
+      &lt;td align=&#34;left&#34; valign=&#34;top&#34; style=&#34;border-left: 1px solid #777777&#34;&gt; &lt;/td&gt;&lt;td&gt;
+        emanuel.regnath@tum.de
+      &lt;/td&gt;   
+    &lt;/tr&gt;
+  &lt;/table&gt;  
+  &lt;br /&gt;
+  &lt;h3&gt;§ Haftungsausschluss für Inhalte&lt;/h3&gt;  
+  &lt;p&gt;
+    Die Qualität der Informationen und Inhalte dieser Webseite wurde von mir mit größter Sorgfalt und nach bestem Gewissen geprüft.
+    Ich übernehme jedoch keine Gewähr für die Korrektheit oder Vollständigkeit der angebotenen Informationen.
+  &lt;/p&gt;
+  &lt;h3&gt;§ Haftungsausschluss für Links&lt;/h3&gt;  
+  &lt;p&gt; 
+    Meine Webseite enthält Links auf externe Webseiten.
+    Für den Inhalt verlinkter Seiten sind die Betreiber dieser Seiten verantwortlich, nicht Ich. 
+  &lt;/p&gt;
+  &lt;h3&gt;§ Datenschutzerklärung&lt;/h3&gt;  
+  &lt;p&gt;
+    Meine Webseite speichert oder verarbeitet keine personenbezogene Daten. Es werden auch keinerlei Daten wie Ihre IP-Adresse für statistische Analysen ausgewertet. Ihre IP Adresse wird lediglich verwendet, um den Inhalt dieser Webseite an Ihren Web-Browser zu senden. Meine Webseite speichert auch keine Cookies in Ihrem Web-Browser.
+  &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

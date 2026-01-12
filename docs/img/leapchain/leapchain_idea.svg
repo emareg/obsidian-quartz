@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg640" version="1.1" viewBox="0 0 81.186 51.804" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs634">
+  <marker id="marker86100-46-3" overflow="visible" orient="auto">
+   <path id="path86098-2-7" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker134966-0" overflow="visible" orient="auto">
+   <path id="path134964-1" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-6-2" overflow="visible" orient="auto">
+   <path id="path86098-4-4-1" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker133234-6" overflow="visible" orient="auto">
+   <path id="path133232-7" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-6-7-4" overflow="visible" orient="auto">
+   <path id="path86098-4-4-8-9" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker131502" overflow="visible" orient="auto">
+   <path id="path131500" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-0-3-3-5" overflow="visible" orient="auto">
+   <path id="path86098-4-9-71-7-4" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-4-1-9" overflow="visible" orient="auto">
+   <path id="path86098-8-7-7" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-46-7-3" overflow="visible" orient="auto">
+   <path id="path86098-2-4-3" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-0-3-5-8" overflow="visible" orient="auto">
+   <path id="path86098-4-9-71-1-1" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-0-3-3-1-1" overflow="visible" orient="auto">
+   <path id="path86098-4-9-71-7-7-5" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="DiamondS-1" overflow="visible" orient="auto">
+   <path id="path9741-3" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-6-7-8-8" overflow="visible" orient="auto">
+   <path id="path86098-4-4-8-5-1" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker136704-5" overflow="visible" orient="auto">
+   <path id="path136702-3" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-0-3-5-1-2" overflow="visible" orient="auto">
+   <path id="path86098-4-9-71-1-3-4" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker86100-6-0-3-5-1-9-3" overflow="visible" orient="auto">
+   <path id="path86098-4-9-71-1-3-3-4" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker24016-49-4-1-2-3-5-96-1-8-4" overflow="visible" orient="auto">
+   <path id="path24014-5-8-7-5-6-3-4-5-9-3" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker24016-49-4-1-2-3-5-96-1-7-9" overflow="visible" orient="auto">
+   <path id="path24014-5-8-7-5-6-3-4-5-6-0" transform="scale(.4)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow2Send-0-3" overflow="visible" orient="auto">
+   <path id="path9689-3-3" transform="matrix(-.3 0 0 -.3 .69 0)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#000002" fill-rule="evenodd" stroke="#000002" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker157712-0" overflow="visible" orient="auto">
+   <path id="path9683-0" transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#000000" fill-rule="evenodd" stroke="#000000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker157712-2-4" overflow="visible" orient="auto">
+   <path id="path9683-7-2" transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker134966-4-5" overflow="visible" orient="auto">
+   <path id="path134964-6-7" transform="scale(.2)" d="m0-7.0711-7.0711 7.0711 7.0711 7.0711 7.071-7.0711z" fill="#0073cf" fill-rule="evenodd" stroke="#0073cf" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g id="layer1" transform="translate(-36.175 -107.81)">
+  <g stroke-width=".2">
+   <path id="path86090-7-94-0-1-4" d="m72.628 139.83c-5.437-1.1482-8.7534-0.9375-12.503-0.9375" fill="none" stroke="#000000" stroke-dasharray="0.80000001, 0.80000001"/>
+   <path id="path119260-0-3" d="m79.66 143.58c-6.0938 0-3.2813-2.8125-7.0313-3.75" fill="none" stroke="#000000"/>
+   <rect id="rect150610-5-3" x="36.277" y="133.27" width="20.625" height="26.25" fill="#ffffff" stroke="#9c9d9f" stroke-dasharray="0.60000001, 0.2" stroke-linejoin="round" stroke-opacity=".87451" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke-width=".2">
+   <rect id="rect6414-9-61-3-7-2-5" x="64.191" y="141.7" width="7.5" height="7.5" stroke="#000016" stroke-linejoin="round" style="paint-order:normal"/>
+   <path id="path119260-0" d="m93.627 143.58c-7.9433 0 0.83635-4.6875-17.384-4.5768" stroke="#000000"/>
+   <rect id="rect6414-9-61-3-7-2-8" x="78.253" y="141.7" width="7.5" height="7.5" stroke="#000016" stroke-linejoin="round" style="paint-order:normal"/>
+   <path id="path86090-0" d="m82.003 147.91v2.2278" marker-end="url(#marker86100-46-3)" stroke="#000000"/>
+   <rect id="rect6414-9-61-3-7-2-0-1" x="64.191" y="115.41" width="7.5" height="5.625" stroke="#000016" stroke-linejoin="round" style="paint-order:normal"/>
+  </g>
+  <rect id="rect6414-7-2-6-2-6-2-0-7-5-3" x="65.597" y="116.82" width="4.6875" height=".9375" fill="#d9dadb" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+  <g fill="none">
+   <g>
+    <path id="path86090-7-2" d="m67.941 119.75v2.2278" marker-end="url(#marker134966-0)" stroke="#0073cf" stroke-width=".4"/>
+    <rect id="rect6414-9-61-3-7-2-0-5" x="78.253" y="115.41" width="7.5" height="5.625" stroke="#000016" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+    <path id="path86090-7-9" d="m82.003 119.75v2.2278" marker-end="url(#marker86100-6-6-2)" stroke="#000000" stroke-width=".2"/>
+   </g>
+   <path id="path86090-7-94" d="m65.558 117.29h-5.4333" stroke="#000000" stroke-dasharray="0.80000001, 0.80000001" stroke-width=".2"/>
+  </g>
+  <g>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-5" x="65.597" y="118.7" width="4.6875" height=".9375" fill="#0073cf" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <path id="path86090-7-94-6" d="m79.621 117.29h-7.93" fill="none" marker-end="url(#marker133234-6)" stroke="#0073cf" stroke-width=".4"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-09" x="79.66" y="116.82" width="4.6875" height=".9375" fill="#0073cf" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-5-7" x="79.66" y="118.7" width="4.6875" height=".9375" fill="#d9dadb" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+  </g>
+  <g fill="none">
+   <rect id="rect6414-9-61-3-7-2-0-5-5" x="92.316" y="115.41" width="7.5" height="5.625" stroke="#000016" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <path id="path86090-7-9-3" d="m96.066 119.75v2.2278" marker-end="url(#marker86100-6-6-7-4)" stroke="#000000" stroke-width=".2"/>
+   <path id="path86090-7-94-6-8" d="m93.683 117.29h-7.93" marker-end="url(#marker131502)" stroke="#0073cf" stroke-width=".4"/>
+  </g>
+  <g stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2">
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-09-3" x="93.722" y="116.82" width="4.6875" height=".9375" fill="#0073cf" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-5-7-7" x="93.722" y="118.7" width="4.6875" height=".9375" fill="#d9dadb" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-7" x="65.597" y="144.99" width="4.6875" height=".9375" fill="#d9dadb" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-0-0-9" x="65.597" y="146.86" width="4.6875" height=".9375" fill="#0073cf" style="paint-order:normal"/>
+  </g>
+  <g fill="#d9dadb" stroke="#000016" stroke-linecap="round" stroke-linejoin="round">
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-9-9" x="65.597" y="143.11" width="4.6875" height=".9375" stroke-width=".3" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-3" x="79.66" y="144.99" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-0-0-2" x="79.66" y="146.86" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-9-4" x="79.66" y="143.11" width="4.6875" height=".9375" stroke-width=".3" style="paint-order:normal"/>
+  </g>
+  <g fill="none" stroke-width=".2">
+   <path id="path86090-7-94-3-1" d="m79.621 145.45h-7.93" marker-end="url(#marker86100-6-0-3-3-5)" stroke="#000000"/>
+   <g>
+    <path id="path86058-4-2" d="m64.191 152.02v-1.875h7.5v1.875" stroke="#0073cf"/>
+    <path id="path86058-4-02" d="m78.253 152.02v-1.875h7.5v1.875" stroke="#000000"/>
+    <rect id="rect6414-9-61-3-7-2-5-1" x="92.316" y="141.7" width="7.5" height="7.5" stroke="#000016" stroke-linejoin="round" style="paint-order:normal"/>
+   </g>
+   <path id="path86090-6-1" d="m96.066 147.91v2.2278" marker-end="url(#marker86100-4-1-9)" stroke="#000000"/>
+   <rect id="rect6414-9-61-3-7-2-8-1" x="106.38" y="141.7" width="7.5" height="7.5" stroke="#000016" stroke-linejoin="round" style="paint-order:normal"/>
+   <path id="path86090-0-7" d="m110.13 147.91v2.2278" marker-end="url(#marker86100-46-7-3)" stroke="#000000"/>
+   <path id="path86090-7-94-3-0" d="m93.683 145.45h-7.93" marker-end="url(#marker86100-6-0-3-5-8)" stroke="#000000"/>
+  </g>
+  <g fill="#d9dadb" stroke="#000016" stroke-linecap="round" stroke-linejoin="round">
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-7-4" x="93.722" y="144.99" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-0-0-9-0" x="93.722" y="146.86" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-9-9-8" x="93.722" y="143.11" width="4.6875" height=".9375" stroke-width=".3" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-3-5" x="107.78" y="144.99" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-0-0-2-1" x="107.78" y="146.86" width="4.6875" height=".9375" stroke-width=".2" style="paint-order:normal"/>
+  </g>
+  <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-1-8-9-4-6" x="107.78" y="143.11" width="4.6875" height=".9375" fill="#0073cf" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" style="paint-order:normal"/>
+  <g fill="none">
+   <g stroke="#000000" stroke-width=".2">
+    <path id="path86090-7-94-3-1-6" d="m107.75 145.45h-7.93" marker-end="url(#marker86100-6-0-3-3-1-1)"/>
+    <path id="path86058-4-2-2" d="m92.316 152.02v-1.875h7.5v1.875"/>
+    <path id="path86058-4-02-1" d="m106.38 152.02v-1.875h7.5v1.875"/>
+   </g>
+   <path id="path119260" d="m107.76 143.58c-7.9433 0 0.83635-4.6875-17.384-4.5768-13.125 0.0797-13.996 0.82682-15.871 6.4518l-2.8125 1e-5" marker-end="url(#DiamondS-1)" stroke="#0073cf" stroke-width=".4"/>
+   <rect id="rect6414-9-61-3-7-2-0-5-5-3" x="106.38" y="115.41" width="7.5" height="5.625" stroke="#000016" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <path id="path86090-7-9-3-4" d="m110.13 119.75v2.2278" marker-end="url(#marker86100-6-6-7-8-8)" stroke="#000000" stroke-width=".2"/>
+   <path id="path86090-7-94-6-8-1" d="m107.75 117.29h-7.93" marker-end="url(#marker136704-5)" stroke="#0073cf" stroke-width=".4"/>
+  </g>
+  <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-09-3-5" x="107.78" y="116.82" width="4.6875" height=".9375" fill="#0073cf" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+  <rect id="rect6414-7-2-6-2-6-2-0-7-5-3-5-7-7-4" x="107.78" y="118.7" width="4.6875" height=".9375" fill="#d9dadb" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+  <g fill="none" stroke-width=".2">
+   <g stroke="#000000" stroke-dasharray="0.80000001, 0.80000001">
+    <path id="path86090-7-94-0" d="m65.558 145.45-5.3861-1e-5"/>
+    <path id="path86090-7-94-3-0-5" d="m117.29 145.45-3.4118 1e-5" marker-end="url(#marker86100-6-0-3-5-1-2)"/>
+    <path id="path86090-7-94-3-0-5-4" d="m117.36 117.29h-3.4827" marker-end="url(#marker86100-6-0-3-5-1-9-3)"/>
+   </g>
+   <rect id="rect150610" x="63.253" y="114.48" width="9.375" height="10.312" stroke="#9c9d9f" stroke-dasharray="0.60000001, 0.2" stroke-linejoin="round" stroke-opacity=".87451" style="paint-order:normal"/>
+  </g>
+  <g stroke="#9c9d9f" stroke-opacity=".87451">
+   <rect id="rect150610-5" x="36.277" y="107.91" width="20.625" height="22.375" fill="#ffffff" stroke-dasharray="0.61119993, 0.20373331" stroke-linejoin="round" stroke-width=".20373" style="paint-order:normal"/>
+   <path id="path150627" d="m56.855 130.29 15.773-5.5" fill="#cdcecf" stroke-dasharray="1.60000001, 1.60000001" stroke-width=".2"/>
+   <path id="path150629" d="m56.902 107.91 15.726 6.5625" fill="#cdcecf" stroke-dasharray="1.60000001, 1.60000001" stroke-width=".2"/>
+  </g>
+  <rect id="rect6414-9-6-5-8-9-0" x="38.152" y="109.79" width="16.875" height="12.187" fill="none" stroke="#000016" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+  <text id="text11212-4-1-6-3-71" x="40.027096" y="112.60156" fill="#000000" font-family="FreeSans" font-size="2.8222px" letter-spacing="0px" stroke-width=".2" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-3" x="40.027096" y="112.60156" font-family="'Libertinus Sans'" font-size="2.4694px" stroke-width=".2">Block Header</tspan></text>
+  <g fill="none" stroke-width=".2">
+   <g stroke="#000000">
+    <path id="path6477-0-0-9-9-7-0-4-6-3" d="m46.589 120.62v3.2323" marker-end="url(#marker24016-49-4-1-2-3-5-96-1-8-4)"/>
+    <path id="path129571-3-3" d="m38.152 125.73v-1.875h16.875v1.875"/>
+    <path id="path129573-4-8" d="m38.152 128.54v-2.8125" stroke-dasharray="0.60000001, 0.60000001"/>
+   </g>
+   <rect id="rect6414-7-2-6-9-3-6-4-5-2-3-6" x="40.027" y="114.01" width="13.125" height="2.8125" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" style="paint-order:normal"/>
+   <rect id="rect6414-7-2-6-9-3-6-4-5-2-3-9-3" x="40.027" y="117.76" width="13.125" height="2.8125" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" style="paint-order:normal"/>
+  </g>
+  <text id="text11212-4-1-6-3-7-5" x="46.553814" y="126.82943" fill="#000000" font-family="FreeSans" font-size="2.8222px" letter-spacing="0px" stroke-width=".2" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-0" x="46.553814" y="126.82943" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">Block Data</tspan></text>
+  <path id="path129573-4-5-8" d="m55.027 128.54v-2.8125" fill="none" stroke="#000000" stroke-dasharray="0.60000001, 0.60000001" stroke-width=".2"/>
+  <g>
+   <rect id="rect6414-9-6-5-8-9-3" x="38.152" y="135.14" width="16.875" height="15.937" fill="none" stroke="#000016" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <text id="text6454-7-2-3-0-7-0-3-7" x="46.583736" y="149.20387" fill="#000000" font-family="FreeSans" font-size="2.1167px" letter-spacing="0px" stroke-width=".2" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan6452-0-6-7-6-0-2-8-6" x="46.583736" y="149.20387" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">data-hash</tspan></text>
+   <rect id="rect6414-7-2-6-9-3-6-4-5-2-0" x="40.027" y="139.36" width="13.125" height="2.8125" fill="none" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" style="paint-order:normal"/>
+   <text id="text11212-4-1-6-3-6" x="40.027065" y="137.95387" fill="#000000" font-family="FreeSans" font-size="3.175px" letter-spacing="0px" stroke-width=".2" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-5" x="40.027065" y="137.95387" font-family="'Libertinus Sans'" font-size="2.4694px" stroke-width=".2">Block Header</tspan></text>
+  </g>
+  <g fill="none" stroke="#000000" stroke-width=".2">
+   <path id="path6477-0-0-9-9-7-0-4-6-0" d="m46.589 149.72v3.2323" marker-end="url(#marker24016-49-4-1-2-3-5-96-1-7-9)"/>
+   <path id="path129571-3-8" d="m38.152 154.83v-1.875h16.875v1.875"/>
+   <path id="path129573-4-1" d="m38.152 157.64v-2.8125" stroke-dasharray="0.60000001, 0.60000001"/>
+  </g>
+  <g stroke-width=".2">
+   <text id="text6454-7-2-2-6-1-2-6-7-2" x="46.571712" y="141.58575" fill="#000000" font-family="FreeSans" font-size="2.1167px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:0" xml:space="preserve"><tspan id="tspan6452-0-6-0-1-55-96-4-0-2" x="46.571712" y="141.58575" font-family="'Libertinus Sans'" font-weight="bold" text-align="center" style="line-height:0">leap-hash</tspan><tspan id="tspan140353-6" x="46.571712" y="141.61917" text-align="center" style="line-height:0"/><tspan id="tspan140355-9" x="46.571712" y="141.61917" text-align="center" style="line-height:0"/><tspan id="tspan140351-1" x="46.571712" y="141.61917" text-align="center" style="line-height:0"/></text>
+   <rect id="rect6414-7-2-6-9-3-6-4-5-2-3-0" x="40.027" y="143.11" width="13.125" height="2.8125" fill="none" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" style="paint-order:normal"/>
+   <text id="text6454-7-8-9-2-8-9-2-1" x="46.648449" y="145.38301" fill="#000000" font-family="FreeSans" font-size="2.1167px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan6452-0-7-7-0-0-7-2-5" x="46.648449" y="145.38301" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">prev-hash</tspan></text>
+   <rect id="rect6414-7-2-6-9-3-6-4-5-2-3-9-4" x="40.027" y="146.86" width="13.125" height="2.8125" fill="none" stroke="#000016" stroke-linecap="round" stroke-linejoin="round" style="paint-order:normal"/>
+  </g>
+  <path id="path129573-4-5-4" d="m55.027 157.64v-2.8125" fill="none" stroke="#000000" stroke-dasharray="0.60000001, 0.60000001" stroke-width=".2"/>
+  <path id="path150627-2" d="m56.997 159.52 15.632-6.5625" fill="#cdcecf" stroke="#9c9d9f" stroke-dasharray="1.60000001, 1.60000001" stroke-opacity=".87451" stroke-width=".2"/>
+  <g>
+   <path id="path81437-7" d="m89.503 127.6v5.625" fill="none" marker-end="url(#Arrow2Send-0-3)" stroke="#000002"/>
+   <path id="path81437-7-3" d="m107.96 134.16h8.4375" fill="none" marker-end="url(#marker157712-0)" stroke="#000000" stroke-width=".3"/>
+   <text id="text11212-4-1-6-3-7-2-4" x="107.96233" y="136.97656" fill="#000000" font-family="FreeSans" font-size="2.8222px" letter-spacing="0px" stroke-width=".2" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9" x="107.96233" y="136.97656" font-family="'Libertinus Sans'" font-size="2.6458px" stroke-width=".2">time</tspan></text>
+   <path id="path81437-7-3-4" d="m113.38 131.35h-15.435" fill="none" marker-end="url(#marker157712-2-4)" stroke="#0073cf" stroke-linecap="square" stroke-width=".30004"/>
+  </g>
+  <g fill="#000000" font-family="FreeSans" font-size="2.8222px" letter-spacing="0px" stroke-width=".2" word-spacing="0px">
+   <text id="text11212-4-1-6-3-7-2-4-2" x="101.39979" y="130.41406" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-5" x="101.39979" y="130.41406" font-family="'Libertinus Sans'" font-size="2.6458px" stroke-width=".2">verification</tspan></text>
+   <text id="text11212-4-1-6-3-7-2-2" x="76.547325" y="111.78253" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-4" x="76.547325" y="111.78253" font-family="'Libertinus Sans'" font-size="3.175px" stroke-width=".2">Blockchain Window</tspan></text>
+   <text id="text11212-4-1-6-3-7-2-4-4" x="109.19073" y="158.57884" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-3" x="109.19073" y="158.57884" font-family="FreeSerif" font-size="2.8222px" font-style="italic" stroke-width=".2">n</tspan></text>
+   <text id="text11212-4-1-6-3-7-2-4-4-9" x="93.387169" y="158.58257" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-3-9" x="93.387169" y="158.58257" font-family="FreeSerif" font-size="2.8222px" font-style="italic" stroke-width=".2">n <tspan id="tspan162701" font-family="FreeSerif" font-style="normal" stroke-width=".2">– 1</tspan></tspan></text>
+   <text id="text11212-4-1-6-3-7-2-4-4-9-6" x="79.210381" y="158.58257" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-3-9-0" x="79.210381" y="158.58257" font-family="FreeSerif" font-size="2.8222px" font-style="italic" stroke-width=".2">n <tspan id="tspan162701-2" font-family="FreeSerif" font-style="normal" stroke-width=".2">– 2</tspan></tspan></text>
+   <text id="text11212-4-1-6-3-7-2-4-4-9-0" x="65.128242" y="158.57884" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-3-9-8" x="65.128242" y="158.57884" font-family="FreeSerif" font-size="2.8222px" font-style="italic" stroke-width=".2">n <tspan id="tspan162701-7" font-family="FreeSerif" font-style="normal" stroke-width=".2">– 3</tspan></tspan></text>
+  </g>
+  <path id="path86090-7-2-4" d="m67.941 147.91v2.2278" fill="none" marker-end="url(#marker134966-4-5)" stroke="#0073cf" stroke-width=".4"/>
+  <rect id="rect150610-0" x="63.253" y="140.77" width="9.375" height="12.188" fill="none" stroke="#9c9d9f" stroke-dasharray="0.60000001, 0.2" stroke-linejoin="round" stroke-opacity=".87451" stroke-width=".2" style="paint-order:normal"/>
+  <text id="text11212-4-1-6-3-7-2-4-4-2" x="74.852699" y="128.39214" fill="#000000" font-family="FreeSans" font-size="2.8222px" letter-spacing="0px" stroke-width=".2" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-7-9-3-5" x="74.852699" y="128.39214" font-family="FreeSerif" font-size="2.8222px" font-style="italic" stroke-width=".2">H(·)</tspan></text>
+  <g stroke="#9c9d9f">
+   <ellipse id="path149411-1-5-1" cx="82.003" cy="121.98" rx="1.2829" ry="1.2958" fill="none" stroke-dasharray="0.60000001, 0.2" stroke-linejoin="round" stroke-width=".2" style="paint-order:normal"/>
+   <ellipse id="path149411-1-5-1-2" cx="77.245" cy="127.64" rx="3.0593" ry="3.1961" fill="none" stroke-dasharray="0.63809387, 0.21269795" stroke-linejoin="round" stroke-width=".2127" style="paint-order:normal"/>
+   <path id="path150629-9-9-1" d="m75.181 125.23 5.8848-4.1869" fill="#cdcecf" stroke-dasharray="1.2, 1.2" stroke-width=".2"/>
+   <path id="path150629-9-9-1-0" d="m80.01 129.01 2.9306-6.0915" fill="#cdcecf" stroke-dasharray="1.2, 1.2" stroke-width=".2"/>
+  </g>
+  <g stroke-width=".2">
+   <path id="path86090-7-94-0-1" d="m76.243 139h-7.93" fill="none" stroke="#000000" stroke-dasharray="0.80000001, 0.80000001"/>
+   <path id="path119260-0-3-8" d="m65.597 143.58c-4.9126 0.0472-2.3836-1.6313-5.6139-3.2775" fill="none" stroke="#000000" stroke-dasharray="0.80000001, 0.80000001"/>
+   <path id="path150629-8" d="m56.902 133.27 15.726 7.5" fill="#cdcecf" stroke="#9c9d9f" stroke-dasharray="1.60000001, 1.60000001" stroke-opacity=".87451"/>
+  </g>
+  <g fill="none" stroke-width=".2">
+   <path id="path86058-4-2-3" d="m64.191 123.85v-1.875h7.5v1.875" stroke="#0073cf"/>
+   <g stroke="#000000">
+    <path id="path86058-4-02-6" d="m78.253 123.85v-1.875h7.5v1.875"/>
+    <path id="path86058-4-2-2-1" d="m92.316 123.85v-1.875h7.5v1.875"/>
+    <path id="path86058-4-02-1-0" d="m106.38 123.85v-1.875h7.5v1.875"/>
+   </g>
+  </g>
+  <g fill="#000000" font-family="FreeSans" letter-spacing="0px" stroke-width=".2" word-spacing="0px">
+   <text id="text6454-7-2-3-0-7-0-3-7-1" x="46.600368" y="120.03035" font-size="2.1167px" text-align="center" text-anchor="middle" style="line-height:1.25" xml:space="preserve"><tspan id="tspan6452-0-6-7-6-0-2-8-6-9" x="46.600368" y="120.03035" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">data-hash</tspan></text>
+   <text id="text6454-7-8-9-2-8-9-2-1-8" x="46.665081" y="116.20948" font-size="2.1167px" text-align="center" text-anchor="middle" style="line-height:1.25" xml:space="preserve"><tspan id="tspan6452-0-7-7-0-0-7-2-5-7" x="46.665081" y="116.20948" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">prev-hash</tspan></text>
+   <text id="text11212-4-1-6-3-7-5-7" x="46.533504" y="155.94116" font-size="2.8222px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan11210-7-0-3-4-2-0-6" x="46.533504" y="155.94116" font-family="'Libertinus Sans'" font-size="2.2931px" stroke-width=".2" text-align="center" text-anchor="middle">Block Data</tspan></text>
+  </g>
+ </g>
+</svg>

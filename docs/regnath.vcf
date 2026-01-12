@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION:4.0
+REV:20190429T111111Z
+FN:M.Sc. Emanuel Regnath
+N:Regnath;Emanuel;;Mr.;
+TZ:+0100
+KIND:individual
+GENDER:M
+LANG:de-DE
+LANG:en-US
+PHOTO;JPEG:https://emareg.de/regnath.jpg
+ORG:TUM-EI-ESI
+URL;TYPE=WORK:www.esi.ei.tum.de
+URL;TYPE=HOME:www.emareg.de
+EMAIL;TYPE=WORK:emanuel.regnath@tum.de
+TEL;TYPE=WORK:+498928923734
+ADR;TYPE=WORK,PREF:;;Arcisstr. 21;München;;80333;Germany
+ROLE:Research Associate
+TITLE:Research Associate
+X-SKYPE:live:emanuel.regnath
+NOTE:vCard available at https://emareg.de/regnath.vcf
+SOURCE:https://emareg.de/regnath.vcf
+END:VCARD

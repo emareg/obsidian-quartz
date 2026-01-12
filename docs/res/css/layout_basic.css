@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* this should overwrite existing tags */
+
+
+::root{
+	--bg-color: #FFFFFF;
+	--text-color: #080808;
+}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure, main {
+	display: block;
+}
+
+	/* whole page */
+	html {
+		min-height: 100%;
+		margin: 0;
+		padding: 0;		
+	}
+
+	/* used area of the page */
+	body {	
+		position: absolute;
+		top: 0;	
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		vertical-align: baseline;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+/*	.container{
+		max-width: 48em;
+		min-width: 32em;
+		width: 80% auto;
+		
+		margin: auto;
+
+		padding-left: 0.5em;
+		padding-right: 0.5em;		
+	}*/
+
+
+	.mark{
+		background: rgb(200, 200, 200);
+	}
+
+	/* Navigation */
+	#navbar{
+		background: rgb(32, 64, 64);
+		
+		position: fixed;
+		top: 0px;
+		
+		width: 100%;		
+		margin: 0;
+		padding: 5px 0% 5px 0%;	
+	}
+
+	.show{
+		transition: all 1s ease-in-out;
+		opacity: 1.0;
+	}
+
+	.hide{
+		opacity: 0.0;
+	}
+
+	nav{
+		color: rgb(64,196,255);
+		vertical-align: center;
+		/* box-shadow: 0px 5px 5px 5px #444; */
+	}
+
+	nav *{
+		float: left;
+		margin: 0;
+	}
+	
+	nav ul{
+		float: right;
+		margin: 0.2em;
+		padding: 0;
+	}
+	
+	
+	nav li{
+		float: left;
+		list-style-type: none;
+		margin: 0.2em;
+		padding: 0;
+	}
+	
+	
+	
+	/* main content contains article and aside*/
+	main{	
+		display: block;
+		padding: 3%;
+	}
+
+
+
+	/* banner */
+	#frontpage{
+		position: relative;
+		top: 0em;
+		height: 100vh;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+
+	#banner{
+		position: relative;
+		top: 40%;
+		/* margin-top: -5em;	/* 0.5 heigth of banner*/
+	}
+
+	#banner h1{
+		margin-top: 0;
+	}
+
+	section {
+		max-width: 48em;
+		min-width: 32em;
+		width: 80% auto;
+		
+		margin: auto;
+		margin-bottom: 5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	article{
+		max-width: 40em;
+		margin-right: 0;
+		margin-left: auto;		
+	}
+
+	data-scroll-index{
+		padding-top: 5em;
+	}
+
+
+	article aside {
+		font-size: 0.8em;
+		margin-left: -23%; */
+	}
+
+	aside{
+		text-align: right;
+		max-width: 20%;
+		float: left;
+		margin-right: 1em;
+	}
+
+	footer{
+		clear: both;
+		color: #777;
+		font-size: small;
+	}
+
+
+@media all and (max-width: 50em) {
+	aside {
+		display: none;
+	}
+}
+	
+	figure{
+		text-align: center;
+		margin: 1em;	
+	}
+
+	
+	img { 
+		max-width: 95%; /* Gute Browser machen ein zu großes Bild, welches das Design sprengen würde, entsprechend kleiner. Funktioniert beim IE leider nicht. */
+	}
+	
+	article img {
+		float: right;
+		margin: 0.8em;		
+	} 
+
+	#profil-picture{
+		float: left;
+		margin-left: 0em;
+		margin-right: 2em;
+	}
+
+	.avatar
+	{
+	    width: 120px; /* These are your circle dimensions */
+	    height: 120px;
+	    overflow: hidden;
+	    border-radius: 50%;
+	    background-repeat: no-repeat; 
+	    background-position: center center; /* Center image in the circle */
+	    background-image: 
+	    background-size: cover; /* Make sure it covers the circle, as there is no bg repeat */
+	}	
+
+

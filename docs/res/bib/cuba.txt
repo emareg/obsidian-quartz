@@ -1,0 +1,13 @@
+@inproceedings{cuba2019,
+  author    = {Emanuel Regnath and Sebastian Steinhorst},
+  title     = {CUBA: Chained Unanimous Byzantine Agreement for Decentralized Platoon Management},
+  booktitle = {Proceedings of the Conference on Design, Automation and Test in Europe (DATE 2019)},
+  location  = {Florence, Italy},
+  year      = {2019},
+  month     = {March},
+  day       = {25},
+  pages     = {426-431},
+  doi       = {10.23919/DATE.2019.8715047},
+  issn      = {1558-1101},
+  url       = {https://emanuel.regnath.info/pdf/2019-CUBA.pdf},
+}

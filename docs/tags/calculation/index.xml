@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>calculation on Emanuel Regnath</title>
+    <link>/tags/calculation/</link>
+    <description>Recent content in calculation on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 14 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/calculation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Calculate with Uncertainty</title>
+      <link>/post/scientific_calculations/</link>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/scientific_calculations/</guid>
+      <description>“It is better to be roughly right than precisely wrong.”— Alan Greenspan
+While calculating with exact numbers is easy 4th grade math, scientific calculations with approximate measurement values require some special considerations. Here is how to do it roughly right.
+The correct notation Every physical quantity, such as the gravity constant1 $$\mathrm{G} \approx 6.674\;08(31) \cdot 10^{-11} \;\mathrm{m^{3}\;kg^{-1}\;s^{-2}}$$
+should be correctly rounded, state the uncertainty, and specify the SI units using exponents.</description>
+    </item>
+    
+  </channel>
+</rss>

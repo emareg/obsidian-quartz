@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on Emanuel Regnath</title>
+    <link>/tags/iot/</link>
+    <description>Recent content in IoT on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LeapChain: Efficient Blockchain Verification for Embedded IoT</title>
+      <link>/publication/leapchain/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/leapchain/</guid>
+      <description>One of the challenges of Blockchain is its linear growing size. Even light clients need to download and hash up to 40 MB of block headers for Bitcoin and up to 3 GB for Ethereum – too much for an embedded IoT device. As a remedy, we have created LeapChain, a Blockchain extension that allows to verify the inclusion and integrity of any block using only a logarithmic amount of block headers.</description>
+    </item>
+    
+  </channel>
+</rss>

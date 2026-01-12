@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>password on Emanuel Regnath</title>
+    <link>/tags/password/</link>
+    <description>Recent content in password on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 20 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/password/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Life Hack: Passwörter</title>
+      <link>/post/passwords/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/passwords/</guid>
+      <description>Verschiedene, starke Passwörter benutzen ohne sich viel zu merken. Im Allgemeinen braucht man 2 Arten von Passwörtern. Starke Passwörter für wichtige Accounts und ein Wegwerf-Passwort für Webseiten, die man nur einmal oder selten besucht [2]. Viele Seiten fordern inzwischen mindestens 8 Zeichen mit Großbuchstaben und Zahlen, deswegen sollte auch Dein Wegwerf-Passwort diese Anforderung erfüllen. Aber was ist wirklich sinnvoll?
+Ein wirklich gutes Passwort &amp;hellip;  &amp;hellip; darf keine sinnvollen Wörter (Wörterbuch) enthalten!</description>
+    </item>
+    
+  </channel>
+</rss>

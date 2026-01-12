@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Emanuel Regnath</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CISCAV: Consensus-based Intersection Scheduling for Connected Autonomous Vehicles</title>
+      <link>/publication/ciscav2021/</link>
+      <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ciscav2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blockchain, what time is it? Trustless Datetime Synchronization for IoT</title>
+      <link>/publication/bcsync2020/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/bcsync2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COLAW: Cooperative Location Proof Architecture for VANETs based on Witnessing</title>
+      <link>/publication/colaw2020/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/colaw2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMSA: Adaptive Merkle Signature Architecture</title>
+      <link>/publication/amsa2020/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/amsa2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CUBA: Chained Unanimous Byzantine Agreement for Decentralized Platoon Management</title>
+      <link>/publication/cuba/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/cuba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LeapChain: Efficient Blockchain Verification for Embedded IoT</title>
+      <link>/publication/leapchain/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/leapchain/</guid>
+      <description>One of the challenges of Blockchain is its linear growing size. Even light clients need to download and hash up to 40 MB of block headers for Bitcoin and up to 3 GB for Ethereum – too much for an embedded IoT device. As a remedy, we have created LeapChain, a Blockchain extension that allows to verify the inclusion and integrity of any block using only a logarithmic amount of block headers.</description>
+    </item>
+    
+    <item>
+      <title>SmaCoNat: Smart Contracts in Natural Language</title>
+      <link>/publication/smaconat/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/smaconat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development and Verification of a Flight Stack for a High-Altitude Glider in Ada/SPARK 2014</title>
+      <link>/publication/spark_glider/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/spark_glider/</guid>
+      <description>Motivation In 2015, the Federal Aviation Administration (FAA) discovered a software fault in the Boeing 787 that could lead to loss of control if the airplane is powered for 248 days. A simple integer overflow would shut down all electrical alternating power sources simultaneously, regardless of whether the airplane would be on the ground or in the air. Despite their simplicity, overflow errors are still common errors that can cause catastrophic hazards.</description>
+    </item>
+    
+    <item>
+      <title>Smart2: Smart Charging for Smart Phones</title>
+      <link>/publication/smart2_charger/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/smart2_charger/</guid>
+      <description>$$\def\SI#1#2{{#1,\mathrm{#2}}}\def\volt{V}$$
+Why smart charging? The battery as an energy storage is one of the most important parts of mobile devices because the capacity of a battery and the power consumption of a device determines its runtime. However, the capacity of a battery fades over time due to aging and as a result the runtime decreases too. Some devices are equipped with non-removable batteries which means that the lifetime of a device will end with the death of its battery.</description>
+    </item>
+    
+  </channel>
+</rss>

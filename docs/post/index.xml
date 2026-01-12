@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Emanuel Regnath</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Dos and Don’ts of Scientific Writing</title>
+      <link>/post/write_good/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/write_good/</guid>
+      <description>My short list of helpful writing rules for scientific articles. Also available as PDF Version.
+Do write in active voice. Don’t let words be written. It was found to result in confusion about by whom actions have been caused.
+Do use simple and common words. Your goal is to inform, not to impress. Don’t engender flowery or compounded character constructions to disguise incertitude.
+Do use positive forms and opposites to avoid negative forms.</description>
+    </item>
+    
+    <item>
+      <title>How to Calculate with Uncertainty</title>
+      <link>/post/scientific_calculations/</link>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/scientific_calculations/</guid>
+      <description>“It is better to be roughly right than precisely wrong.”— Alan Greenspan
+While calculating with exact numbers is easy 4th grade math, scientific calculations with approximate measurement values require some special considerations. Here is how to do it roughly right.
+The correct notation Every physical quantity, such as the gravity constant1 $$\mathrm{G} \approx 6.674\;08(31) \cdot 10^{-11} \;\mathrm{m^{3}\;kg^{-1}\;s^{-2}}$$
+should be correctly rounded, state the uncertainty, and specify the SI units using exponents.</description>
+    </item>
+    
+    <item>
+      <title>Life Hack: Passwörter</title>
+      <link>/post/passwords/</link>
+      <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/passwords/</guid>
+      <description>Verschiedene, starke Passwörter benutzen ohne sich viel zu merken. Im Allgemeinen braucht man 2 Arten von Passwörtern. Starke Passwörter für wichtige Accounts und ein Wegwerf-Passwort für Webseiten, die man nur einmal oder selten besucht [2]. Viele Seiten fordern inzwischen mindestens 8 Zeichen mit Großbuchstaben und Zahlen, deswegen sollte auch Dein Wegwerf-Passwort diese Anforderung erfüllen. Aber was ist wirklich sinnvoll?
+Ein wirklich gutes Passwort &amp;hellip;  &amp;hellip; darf keine sinnvollen Wörter (Wörterbuch) enthalten!</description>
+    </item>
+    
+  </channel>
+</rss>

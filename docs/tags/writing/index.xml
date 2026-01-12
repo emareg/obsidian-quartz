@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writing on Emanuel Regnath</title>
+    <link>/tags/writing/</link>
+    <description>Recent content in writing on Emanuel Regnath</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Dos and Don’ts of Scientific Writing</title>
+      <link>/post/write_good/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/write_good/</guid>
+      <description>My short list of helpful writing rules for scientific articles. Also available as PDF Version.
+Do write in active voice. Don’t let words be written. It was found to result in confusion about by whom actions have been caused.
+Do use simple and common words. Your goal is to inform, not to impress. Don’t engender flowery or compounded character constructions to disguise incertitude.
+Do use positive forms and opposites to avoid negative forms.</description>
+    </item>
+    
+  </channel>
+</rss>

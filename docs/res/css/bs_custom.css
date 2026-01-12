@@ -1,0 +1,21 @@
+
+
+
+
+.nav .active { 
+	text-underline-position: under;
+	text-decoration: underline; 
+}
+
+
+.jumbotron{
+    /*background-color: #FFF;  */
+}
+
+
+.jumbotron div {
+	/*margin-top: 50hv;*/
+	/*transform: translate(50%, 50%);  */
+}
+
+
