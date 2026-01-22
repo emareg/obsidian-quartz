@@ -6,7 +6,7 @@ lang: de
 date: 2025-11-08
 share: true
 category: projects/smart-home
-permalink: einheitliche-rollo-positionen
+permalink: projects/smart-home/einheitliche-rollo-positionen
 ---
 
 **TL;DR:** Wie schafft man es, dass in KNX, Home Assistant (und über Alexa), die Soll-Position 0% den Rollladen ganz nach unten fährt und danach überall 0% (= unten) angezeigt wird? → Wir invertieren in KNX so gut wie alles, außer der Prozentkodierung und dann invertieren wir in der KNX Integration von HA die automatische Invertierung. Klingt komisch, funktioniert aber aktuell wohl nur so 🤷‍♂️
