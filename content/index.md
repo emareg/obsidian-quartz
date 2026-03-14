@@ -244,7 +244,7 @@ My vision is that at the end all system components fit together as shown in the 
 
   <div class="card">
     <a href="https://classless.de">
-      <img src="https://github.com/emareg/classlesscss/blob/master/docs/img/classless.png?raw=true">
+      <img src="https://github.com/emareg/classlesscss/blob/main/docs/img/classless.png?raw=true">
       <h4>Classless.css</h4>
     </a>
     <p>Minimal CSS3 framework with few but great styles for basic HTML tags.</p>
