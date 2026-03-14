@@ -302,6 +302,14 @@ My vision is that at the end all system components fit together as shown in the 
   <p>Flight stack written in Ada/SPARK 2014.</p>
   </div>
 
+  <div class="card">
+  <a href="https://sbc.emareg.de">
+    <img src="res/img/sbc-logo.jpg">
+    <h4>Single Button Controller</h4>
+  </a>
+  <p>A concept to emulate a 8-button game controller with just a single button.</p>
+  </div>
+
 </div>
 </div>
 
